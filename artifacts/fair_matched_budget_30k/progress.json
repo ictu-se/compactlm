@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "model_name": null,
+  "seed": null,
+  "epoch": null,
+  "max_epochs": null,
+  "best_epoch": null,
+  "best_val_loss": null,
+  "latest_train_loss": null,
+  "latest_val_loss": null,
+  "latest_test_loss": null,
+  "completed_runs": [
+    {
+      "model_name": "Primitive RNN Fair",
+      "seed": 7
+    },
+    {
+      "model_name": "Primitive RNN Fair",
+      "seed": 11
+    },
+    {
+      "model_name": "Primitive RNN Fair",
+      "seed": 19
+    },
+    {
+      "model_name": "Primitive GRU Fair",
+      "seed": 7
+    },
+    {
+      "model_name": "Primitive GRU Fair",
+      "seed": 11
+    },
+    {
+      "model_name": "Primitive GRU Fair",
+      "seed": 19
+    },
+    {
+      "model_name": "Primitive LSTM Fair",
+      "seed": 7
+    },
+    {
+      "model_name": "Primitive LSTM Fair",
+      "seed": 11
+    },
+    {
+      "model_name": "Primitive LSTM Fair",
+      "seed": 19
+    },
+    {
+      "model_name": "Primitive Peephole LSTM Fair",
+      "seed": 7
+    },
+    {
+      "model_name": "Primitive Peephole LSTM Fair",
+      "seed": 11
+    },
+    {
+      "model_name": "Primitive Peephole LSTM Fair",
+      "seed": 19
+    },
+    {
+      "model_name": "Primitive CIFG LSTM Fair",
+      "seed": 7
+    },
+    {
+      "model_name": "Primitive CIFG LSTM Fair",
+      "seed": 11
+    },
+    {
+      "model_name": "Primitive CIFG LSTM Fair",
+      "seed": 19
+    },
+    {
+      "model_name": "Tiny Transformer Decoder Fair",
+      "seed": 7
+    },
+    {
+      "model_name": "Tiny Transformer Decoder Fair",
+      "seed": 11
+    },
+    {
+      "model_name": "Tiny Transformer Decoder Fair",
+      "seed": 19
+    }
+  ],
+  "timestamp": "2026-03-25 20:01:36",
+  "experiment_name": "fair_matched_budget_30k",
+  "device": "cuda",
+  "summary_path": "artifacts\\fair_matched_budget_30k\\summary.md",
+  "results_path": "artifacts\\fair_matched_budget_30k\\results.json"
+}

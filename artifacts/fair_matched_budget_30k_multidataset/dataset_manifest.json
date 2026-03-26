@@ -1,0 +1,38 @@
+[
+  {
+    "dataset_id": "tinyshakespeare",
+    "display_name": "Tiny Shakespeare",
+    "local_path": "tinyshakespeare.txt",
+    "url": null,
+    "start_marker": null,
+    "end_marker": null,
+    "char_limit": null
+  },
+  {
+    "dataset_id": "alice_in_wonderland",
+    "display_name": "Alice in Wonderland",
+    "local_path": "alice_in_wonderland.txt",
+    "url": "https://www.gutenberg.org/files/11/11-0.txt",
+    "start_marker": "*** START OF THE PROJECT GUTENBERG EBOOK 11 ***",
+    "end_marker": "*** END OF THE PROJECT GUTENBERG EBOOK 11 ***",
+    "char_limit": 1115394
+  },
+  {
+    "dataset_id": "pride_and_prejudice",
+    "display_name": "Pride and Prejudice",
+    "local_path": "pride_and_prejudice.txt",
+    "url": "https://www.gutenberg.org/files/1342/1342-0.txt",
+    "start_marker": "*** START OF THE PROJECT GUTENBERG EBOOK 1342 ***",
+    "end_marker": "*** END OF THE PROJECT GUTENBERG EBOOK 1342 ***",
+    "char_limit": 1115394
+  },
+  {
+    "dataset_id": "sherlock_holmes",
+    "display_name": "The Adventures of Sherlock Holmes",
+    "local_path": "sherlock_holmes.txt",
+    "url": "https://www.gutenberg.org/files/1661/1661-0.txt",
+    "start_marker": "*** START OF THE PROJECT GUTENBERG EBOOK 1661 ***",
+    "end_marker": "*** END OF THE PROJECT GUTENBERG EBOOK 1661 ***",
+    "char_limit": 1115394
+  }
+]
