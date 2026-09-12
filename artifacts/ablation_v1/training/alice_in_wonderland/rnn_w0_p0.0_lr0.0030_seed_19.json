@@ -1,0 +1,167 @@
+{
+  "signature": "ee787423f199ab61a56c193672ad5d0e1c2907d2a28549def7fdb031484f1acd",
+  "source_hash": "7c1127cdf3ca0c5747b7a2940f92c1c0737094fa43da837be81421f895744721",
+  "config": {
+    "architecture": "rnn",
+    "learning_rate": 0.003,
+    "id": "rnn_w0_p0.0_lr0.0030"
+  },
+  "dataset": "alice_in_wonderland",
+  "seed": 19,
+  "corpus": {
+    "dataset": "alice_in_wonderland",
+    "sha256": "a4c81ef23eb99f8b14be2474be0410b708cc99293ce6d88cf6799335926639b9",
+    "characters": 144530,
+    "vocabulary": 75,
+    "split_sizes": [
+      130077,
+      7226,
+      7227
+    ],
+    "heldout_only_characters": []
+  },
+  "params": 31600,
+  "dimensions": {},
+  "initial_state_sha256": "5004791fb1b3f49428f58302f191cba53c4d8b086432821a4e5d45729cf3533d",
+  "best_val_loss": 1.5597267441271085,
+  "best_epoch": 20,
+  "stop_reason": "validation_plateau",
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.5267237710952757,
+      "val_loss": 2.1459068810486053
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.9997738003730774,
+      "val_loss": 1.9388637450327098
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.815852017402649,
+      "val_loss": 1.8215757714505838
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.7160095798969268,
+      "val_loss": 1.756103602214668
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.649920063018799,
+      "val_loss": 1.7058349039150358
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.6042033636569977,
+      "val_loss": 1.6742257743228266
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.5567802262306214,
+      "val_loss": 1.6419619529222536
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.5206536674499511,
+      "val_loss": 1.622633952104509
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.5037465107440948,
+      "val_loss": 1.6046329495651086
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.4790247082710266,
+      "val_loss": 1.6108457814780899
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.460054132938385,
+      "val_loss": 1.5981782832690177
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.4430982398986816,
+      "val_loss": 1.5830724970939662
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.4202660346031188,
+      "val_loss": 1.585485546283656
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.4106890094280242,
+      "val_loss": 1.5812286017922794
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.4046315503120423,
+      "val_loss": 1.5764974342003
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.3935443115234376,
+      "val_loss": 1.5706785704932824
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.3889997494220734,
+      "val_loss": 1.5773298153992754
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.3848181331157685,
+      "val_loss": 1.569692006886624
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.3683788561820984,
+      "val_loss": 1.573441066015963
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.365868283510208,
+      "val_loss": 1.5597267441271085
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.3560705542564393,
+      "val_loss": 1.5727810806221616
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.350901165008545,
+      "val_loss": 1.5751599511803227
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.3402799785137176,
+      "val_loss": 1.564358169925254
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.3427470707893372,
+      "val_loss": 1.5705155569954314
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.3347045469284058,
+      "val_loss": 1.5662329376115105
+    }
+  ],
+  "checkpoint": "rnn_w0_p0.0_lr0.0030_seed_19.pt",
+  "checkpoint_sha256": "024cca7b411629e9d677787ecad47380955f9f5abba24d53d46958a464bd74eb",
+  "reused_original": false,
+  "original_signature": null,
+  "elapsed_seconds": 15.922048749999988,
+  "completed": true,
+  "completed_at": "2026-09-12T14:25:08.897181+00:00",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "device": "cpu",
+  "threads": 1
+}

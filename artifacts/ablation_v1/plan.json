@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "configs": [
+    {
+      "architecture": "transformer",
+      "width": 48,
+      "dropout": 0.0,
+      "learning_rate": 0.0003,
+      "id": "transformer_w48_p0.0_lr0.0003"
+    },
+    {
+      "architecture": "transformer",
+      "width": 48,
+      "dropout": 0.0,
+      "learning_rate": 0.001,
+      "id": "transformer_w48_p0.0_lr0.0010"
+    },
+    {
+      "architecture": "transformer",
+      "width": 48,
+      "dropout": 0.0,
+      "learning_rate": 0.003,
+      "id": "transformer_w48_p0.0_lr0.0030"
+    },
+    {
+      "architecture": "transformer",
+      "width": 48,
+      "dropout": 0.1,
+      "learning_rate": 0.0003,
+      "id": "transformer_w48_p0.1_lr0.0003"
+    },
+    {
+      "architecture": "transformer",
+      "width": 48,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "id": "transformer_w48_p0.1_lr0.0010"
+    },
+    {
+      "architecture": "transformer",
+      "width": 48,
+      "dropout": 0.1,
+      "learning_rate": 0.003,
+      "id": "transformer_w48_p0.1_lr0.0030"
+    },
+    {
+      "architecture": "transformer",
+      "width": 32,
+      "dropout": 0.0,
+      "learning_rate": 0.0003,
+      "id": "transformer_w32_p0.0_lr0.0003"
+    },
+    {
+      "architecture": "transformer",
+      "width": 32,
+      "dropout": 0.0,
+      "learning_rate": 0.001,
+      "id": "transformer_w32_p0.0_lr0.0010"
+    },
+    {
+      "architecture": "transformer",
+      "width": 32,
+      "dropout": 0.0,
+      "learning_rate": 0.003,
+      "id": "transformer_w32_p0.0_lr0.0030"
+    },
+    {
+      "architecture": "transformer",
+      "width": 32,
+      "dropout": 0.1,
+      "learning_rate": 0.0003,
+      "id": "transformer_w32_p0.1_lr0.0003"
+    },
+    {
+      "architecture": "transformer",
+      "width": 32,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "id": "transformer_w32_p0.1_lr0.0010"
+    },
+    {
+      "architecture": "transformer",
+      "width": 32,
+      "dropout": 0.1,
+      "learning_rate": 0.003,
+      "id": "transformer_w32_p0.1_lr0.0030"
+    },
+    {
+      "architecture": "rnn",
+      "learning_rate": 0.0003,
+      "id": "rnn_w0_p0.0_lr0.0003"
+    },
+    {
+      "architecture": "rnn",
+      "learning_rate": 0.001,
+      "id": "rnn_w0_p0.0_lr0.0010"
+    },
+    {
+      "architecture": "rnn",
+      "learning_rate": 0.003,
+      "id": "rnn_w0_p0.0_lr0.0030"
+    },
+    {
+      "architecture": "gru",
+      "learning_rate": 0.0003,
+      "id": "gru_w0_p0.0_lr0.0003"
+    },
+    {
+      "architecture": "gru",
+      "learning_rate": 0.001,
+      "id": "gru_w0_p0.0_lr0.0010"
+    },
+    {
+      "architecture": "gru",
+      "learning_rate": 0.003,
+      "id": "gru_w0_p0.0_lr0.0030"
+    }
+  ],
+  "seeds": [
+    7,
+    11,
+    19
+  ],
+  "datasets": [
+    "tinyshakespeare",
+    "alice_in_wonderland",
+    "pride_and_prejudice",
+    "sherlock_holmes"
+  ],
+  "training_protocol": {
+    "version": 1,
+    "sequence_length": 64,
+    "batch_size": 32,
+    "steps_per_epoch": 100,
+    "max_epochs": 50,
+    "patience": 5,
+    "min_delta": 0.002,
+    "learning_rate": 0.001,
+    "prompts": 32,
+    "continuation": 160,
+    "temperature": 0.8,
+    "threads": 1,
+    "alphabet": "closed_corpus",
+    "evaluation": "full_disjoint_blocks"
+  },
+  "source_hash": "7c1127cdf3ca0c5747b7a2940f92c1c0737094fa43da837be81421f895744721",
+  "baseline_source_hash": "20fdba9a3f29555f63cdd9dfffeddd266c8f3bcd80bab5faa81b796710873772",
+  "design": "Transformer 2 dropout x 3 learning rates x 2 allocations; RNN/GRU same 3 learning rates",
+  "selection": "One configuration per architecture, minimizing validation NLL averaged equally over corpora and seeds; ties by config id",
+  "primary_contrasts": "Paired NLL differences for dropout, learning rate and allocation, marginalized over the other prespecified factors",
+  "baseline_disclosure": "Follow-up designed after original baseline results were known; grid fixed before new ablation outcomes",
+  "interpretation": "Effects of interventions under this training/selection policy, not universal architecture causality",
+  "generation": "Greedy and temperature 0.8, 32 prompts, 64 context, 160 continuation, for validation-selected configurations only",
+  "corpus_hashes": {
+    "tinyshakespeare": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "alice_in_wonderland": "a4c81ef23eb99f8b14be2474be0410b708cc99293ce6d88cf6799335926639b9",
+    "pride_and_prejudice": "302aa4dfe7c4211413f82033e26ccd9e7a098a7041e41c08daa0776afda1017c",
+    "sherlock_holmes": "e79b7c0c6341d620d5716eb48bb2631138c881409231aa5e26c20ed2fb79631a"
+  },
+  "frozen_at": "2026-09-12T14:13:45.825745+00:00"
+}

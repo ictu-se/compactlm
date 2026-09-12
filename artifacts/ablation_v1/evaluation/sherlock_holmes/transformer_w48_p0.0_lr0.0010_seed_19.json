@@ -1,0 +1,23 @@
+{
+  "dataset": "sherlock_holmes",
+  "config": {
+    "architecture": "transformer",
+    "width": 48,
+    "dropout": 0.0,
+    "learning_rate": 0.001,
+    "id": "transformer_w48_p0.0_lr0.0010"
+  },
+  "seed": 19,
+  "params": 32216,
+  "train_loss": 1.7920057897836383,
+  "val_loss": 1.8413112745975198,
+  "test_loss": 1.782612653675431,
+  "train_targets": 505923,
+  "test_targets": 28106,
+  "generation": {},
+  "training_sha256": "dd3e6117513ed453b3941c5ab804d62d037da2ee2d97f9977b6a7f1f9d90a218",
+  "checkpoint_sha256": "12e703ae5b9ba4f8f507b6e31bc2bbade672ecad71f2ed8c92e07d9f691d0375",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:49.290460+00:00"
+}

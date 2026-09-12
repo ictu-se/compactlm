@@ -1,0 +1,1082 @@
+[
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w48_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "transformer_w32_p0.1_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0003",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "rnn_w0_p0.0_lr0.0030",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0010",
+    "seed": 19
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 7
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 11
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "config": "gru_w0_p0.0_lr0.0030",
+    "seed": 19
+  }
+]

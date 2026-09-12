@@ -1,0 +1,23 @@
+{
+  "dataset": "pride_and_prejudice",
+  "config": {
+    "architecture": "transformer",
+    "width": 48,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "id": "transformer_w48_p0.1_lr0.0010"
+  },
+  "seed": 7,
+  "params": 32507,
+  "train_loss": 1.788681722001856,
+  "val_loss": 1.7981021044661052,
+  "test_loss": 1.7986345550685452,
+  "train_targets": 655437,
+  "test_targets": 36413,
+  "generation": {},
+  "training_sha256": "dca6d8248f51b650e3efd12e811a93ee15cb82a94955f204b7edd52eb5aaa4db",
+  "checkpoint_sha256": "1e8de1ee029365c7fe5d05aa6e98882d955c4fe501888a78cd2d1bd9a8d4909c",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:42.143224+00:00"
+}

@@ -98,7 +98,8 @@ repository. Figures are generated exclusively from measured results.
   prompts are averaged within checkpoints, not counted as independent models.
 - Budgets are approximately matched, not equal. Width, gate implementation,
   Transformer dropout, and architecture differ together. No architecture-specific
-  tuning was performed. Conclusions are limited to these configurations and texts.
+  tuning was performed in the original comparison. The separate follow-up below
+  examines a fixed grid; conclusions remain conditional on these configurations and texts.
 - Custom GRU reset gating occurs before the recurrent candidate matrix product;
   substituting a library GRU can change its equations.
 
@@ -133,3 +134,39 @@ The recorded computational source SHA256 is
 It covers the training protocol and model implementations; corpus and checkpoint
 hashes are recorded separately in each run. Historical results can be recovered
 from commit `c9042ece7f079e848e8a79239526d81d07686bd1`.
+
+## Controlled follow-up: optimization, dropout and allocation
+
+The follow-up preserves the original experiment and its computational hash.
+[ABLATION_PROTOCOL.md](ABLATION_PROTOCOL.md) defines the frozen design and its
+interpretation. Twelve Transformer settings cross two dropout levels, three Adam
+learning rates and two parameter allocations; RNN and GRU each receive the same
+three learning rates. Four corpora and three seeds produce 216 combinations,
+including 36 verified original checkpoints and 180 newly trained combinations.
+The Transformer has a larger search grid, so this is not an equal-effort tuning
+competition.
+
+```sh
+python3 ablation_experiments.py --phase freeze
+python3 ablation_experiments.py --workers 8
+python3 validate_ablation.py --workers 8
+python3 build_ablation_assets.py
+```
+
+The training command resumes compatible completed records automatically. It fixes
+one global setting per architecture using validation scores only, after all
+training finishes and before new test evaluation. All 216 checkpoints then
+receive full training, validation and test loss evaluation. Generation for the
+36 globally selected checkpoints adds 2,304 continuations with the original two
+decoding strategies. The validator reloads all checkpoints, recomputes all 648
+losses, regenerates every selected continuation, and checks selection chronology
+and matched initialization. It creates the integrity report only after all checks
+pass.
+
+`artifacts/ablation_v1` contains the frozen plan, training records, checkpoints,
+locked selection, and separate evaluation records. `artifacts/ablation_assets`
+contains the full grid, paired contrasts, conditional effects, interactions,
+selected-setting comparisons, and empirical figure. Generated table fragments
+remain untracked. The follow-up was designed after original outcomes were known;
+its frozen grid prevents outcome-driven expansion but does not make the study
+prospectively independent of the original benchmark.

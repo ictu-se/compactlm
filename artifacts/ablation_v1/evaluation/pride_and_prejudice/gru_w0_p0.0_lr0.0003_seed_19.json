@@ -1,0 +1,21 @@
+{
+  "dataset": "pride_and_prejudice",
+  "config": {
+    "architecture": "gru",
+    "learning_rate": 0.0003,
+    "id": "gru_w0_p0.0_lr0.0003"
+  },
+  "seed": 19,
+  "params": 32860,
+  "train_loss": 1.6416023902873917,
+  "val_loss": 1.6530739577749227,
+  "test_loss": 1.659808855567739,
+  "train_targets": 655437,
+  "test_targets": 36413,
+  "generation": {},
+  "training_sha256": "fbeb6c37cf5c37ca3e85ba4186e082a5294ba44fa9001bd28c977402e4c6f673",
+  "checkpoint_sha256": "0a78278a63153122cac3ccfdb02a67a3cf21accefe664bab2b18ea795b5bd2b4",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:47.730939+00:00"
+}

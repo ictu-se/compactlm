@@ -1,0 +1,23 @@
+{
+  "dataset": "tinyshakespeare",
+  "config": {
+    "architecture": "transformer",
+    "width": 32,
+    "dropout": 0.0,
+    "learning_rate": 0.0003,
+    "id": "transformer_w32_p0.0_lr0.0003"
+  },
+  "seed": 11,
+  "params": 29961,
+  "train_loss": 2.3094052869265274,
+  "val_loss": 2.3189643198828755,
+  "test_loss": 2.3378236739814895,
+  "train_targets": 1003853,
+  "test_targets": 55769,
+  "generation": {},
+  "training_sha256": "9bcf26d0fd3f8cf7e5d04abe7df1af98a9b030d8bf0a769d26168d96b4c9da30",
+  "checkpoint_sha256": "b88769744578b148e4310de2989fa92c70cb384f687d641ab9f6824a2264e924",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:30.907932+00:00"
+}

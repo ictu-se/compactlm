@@ -1,0 +1,21 @@
+{
+  "dataset": "tinyshakespeare",
+  "config": {
+    "architecture": "gru",
+    "learning_rate": 0.001,
+    "id": "gru_w0_p0.0_lr0.0010"
+  },
+  "seed": 11,
+  "params": 30104,
+  "train_loss": 1.6199933635074177,
+  "val_loss": 1.7496837919738975,
+  "test_loss": 1.8162767953080416,
+  "train_targets": 1003853,
+  "test_targets": 55769,
+  "generation": {},
+  "training_sha256": "c628565a84d99dcaaecff09abc6a9fc1bb978f56aa129f82ca70680c0bc234b2",
+  "checkpoint_sha256": "540d5243c8b004bfca1f984e0c400d11e9caf1816805e4fae4e26a7f2dd0b328",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:37.306614+00:00"
+}

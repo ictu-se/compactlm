@@ -1,0 +1,21 @@
+{
+  "dataset": "sherlock_holmes",
+  "config": {
+    "architecture": "gru",
+    "learning_rate": 0.001,
+    "id": "gru_w0_p0.0_lr0.0010"
+  },
+  "seed": 11,
+  "params": 32542,
+  "train_loss": 1.5643024128707494,
+  "val_loss": 1.6304263537917316,
+  "test_loss": 1.5944159297445004,
+  "train_targets": 505923,
+  "test_targets": 28106,
+  "generation": {},
+  "training_sha256": "0fb271b5d5823d88e5f88232695faa1131a73236c1dec8e64a351a5cc390ce26",
+  "checkpoint_sha256": "0b5afbdb592bd8b4ba48256d5731d4a24149ec452f68aba01df1babf19e909df",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:54.498906+00:00"
+}

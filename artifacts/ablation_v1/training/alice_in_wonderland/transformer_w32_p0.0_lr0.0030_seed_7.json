@@ -1,0 +1,261 @@
+{
+  "signature": "6ff01e156f2132125bc7f70a8ab4343f8c742be541e1ea620e112f67c058267b",
+  "source_hash": "7c1127cdf3ca0c5747b7a2940f92c1c0737094fa43da837be81421f895744721",
+  "config": {
+    "architecture": "transformer",
+    "width": 32,
+    "dropout": 0.0,
+    "learning_rate": 0.003,
+    "id": "transformer_w32_p0.0_lr0.0030"
+  },
+  "dataset": "alice_in_wonderland",
+  "seed": 7,
+  "corpus": {
+    "dataset": "alice_in_wonderland",
+    "sha256": "a4c81ef23eb99f8b14be2474be0410b708cc99293ce6d88cf6799335926639b9",
+    "characters": 144530,
+    "vocabulary": 75,
+    "split_sizes": [
+      130077,
+      7226,
+      7227
+    ],
+    "heldout_only_characters": []
+  },
+  "params": 30936,
+  "dimensions": {
+    "d_model": 32,
+    "ff_dim": 301,
+    "num_heads": 4,
+    "num_layers": 1,
+    "max_seq_len": 64,
+    "dropout": 0.0
+  },
+  "initial_state_sha256": "e56b26200d85fc15e02bf09a31ce1d8f802466cb99a44030ccbc328854020de8",
+  "best_val_loss": 1.5961471325303445,
+  "best_epoch": 37,
+  "stop_reason": "validation_plateau",
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.9354512190818784,
+      "val_loss": 2.5774911826374622
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.5055233359336855,
+      "val_loss": 2.4478405149255242
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.430546753406525,
+      "val_loss": 2.3907996745918036
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.3573590874671937,
+      "val_loss": 2.3096857048483455
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.2778040409088134,
+      "val_loss": 2.236539908544415
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.1920231223106383,
+      "val_loss": 2.142789545290198
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.103681355714798,
+      "val_loss": 2.060356054603022
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.029471136331558,
+      "val_loss": 2.004568198444934
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.9630758726596833,
+      "val_loss": 1.9509760852008542
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.901262001991272,
+      "val_loss": 1.9020246586255136
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.8555084085464477,
+      "val_loss": 1.8586668760306282
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.810929844379425,
+      "val_loss": 1.8314658849379595
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.7890359044075013,
+      "val_loss": 1.8099503334335802
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.748156907558441,
+      "val_loss": 1.776615731526411
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.7224895310401918,
+      "val_loss": 1.765029665409075
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.6978621208667755,
+      "val_loss": 1.7498284077891841
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.6737405729293824,
+      "val_loss": 1.721540580142328
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.6548754501342773,
+      "val_loss": 1.7101439806664278
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.6288302659988403,
+      "val_loss": 1.696676328454463
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.6197934579849242,
+      "val_loss": 1.677885994564703
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.6112159144878389,
+      "val_loss": 1.6779119112747352
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.592638865709305,
+      "val_loss": 1.6677715198556444
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.5854211890697478,
+      "val_loss": 1.6550916150366972
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.5708783292770385,
+      "val_loss": 1.6336830968097833
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.5533514189720155,
+      "val_loss": 1.6421660236503839
+    },
+    {
+      "epoch": 26,
+      "train_loss": 1.5559075212478637,
+      "val_loss": 1.6420845248212452
+    },
+    {
+      "epoch": 27,
+      "train_loss": 1.5404198253154755,
+      "val_loss": 1.6456029175227076
+    },
+    {
+      "epoch": 28,
+      "train_loss": 1.5369513821601868,
+      "val_loss": 1.629379940890936
+    },
+    {
+      "epoch": 29,
+      "train_loss": 1.526860122680664,
+      "val_loss": 1.6263871802095724
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.517849668264389,
+      "val_loss": 1.613586726733145
+    },
+    {
+      "epoch": 31,
+      "train_loss": 1.519281873703003,
+      "val_loss": 1.6246104763783387
+    },
+    {
+      "epoch": 32,
+      "train_loss": 1.504527028799057,
+      "val_loss": 1.6139166048571312
+    },
+    {
+      "epoch": 33,
+      "train_loss": 1.5050566220283508,
+      "val_loss": 1.601021164626811
+    },
+    {
+      "epoch": 34,
+      "train_loss": 1.488752851486206,
+      "val_loss": 1.6027850225640004
+    },
+    {
+      "epoch": 35,
+      "train_loss": 1.4885278391838073,
+      "val_loss": 1.6029279525387246
+    },
+    {
+      "epoch": 36,
+      "train_loss": 1.4831250238418578,
+      "val_loss": 1.6025955464188202
+    },
+    {
+      "epoch": 37,
+      "train_loss": 1.4901447451114656,
+      "val_loss": 1.5961471325303445
+    },
+    {
+      "epoch": 38,
+      "train_loss": 1.4776232278347015,
+      "val_loss": 1.5978274662849399
+    },
+    {
+      "epoch": 39,
+      "train_loss": 1.4724737524986267,
+      "val_loss": 1.6050815811949206
+    },
+    {
+      "epoch": 40,
+      "train_loss": 1.4721222877502442,
+      "val_loss": 1.603819975011489
+    },
+    {
+      "epoch": 41,
+      "train_loss": 1.4655323684215547,
+      "val_loss": 1.6040953037565555
+    },
+    {
+      "epoch": 42,
+      "train_loss": 1.46129030585289,
+      "val_loss": 1.598023837924416
+    }
+  ],
+  "checkpoint": "transformer_w32_p0.0_lr0.0030_seed_7.pt",
+  "checkpoint_sha256": "488825cb58ef81ff76a19f8d595be88dfec34d2933866cb8735aa17c2b22ed57",
+  "reused_original": false,
+  "original_signature": null,
+  "elapsed_seconds": 33.696108665999986,
+  "completed": true,
+  "completed_at": "2026-09-12T14:24:02.934984+00:00",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "device": "cpu",
+  "threads": 1
+}

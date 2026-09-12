@@ -1,0 +1,21 @@
+{
+  "dataset": "alice_in_wonderland",
+  "config": {
+    "architecture": "gru",
+    "learning_rate": 0.0003,
+    "id": "gru_w0_p0.0_lr0.0003"
+  },
+  "seed": 7,
+  "params": 31164,
+  "train_loss": 1.5752481900882067,
+  "val_loss": 1.656264689620391,
+  "test_loss": 1.685754872609003,
+  "train_targets": 130076,
+  "test_targets": 7226,
+  "generation": {},
+  "training_sha256": "e29fce7185a2c41950fe6863870cf540b5f3040d80db99b7d7d6c2ff6ed2fe49",
+  "checkpoint_sha256": "5cc1398f715c7d901c6753cbeb116dd09b87dcd907af2f101ac4ea23e37a0040",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:39.572442+00:00"
+}

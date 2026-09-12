@@ -1,0 +1,23 @@
+{
+  "dataset": "alice_in_wonderland",
+  "config": {
+    "architecture": "transformer",
+    "width": 48,
+    "dropout": 0.0,
+    "learning_rate": 0.001,
+    "id": "transformer_w48_p0.0_lr0.0010"
+  },
+  "seed": 11,
+  "params": 30955,
+  "train_loss": 1.6246827850592833,
+  "val_loss": 1.6846289601045497,
+  "test_loss": 1.7273903009207203,
+  "train_targets": 130076,
+  "test_targets": 7226,
+  "generation": {},
+  "training_sha256": "9a04a3ba2fee95a8a04211a08f3653a81c4d1591f37e69c6a2aa177bccab4d52",
+  "checkpoint_sha256": "a63a5ec7caf9d63ff430745f9589b9c7aab636d3189d72200d4f3af2644de1a1",
+  "selection_sha256": "77149c24d5507b21b53aaf407101825fe318713fedda9f6d23c3a26af4585cd6",
+  "completed": true,
+  "evaluated_at": "2026-09-12T14:34:37.021283+00:00"
+}

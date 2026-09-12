@@ -1,0 +1,262 @@
+{
+  "signature": "3d96641a27ba85ee05a3e4812dc95ee94a7b065491152890dcb615db858a693f",
+  "source_hash": "7c1127cdf3ca0c5747b7a2940f92c1c0737094fa43da837be81421f895744721",
+  "config": {
+    "architecture": "rnn",
+    "learning_rate": 0.003,
+    "id": "rnn_w0_p0.0_lr0.0030"
+  },
+  "dataset": "tinyshakespeare",
+  "seed": 7,
+  "corpus": {
+    "dataset": "tinyshakespeare",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "characters": 1115394,
+    "vocabulary": 65,
+    "split_sizes": [
+      1003854,
+      55770,
+      55770
+    ],
+    "heldout_only_characters": []
+  },
+  "params": 30020,
+  "dimensions": {},
+  "initial_state_sha256": "371411fab4b1667430c6282c0d786fabf9589e25fa625a6604d52149d2ddf17f",
+  "best_val_loss": 1.7114181749068589,
+  "best_epoch": 42,
+  "stop_reason": "validation_plateau",
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.5995257186889646,
+      "val_loss": 2.24051969566811
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.1199104976654053,
+      "val_loss": 2.078940566118897
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.9840069913864136,
+      "val_loss": 2.0091397473343937
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.9053762114048005,
+      "val_loss": 1.9589626688670696
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.8534990072250366,
+      "val_loss": 1.9282345722454788
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.8165469717979432,
+      "val_loss": 1.898025513926544
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.786642792224884,
+      "val_loss": 1.8743399954010602
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.762442101240158,
+      "val_loss": 1.8593959966699662
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.7458563125133515,
+      "val_loss": 1.8472057161196254
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.7246899139881133,
+      "val_loss": 1.8345149711465654
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.715475001335144,
+      "val_loss": 1.8180343952017184
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.7131325268745423,
+      "val_loss": 1.8104179541837102
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.6918464314937591,
+      "val_loss": 1.8001806450714377
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.6776417016983032,
+      "val_loss": 1.797556889192039
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.6690891313552856,
+      "val_loss": 1.7879706170039118
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.672158921957016,
+      "val_loss": 1.781651921644982
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.6681480765342713,
+      "val_loss": 1.7804799715945805
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.6566644155979156,
+      "val_loss": 1.7743123532683938
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.6515687835216522,
+      "val_loss": 1.7678857657067581
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.6442861700057982,
+      "val_loss": 1.7631789810095024
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.6348828601837158,
+      "val_loss": 1.7548621094787518
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.6380996096134186,
+      "val_loss": 1.7572034673600676
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.6293421852588654,
+      "val_loss": 1.7540428348905088
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.631558643579483,
+      "val_loss": 1.7487392955308674
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.6217166411876678,
+      "val_loss": 1.7455701680426152
+    },
+    {
+      "epoch": 26,
+      "train_loss": 1.6183217000961303,
+      "val_loss": 1.7529260304003693
+    },
+    {
+      "epoch": 27,
+      "train_loss": 1.615086431503296,
+      "val_loss": 1.7407181477537714
+    },
+    {
+      "epoch": 28,
+      "train_loss": 1.6100980865955352,
+      "val_loss": 1.7490158371078113
+    },
+    {
+      "epoch": 29,
+      "train_loss": 1.6082701432704924,
+      "val_loss": 1.7423416523070778
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.6050320196151733,
+      "val_loss": 1.7352150313732677
+    },
+    {
+      "epoch": 31,
+      "train_loss": 1.599435099363327,
+      "val_loss": 1.7417228549751456
+    },
+    {
+      "epoch": 32,
+      "train_loss": 1.6093076050281525,
+      "val_loss": 1.7315140111148535
+    },
+    {
+      "epoch": 33,
+      "train_loss": 1.601410619020462,
+      "val_loss": 1.7307495331695393
+    },
+    {
+      "epoch": 34,
+      "train_loss": 1.5975076854228973,
+      "val_loss": 1.7281435466286792
+    },
+    {
+      "epoch": 35,
+      "train_loss": 1.5910355818271638,
+      "val_loss": 1.7280580720739207
+    },
+    {
+      "epoch": 36,
+      "train_loss": 1.5952824831008912,
+      "val_loss": 1.7228514436314366
+    },
+    {
+      "epoch": 37,
+      "train_loss": 1.5914073526859283,
+      "val_loss": 1.72655413713349
+    },
+    {
+      "epoch": 38,
+      "train_loss": 1.598421312570572,
+      "val_loss": 1.7212791221933437
+    },
+    {
+      "epoch": 39,
+      "train_loss": 1.5900748348236085,
+      "val_loss": 1.7132961895170484
+    },
+    {
+      "epoch": 40,
+      "train_loss": 1.575955356359482,
+      "val_loss": 1.716993618341513
+    },
+    {
+      "epoch": 41,
+      "train_loss": 1.5874356424808502,
+      "val_loss": 1.7208117349422813
+    },
+    {
+      "epoch": 42,
+      "train_loss": 1.5893174338340759,
+      "val_loss": 1.7114181749068589
+    },
+    {
+      "epoch": 43,
+      "train_loss": 1.588884414434433,
+      "val_loss": 1.7154099189561167
+    },
+    {
+      "epoch": 44,
+      "train_loss": 1.5828282678127288,
+      "val_loss": 1.7135333184837327
+    }
+  ],
+  "checkpoint": "rnn_w0_p0.0_lr0.0030_seed_7.pt",
+  "checkpoint_sha256": "4723d494a90690960934ce7c7811cb0b7b8ab722ee4829c07c85ff8a418b9e8d",
+  "reused_original": false,
+  "original_signature": null,
+  "elapsed_seconds": 29.313823125000006,
+  "completed": true,
+  "completed_at": "2026-09-12T14:21:20.914712+00:00",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "device": "cpu",
+  "threads": 1
+}

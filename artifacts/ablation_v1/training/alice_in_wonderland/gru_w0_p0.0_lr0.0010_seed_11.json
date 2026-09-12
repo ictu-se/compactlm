@@ -1,0 +1,262 @@
+{
+  "signature": "9995e2319218ec7ece859e33f4a39604360cf50714c10f40bd39a14748c8d262",
+  "source_hash": "7c1127cdf3ca0c5747b7a2940f92c1c0737094fa43da837be81421f895744721",
+  "config": {
+    "architecture": "gru",
+    "learning_rate": 0.001,
+    "id": "gru_w0_p0.0_lr0.0010"
+  },
+  "dataset": "alice_in_wonderland",
+  "seed": 11,
+  "corpus": {
+    "dataset": "alice_in_wonderland",
+    "sha256": "a4c81ef23eb99f8b14be2474be0410b708cc99293ce6d88cf6799335926639b9",
+    "characters": 144530,
+    "vocabulary": 75,
+    "split_sizes": [
+      130077,
+      7226,
+      7227
+    ],
+    "heldout_only_characters": []
+  },
+  "params": 31164,
+  "dimensions": {},
+  "initial_state_sha256": "e2ee217bd9ef701c0e1ed4ca7eac63a6259a1e8ce411908ff5707711e2232147",
+  "best_val_loss": 1.554546430647167,
+  "best_epoch": 44,
+  "stop_reason": "validation_plateau",
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.1919720363616944,
+      "val_loss": 2.719740900481861
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.5269536852836607,
+      "val_loss": 2.3697582353110134
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.280883557796478,
+      "val_loss": 2.18765083286589
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.129007267951965,
+      "val_loss": 2.069519421006569
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.009664273262024,
+      "val_loss": 1.9877253158199746
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.920725359916687,
+      "val_loss": 1.9157224566713749
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.8505736112594604,
+      "val_loss": 1.8683006450296686
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.8032767105102538,
+      "val_loss": 1.8271494734081017
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.767450680732727,
+      "val_loss": 1.7936193858215965
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.7252835631370544,
+      "val_loss": 1.7639937351319204
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.682600724697113,
+      "val_loss": 1.7422334463786089
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.6666018617153169,
+      "val_loss": 1.7232779141858374
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.639925991296768,
+      "val_loss": 1.7005180585920605
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.6129228675365448,
+      "val_loss": 1.6849790706436527
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.595004130601883,
+      "val_loss": 1.6700154192967398
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.57980428814888,
+      "val_loss": 1.6603801518740537
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.5689192533493042,
+      "val_loss": 1.6452723625209504
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.5498214828968049,
+      "val_loss": 1.6351491939980265
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.536912499666214,
+      "val_loss": 1.6279311088377217
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.534893958568573,
+      "val_loss": 1.619831945293915
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.5176834511756896,
+      "val_loss": 1.616235943962546
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.5024640202522277,
+      "val_loss": 1.6038729520487538
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.496069278717041,
+      "val_loss": 1.6029084160088667
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.48748761177063,
+      "val_loss": 1.5934966977657332
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.477475973367691,
+      "val_loss": 1.5958811079507056
+    },
+    {
+      "epoch": 26,
+      "train_loss": 1.4701990938186646,
+      "val_loss": 1.5923005037406737
+    },
+    {
+      "epoch": 27,
+      "train_loss": 1.4612891149520875,
+      "val_loss": 1.5891925671851346
+    },
+    {
+      "epoch": 28,
+      "train_loss": 1.4650202453136445,
+      "val_loss": 1.5812948925189907
+    },
+    {
+      "epoch": 29,
+      "train_loss": 1.4512366378307342,
+      "val_loss": 1.5788747999989863
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.4398469340801239,
+      "val_loss": 1.577550541966844
+    },
+    {
+      "epoch": 31,
+      "train_loss": 1.430837596654892,
+      "val_loss": 1.5764913180130162
+    },
+    {
+      "epoch": 32,
+      "train_loss": 1.422236224412918,
+      "val_loss": 1.570986610069407
+    },
+    {
+      "epoch": 33,
+      "train_loss": 1.4239026927947998,
+      "val_loss": 1.5670853970537548
+    },
+    {
+      "epoch": 34,
+      "train_loss": 1.4134477865695954,
+      "val_loss": 1.570243502818177
+    },
+    {
+      "epoch": 35,
+      "train_loss": 1.407247281074524,
+      "val_loss": 1.5664714530760029
+    },
+    {
+      "epoch": 36,
+      "train_loss": 1.3973805236816406,
+      "val_loss": 1.567448256337519
+    },
+    {
+      "epoch": 37,
+      "train_loss": 1.405433338880539,
+      "val_loss": 1.5665468093185688
+    },
+    {
+      "epoch": 38,
+      "train_loss": 1.3970099222660064,
+      "val_loss": 1.5621164193862862
+    },
+    {
+      "epoch": 39,
+      "train_loss": 1.3968490529060364,
+      "val_loss": 1.5554170918712154
+    },
+    {
+      "epoch": 40,
+      "train_loss": 1.386268424987793,
+      "val_loss": 1.560186974548551
+    },
+    {
+      "epoch": 41,
+      "train_loss": 1.3863702976703645,
+      "val_loss": 1.562069178386543
+    },
+    {
+      "epoch": 42,
+      "train_loss": 1.3754140102863313,
+      "val_loss": 1.5596399242572718
+    },
+    {
+      "epoch": 43,
+      "train_loss": 1.365758500099182,
+      "val_loss": 1.5574404009650735
+    },
+    {
+      "epoch": 44,
+      "train_loss": 1.3733561074733733,
+      "val_loss": 1.554546430647167
+    }
+  ],
+  "checkpoint": "gru_w0_p0.0_lr0.0010_seed_11.pt",
+  "checkpoint_sha256": "674e494dc0d77a1291d94502ba7d6c370763002f1e442fad3278e0c0605d99cb",
+  "reused_original": true,
+  "original_signature": "48d22d17f25cfe41cbee42a69f7838f1a65d8249909eefc186e467c27c64ca5c",
+  "elapsed_seconds": 0.017390042000045014,
+  "completed": true,
+  "completed_at": "2026-09-12T14:25:05.735433+00:00",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "device": "cpu",
+  "threads": 1
+}
