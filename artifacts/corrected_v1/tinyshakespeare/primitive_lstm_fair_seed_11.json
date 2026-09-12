@@ -1,0 +1,1204 @@
+{
+  "signature": "92950b0464a627d394e8d3fd34e2ffa45954d0aa43fd0586b3e092a74933d1c6",
+  "code_sha256": "20fdba9a3f29555f63cdd9dfffeddd266c8f3bcd80bab5faa81b796710873772",
+  "config": {
+    "version": 1,
+    "sequence_length": 64,
+    "batch_size": 32,
+    "steps_per_epoch": 100,
+    "max_epochs": 50,
+    "patience": 5,
+    "min_delta": 0.002,
+    "learning_rate": 0.001,
+    "prompts": 32,
+    "continuation": 160,
+    "temperature": 0.8,
+    "threads": 1,
+    "alphabet": "closed_corpus",
+    "evaluation": "full_disjoint_blocks"
+  },
+  "corpus": {
+    "dataset": "tinyshakespeare",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "characters": 1115394,
+    "vocabulary": 65,
+    "split_sizes": [
+      1003854,
+      55770,
+      55770
+    ],
+    "heldout_only_characters": []
+  },
+  "model": "Primitive LSTM Fair",
+  "seed": 11,
+  "params": 29735,
+  "best_epoch": 50,
+  "best_val_loss": 1.8109227874946836,
+  "final_test_loss": 1.8704708430908523,
+  "test_ppl": 6.4913520881362565,
+  "evaluation_tokens": 55769,
+  "stop_reason": "max_epochs_reached",
+  "completed": true,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.4056291246414183,
+      "val_loss": 2.955232529641138
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.740249848365784,
+      "val_loss": 2.5801444053393396
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.485706481933594,
+      "val_loss": 2.405763547128811
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.359293830394745,
+      "val_loss": 2.3084055137158885
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.2695594000816346,
+      "val_loss": 2.24094409241851
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.210952672958374,
+      "val_loss": 2.1905981581404625
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.1577545976638794,
+      "val_loss": 2.152292326179024
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.1139560914039612,
+      "val_loss": 2.121699068219634
+    },
+    {
+      "epoch": 9,
+      "train_loss": 2.073528468608856,
+      "val_loss": 2.0948246135375475
+    },
+    {
+      "epoch": 10,
+      "train_loss": 2.05231542468071,
+      "val_loss": 2.0719869579754393
+    },
+    {
+      "epoch": 11,
+      "train_loss": 2.0195521795749665,
+      "val_loss": 2.053837252004362
+    },
+    {
+      "epoch": 12,
+      "train_loss": 2.002773315906525,
+      "val_loss": 2.0367306226014077
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.9777379763126373,
+      "val_loss": 2.021607852473327
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.951256000995636,
+      "val_loss": 2.0085803351716676
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.9391889345645905,
+      "val_loss": 1.9956227912882996
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.9265248095989227,
+      "val_loss": 1.979745334720391
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.9081329607963562,
+      "val_loss": 1.9708033872609603
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.8939241456985474,
+      "val_loss": 1.9585527840954122
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.8853652787208557,
+      "val_loss": 1.9512555394392153
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.8674127900600432,
+      "val_loss": 1.9411766727918593
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.8605173552036285,
+      "val_loss": 1.9325871249303244
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.8472561490535737,
+      "val_loss": 1.9243076838638855
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.8378868448734282,
+      "val_loss": 1.916523928742225
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.8317175650596618,
+      "val_loss": 1.9071875889605816
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.8244756042957306,
+      "val_loss": 1.904477067580173
+    },
+    {
+      "epoch": 26,
+      "train_loss": 1.8135681581497192,
+      "val_loss": 1.89813271089385
+    },
+    {
+      "epoch": 27,
+      "train_loss": 1.805582959651947,
+      "val_loss": 1.8924621808167439
+    },
+    {
+      "epoch": 28,
+      "train_loss": 1.794972321987152,
+      "val_loss": 1.8839754542624871
+    },
+    {
+      "epoch": 29,
+      "train_loss": 1.7916010236740112,
+      "val_loss": 1.88216888405025
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.7836446940898896,
+      "val_loss": 1.8795213039092917
+    },
+    {
+      "epoch": 31,
+      "train_loss": 1.7777377235889436,
+      "val_loss": 1.8760930406273264
+    },
+    {
+      "epoch": 32,
+      "train_loss": 1.7748919785022736,
+      "val_loss": 1.8702707094165383
+    },
+    {
+      "epoch": 33,
+      "train_loss": 1.7624334299564361,
+      "val_loss": 1.862554560191755
+    },
+    {
+      "epoch": 34,
+      "train_loss": 1.7569358694553374,
+      "val_loss": 1.8623182246169834
+    },
+    {
+      "epoch": 35,
+      "train_loss": 1.7612098002433776,
+      "val_loss": 1.8587140645216274
+    },
+    {
+      "epoch": 36,
+      "train_loss": 1.753329441547394,
+      "val_loss": 1.8517807719718988
+    },
+    {
+      "epoch": 37,
+      "train_loss": 1.7442224252223968,
+      "val_loss": 1.848435126513953
+    },
+    {
+      "epoch": 38,
+      "train_loss": 1.7410642790794373,
+      "val_loss": 1.8422337324290239
+    },
+    {
+      "epoch": 39,
+      "train_loss": 1.736057471036911,
+      "val_loss": 1.8378838775092476
+    },
+    {
+      "epoch": 40,
+      "train_loss": 1.7400803542137147,
+      "val_loss": 1.8385890302736914
+    },
+    {
+      "epoch": 41,
+      "train_loss": 1.7281300663948058,
+      "val_loss": 1.8334692545444504
+    },
+    {
+      "epoch": 42,
+      "train_loss": 1.7269638574123383,
+      "val_loss": 1.8291479957292047
+    },
+    {
+      "epoch": 43,
+      "train_loss": 1.7233326971530913,
+      "val_loss": 1.8293844248091702
+    },
+    {
+      "epoch": 44,
+      "train_loss": 1.722594690322876,
+      "val_loss": 1.8249831378602077
+    },
+    {
+      "epoch": 45,
+      "train_loss": 1.7193813848495483,
+      "val_loss": 1.826805727625785
+    },
+    {
+      "epoch": 46,
+      "train_loss": 1.7117232406139373,
+      "val_loss": 1.8240472891085797
+    },
+    {
+      "epoch": 47,
+      "train_loss": 1.7130238497257233,
+      "val_loss": 1.8223344970132929
+    },
+    {
+      "epoch": 48,
+      "train_loss": 1.711390335559845,
+      "val_loss": 1.8176764225027378
+    },
+    {
+      "epoch": 49,
+      "train_loss": 1.708034290075302,
+      "val_loss": 1.8143819928560423
+    },
+    {
+      "epoch": 50,
+      "train_loss": 1.7029321312904357,
+      "val_loss": 1.8109227874946836
+    }
+  ],
+  "generation": {
+    "greedy": [
+      {
+        "start_index": 896,
+        "prompt": "tista, shall I lead the way?\nWelcome! one mess is like to be you",
+        "reference": "r cheer:\nCome, sir; we will better it in Pisa.\n\nBAPTISTA:\nI follow you.\n\nBIONDELLO:\nCambio!\n\nLUCENTIO:\nWhat sayest thou, Biondello?\n\nBIONDELLO:\nYou saw my maste",
+        "continuation": "r sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould th",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.006329113924050633,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.9299363057324841,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 3584,
+        "prompt": " Katharina.\n\nHORTENSIO:\nPetruchio, go thy ways; the field is won",
+        "reference": ".\n\nPETRUCHIO:\nWell, forward, forward! thus the bowl should run,\nAnd not unluckily against the bias.\nBut, soft! company is coming here.\nGood morrow, gentle mistr",
+        "continuation": "ders and the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.89171974522293,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 4928,
+        "prompt": "ir sir, and you my merry mistress,\nThat with your strange encoun",
+        "reference": "ter much amazed me,\nMy name is call'd Vincentio; my dwelling Pisa;\nAnd bound I am to Padua; there to visit\nA son of mine, which long I have not seen.\n\nPETRUCHIO",
+        "continuation": "d the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the soul",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0189873417721519,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.9363057324840764,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 5152,
+        "prompt": ":\nWhat is his name?\n\nVINCENTIO:\nLucentio, gentle sir.\n\nPETRUCHIO",
+        "reference": ":\nHappily we met; the happier for thy son.\nAnd now by law, as well as reverend age,\nI may entitle thee my loving father:\nThe sister to my wife, this gentlewoman",
+        "continuation": ":\nI ward the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.89171974522293,
+          "distinct_word_bigram_ratio": 0.18181818181818182
+        }
+      },
+      {
+        "start_index": 6720,
+        "prompt": "REMIO:\nThey're busy within; you were best knock louder.\n\nPedant:",
+        "reference": "\nWhat's he that knocks as he would beat down the gate?\n\nVINCENTIO:\nIs Signior Lucentio within, sir?\n\nPedant:\nHe's within, sir, but not to be spoken withal.\n\nVIN",
+        "continuation": "\nI ward the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.06329113924050633,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.8789808917197452,
+          "distinct_word_bigram_ratio": 0.1875
+        }
+      },
+      {
+        "start_index": 7840,
+        "prompt": "ose, sir.\n\nVINCENTIO:\nCome hither, you rogue. What, have you for",
+        "reference": "got me?\n\nBIONDELLO:\nForgot you! no, sir: I could not forget you, for I\nnever saw you before in all my life.\n\nVINCENTIO:\nWhat, you notorious villain, didst thou ",
+        "continuation": " the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.02531645569620253,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.9363057324840764,
+          "distinct_word_bigram_ratio": 0.06451612903225806
+        }
+      },
+      {
+        "start_index": 8064,
+        "prompt": "never see\nthy master's father, Vincentio?\n\nBIONDELLO:\nWhat, my o",
+        "reference": "ld worshipful old master? yes, marry, sir:\nsee where he looks out of the window.\n\nVINCENTIO:\nIs't so, indeed.\n\nBIONDELLO:\nHelp, help, help! here's a madman will",
+        "continuation": "ur shall the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.8853503184713376,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 11872,
+        "prompt": "the street?\n\nPETRUCHIO:\nWhat, art thou ashamed of me?\n\nKATHARINA",
+        "reference": ":\nNo, sir, God forbid; but ashamed to kiss.\n\nPETRUCHIO:\nWhy, then let's home again. Come, sirrah, let's away.\n\nKATHARINA:\nNay, I will give thee a kiss: now pray",
+        "continuation": ":\nI ward the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.0379746835443038,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.89171974522293,
+          "distinct_word_bigram_ratio": 0.18181818181818182
+        }
+      },
+      {
+        "start_index": 16352,
+        "prompt": "\nO, ho! entreat her!\nNay, then she must needs come.\n\nHORTENSIO:\n",
+        "reference": "I am afraid, sir,\nDo what you can, yours will not be entreated.\nNow, where's my wife?\n\nBIONDELLO:\nShe says you have some goodly jest in hand:\nShe will not come:",
+        "continuation": "I ward the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.03164556962025317,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.9044585987261147,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 16800,
+        "prompt": "IO:\nWhat?\n\nHORTENSIO:\nShe will not.\n\nPETRUCHIO:\nThe fouler fortu",
+        "reference": "ne mine, and there an end.\n\nBAPTISTA:\nNow, by my holidame, here comes Katharina!\n\nKATHARINA:\nWhat is your will, sir, that you send for me?\n\nPETRUCHIO:\nWhere is ",
+        "continuation": "re the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sou",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.03164556962025317,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.9235668789808917,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 18816,
+        "prompt": "hy beauty as frosts do bite the meads,\nConfounds thy fame as whi",
+        "reference": "rlwinds shake fair buds,\nAnd in no sense is meet or amiable.\nA woman moved is like a fountain troubled,\nMuddy, ill-seeming, thick, bereft of beauty;\nAnd while i",
+        "continuation": "ch the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sou",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.006329113924050633,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.9235668789808917,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 19488,
+        "prompt": "t for so great a debt.\nSuch duty as the subject owes the prince\n",
+        "reference": "Even such a woman oweth to her husband;\nAnd when she is froward, peevish, sullen, sour,\nAnd not obedient to his honest will,\nWhat is she but a foul contending r",
+        "continuation": "The soul the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould th",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0379746835443038,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.910828025477707,
+          "distinct_word_bigram_ratio": 0.1875
+        }
+      },
+      {
+        "start_index": 21280,
+        "prompt": "wain:\nHeigh, my hearts! cheerly, cheerly, my hearts!\nyare, yare!",
+        "reference": " Take in the topsail. Tend to the\nmaster's whistle. Blow, till thou burst thy wind,\nif room enough!\n\nALONSO:\nGood boatswain, have care. Where's the master?\nPlay",
+        "continuation": " what the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the s",
+        "metrics": {
+          "char_accuracy": 0.025,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.08860759493670886,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.8853503184713376,
+          "distinct_word_bigram_ratio": 0.1875
+        }
+      },
+      {
+        "start_index": 25536,
+        "prompt": "I am, but stopp'd\nAnd left me to a bootless inquisition,\nConclud",
+        "reference": "ing 'Stay: not yet.'\n\nPROSPERO:\nThe hour's now come;\nThe very minute bids thee ope thine ear;\nObey and be attentive. Canst thou remember\nA time before we came u",
+        "continuation": "ing the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sou",
+        "metrics": {
+          "char_accuracy": 0.14375,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.05063291139240506,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.8980891719745223,
+          "distinct_word_bigram_ratio": 0.1875
+        }
+      },
+      {
+        "start_index": 28000,
+        "prompt": "nd suck'd my verdure out on't. Thou attend'st not.\n\nMIRANDA:\nO, ",
+        "reference": "good sir, I do.\n\nPROSPERO:\nI pray thee, mark me.\nI, thus neglecting worldly ends, all dedicated\nTo closeness and the bettering of my mind\nWith that which, but b",
+        "continuation": "the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.05063291139240506,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.9171974522292994,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 29344,
+        "prompt": " the heavens!\n\nPROSPERO:\nMark his condition and the event; then ",
+        "reference": "tell me\nIf this might be a brother.\n\nMIRANDA:\nI should sin\nTo think but nobly of my grandmother:\nGood wombs have borne bad sons.\n\nPROSPERO:\nNow the condition.\nT",
+        "continuation": "the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.9363057324840764,
+          "distinct_word_bigram_ratio": 0.06451612903225806
+        }
+      },
+      {
+        "start_index": 30464,
+        "prompt": "Dear, they durst not,\nSo dear the love my people bore me, nor se",
+        "reference": "t\nA mark so bloody on the business, but\nWith colours fairer painted their foul ends.\nIn few, they hurried us aboard a bark,\nBore us some leagues to sea; where t",
+        "continuation": "e the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the soul",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.9299363057324841,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 31584,
+        "prompt": "wing I loved my books, he furnish'd me\nFrom mine own library wit",
+        "reference": "h volumes that\nI prize above my dukedom.\n\nMIRANDA:\nWould I might\nBut ever see that man!\n\nPROSPERO:\nNow I arise:\nSit still, and hear the last of our sea-sorrow.\n",
+        "continuation": "h the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the soul",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.05063291139240506,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.9299363057324841,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 32704,
+        "prompt": "y,\nTo swim, to dive into the fire, to ride\nOn the curl'd clouds,",
+        "reference": " to thy strong bidding task\nAriel and all his quality.\n\nPROSPERO:\nHast thou, spirit,\nPerform'd to point the tempest that I bade thee?\n\nARIEL:\nTo every article.\n",
+        "continuation": " and the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the s",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.9171974522292994,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 36064,
+        "prompt": "ou hast. Where was she born? speak; tell me.\n\nARIEL:\nSir, in Arg",
+        "reference": "ier.\n\nPROSPERO:\nO, was she so? I must\nOnce in a month recount what thou hast been,\nWhich thou forget'st. This damn'd witch Sycorax,\nFor mischiefs manifold and s",
+        "continuation": "ent the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sou",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.05063291139240506,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.8980891719745223,
+          "distinct_word_bigram_ratio": 0.1875
+        }
+      },
+      {
+        "start_index": 36512,
+        "prompt": "child\nAnd here was left by the sailors. Thou, my slave,\nAs thou ",
+        "reference": "report'st thyself, wast then her servant;\nAnd, for thou wast a spirit too delicate\nTo act her earthy and abhorr'd commands,\nRefusing her grand hests, she did co",
+        "continuation": "shall the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the s",
+        "metrics": {
+          "char_accuracy": 0.03125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.03164556962025317,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.89171974522293,
+          "distinct_word_bigram_ratio": 0.1875
+        }
+      },
+      {
+        "start_index": 36736,
+        "prompt": "nfine thee,\nBy help of her more potent ministers\nAnd in her most",
+        "reference": " unmitigable rage,\nInto a cloven pine; within which rift\nImprison'd thou didst painfully remain\nA dozen years; within which space she died\nAnd left thee there; ",
+        "continuation": " the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould",
+        "metrics": {
+          "char_accuracy": 0.0375,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.05063291139240506,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.9363057324840764,
+          "distinct_word_bigram_ratio": 0.06451612903225806
+        }
+      },
+      {
+        "start_index": 37184,
+        "prompt": "SPERO:\nDull thing, I say so; he, that Caliban\nWhom now I keep in",
+        "reference": " service. Thou best know'st\nWhat torment I did find thee in; thy groans\nDid make wolves howl and penetrate the breasts\nOf ever angry bears: it was a torment\nTo ",
+        "continuation": " the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.9363057324840764,
+          "distinct_word_bigram_ratio": 0.06451612903225806
+        }
+      },
+      {
+        "start_index": 38080,
+        "prompt": "s shape\nAnd hither come in't: go, hence with diligence!\nAwake, d",
+        "reference": "ear heart, awake! thou hast slept well; Awake!\n\nMIRANDA:\nThe strangeness of your story put\nHeaviness in me.\n\nPROSPERO:\nShake it off. Come on;\nWe'll visit Caliba",
+        "continuation": "o the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0189873417721519,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.910828025477707,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 39424,
+        "prompt": ",\nThou strokedst me and madest much of me, wouldst give me\nWater",
+        "reference": " with berries in't, and teach me how\nTo name the bigger light, and how the less,\nThat burn by day and night: and then I loved thee\nAnd show'd thee all the quali",
+        "continuation": "y the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould",
+        "metrics": {
+          "char_accuracy": 0.1375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.12658227848101267,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.910828025477707,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 40096,
+        "prompt": ", and lodged thee\nIn mine own cell, till thou didst seek to viol",
+        "reference": "ate\nThe honour of my child.\n\nCALIBAN:\nO ho, O ho! would't had been done!\nThou didst prevent me; I had peopled else\nThis isle with Calibans.\n\nPROSPERO:\nAbhorred ",
+        "continuation": "ess the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the so",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0189873417721519,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.9171974522292994,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 40320,
+        "prompt": "slave,\nWhich any print of goodness wilt not take,\nBeing capable ",
+        "reference": "of all ill! I pitied thee,\nTook pains to make thee speak, taught thee each hour\nOne thing or other: when thou didst not, savage,\nKnow thine own meaning, but wou",
+        "continuation": "the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.01875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.9171974522292994,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 40768,
+        "prompt": "rvedly confined into this rock,\nWho hadst deserved more than a p",
+        "reference": "rison.\n\nCALIBAN:\nYou taught me language; and my profit on't\nIs, I know how to curse. The red plague rid you\nFor learning me your language!\n\nPROSPERO:\nHag-seed, ",
+        "continuation": "rove the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the s",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.006329113924050633,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.910828025477707,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      },
+      {
+        "start_index": 42560,
+        "prompt": "\nIt carries a brave form. But 'tis a spirit.\n\nPROSPERO:\nNo, wenc",
+        "reference": "h; it eats and sleeps and hath such senses\nAs we have, such. This gallant which thou seest\nWas in the wreck; and, but he's something stain'd\nWith grief that's b",
+        "continuation": "h a soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.0379746835443038,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.8980891719745223,
+          "distinct_word_bigram_ratio": 0.18181818181818182
+        }
+      },
+      {
+        "start_index": 43232,
+        "prompt": "you wonder!\nIf you be maid or no?\n\nMIRANDA:\nNo wonder, sir;\nBut ",
+        "reference": "certainly a maid.\n\nFERDINAND:\nMy language! heavens!\nI am the best of them that speak this speech,\nWere I but where 'tis spoken.\n\nPROSPERO:\nHow? the best?\nWhat w",
+        "continuation": "the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.06329113924050633,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.9171974522292994,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 50848,
+        "prompt": "O thou mine heir\nOf Naples and of Milan, what strange fish\nHath ",
+        "reference": "made his meal on thee?\n\nFRANCISCO:\nSir, he may live:\nI saw him beat the surges under him,\nAnd ride upon their backs; he trod the water,\nWhose enmity he flung as",
+        "continuation": "the soul the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould t",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.9171974522292994,
+          "distinct_word_bigram_ratio": 0.15625
+        }
+      },
+      {
+        "start_index": 51744,
+        "prompt": "thness and obedience, at\nWhich end o' the beam should bow. We ha",
+        "reference": "ve lost your\nson,\nI fear, for ever: Milan and Naples have\nMore widows in them of this business' making\nThan we bring men to comfort them:\nThe fault's your own.\n",
+        "continuation": "ve the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sould the sou",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.9235668789808917,
+          "distinct_word_bigram_ratio": 0.125
+        }
+      }
+    ],
+    "sampled": [
+      {
+        "start_index": 896,
+        "prompt": "tista, shall I lead the way?\nWelcome! one mess is like to be you",
+        "reference": "r cheer:\nCome, sir; we will better it in Pisa.\n\nBAPTISTA:\nI follow you.\n\nBIONDELLO:\nCambio!\n\nLUCENTIO:\nWhat sayest thou, Biondello?\n\nBIONDELLO:\nYou saw my maste",
+        "continuation": "r the come:\nMady even no like,\nAs the then he head sween hath which recceys,\nBy soul hap nor thine strice,\nThen thee were we voor thee nor of the look, coy and ",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.10828025477707007,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 3584,
+        "prompt": " Katharina.\n\nHORTENSIO:\nPetruchio, go thy ways; the field is won",
+        "reference": ".\n\nPETRUCHIO:\nWell, forward, forward! thus the bowl should run,\nAnd not unluckily against the bias.\nBut, soft! company is coming here.\nGood morrow, gentle mistr",
+        "continuation": "tle you.\n\nROMEO:\nYou hope and wheld and me, speasence,\nAnd mise hath the forcey; why dimst's fanessefter lards nobled:\nAnd son, 'treing both of poor pallies not",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4928,
+        "prompt": "ir sir, and you my merry mistress,\nThat with your strange encoun",
+        "reference": "ter much amazed me,\nMy name is call'd Vincentio; my dwelling Pisa;\nAnd bound I am to Padua; there to visit\nA son of mine, which long I have not seen.\n\nPETRUCHIO",
+        "continuation": "don, thou Marks.\n\nFRIAR LAURENCE:\nAnd live God and the fither from corth save is foult that pertion:\nWhere sir, cam death the comportion with that very me that ",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 5152,
+        "prompt": ":\nWhat is his name?\n\nVINCENTIO:\nLucentio, gentle sir.\n\nPETRUCHIO",
+        "reference": ":\nHappily we met; the happier for thy son.\nAnd now by law, as well as reverend age,\nI may entitle thee my loving father:\nThe sister to my wife, this gentlewoman",
+        "continuation": ":\nI dive me, speach we father:\nMards of his fail, wovers them,\nIn bead not this led use of me cannobs of that?\n\nBUMNILH:\nWhy stay heaver! might the feach there ",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.1962025316455696,
+          "char_fourgram_f1": 0.10191082802547771,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6720,
+        "prompt": "REMIO:\nThey're busy within; you were best knock louder.\n\nPedant:",
+        "reference": "\nWhat's he that knocks as he would beat down the gate?\n\nVINCENTIO:\nIs Signior Lucentio within, sir?\n\nPedant:\nHe's within, sir, but not to be spoken withal.\n\nVIN",
+        "continuation": "\nThat whill see to the marst alod lette abe\nme and should sees I and mates, up, it is the porturing is not\nAnd deak of you, lord his hope heir relight the shall",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.050955414012738856,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 7840,
+        "prompt": "ose, sir.\n\nVINCENTIO:\nCome hither, you rogue. What, have you for",
+        "reference": "got me?\n\nBIONDELLO:\nForgot you! no, sir: I could not forget you, for I\nnever saw you before in all my life.\n\nVINCENTIO:\nWhat, you notorious villain, didst thou ",
+        "continuation": " abouched.\n\nQUEEN MARGARET:\nWa deet my die, and I'll stried your hand thours\nWhich you benir, and lood: you did dide,\nDo the death and be\nbesting you, so your h",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.09554140127388536,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 8064,
+        "prompt": "never see\nthy master's father, Vincentio?\n\nBIONDELLO:\nWhat, my o",
+        "reference": "ld worshipful old master? yes, marry, sir:\nsee where he looks out of the window.\n\nVINCENTIO:\nIs't so, indeed.\n\nBIONDELLO:\nHelp, help, help! here's a madman will",
+        "continuation": "ur ammen I have me shichne:\nThat we him I more the grant of this fair haw your.\n\nLUCIOL:\nYou love mary!\n\nMENENES:\nWhich, who fill a percite.\n\nDUKE VINCENTIO:\nI ",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.10191082802547771,
+          "repetition_rate_4gram": 0.012738853503184714,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 11872,
+        "prompt": "the street?\n\nPETRUCHIO:\nWhat, art thou ashamed of me?\n\nKATHARINA",
+        "reference": ":\nNo, sir, God forbid; but ashamed to kiss.\n\nPETRUCHIO:\nWhy, then let's home again. Come, sirrah, let's away.\n\nKATHARINA:\nNay, I will give thee a kiss: now pray",
+        "continuation": ":\nNaite: I ment with his preself,\nFor my aspitice!\nWhere to brives thee I dead withy najess,\nComely fint the sourst the corse alto eligce.\n\nCLARENTA:\nBe, in man",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 16352,
+        "prompt": "\nO, ho! entreat her!\nNay, then she must needs come.\n\nHORTENSIO:\n",
+        "reference": "I am afraid, sir,\nDo what you can, yours will not be entreated.\nNow, where's my wife?\n\nBIONDELLO:\nShe says you have some goodly jest in hand:\nShe will not come:",
+        "continuation": "Brand thy loven bort of contain hush upores and thee hiene.\n\nGLOUCESTER:\nAnd with hope many as a man of the clousomed\nTo mentings speater upon should and deach ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.05732484076433121,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 16800,
+        "prompt": "IO:\nWhat?\n\nHORTENSIO:\nShe will not.\n\nPETRUCHIO:\nThe fouler fortu",
+        "reference": "ne mine, and there an end.\n\nBAPTISTA:\nNow, by my holidame, here comes Katharina!\n\nKATHARINA:\nWhat is your will, sir, that you send for me?\n\nPETRUCHIO:\nWhere is ",
+        "continuation": "lfals, if thou that thy moon\nTo kind and be cut it of a mortuate but faze the\nsemble, my lords. See.\n\nJORY:\nAnd you make of pight in my die;\nNo no fits to not t",
+        "metrics": {
+          "char_accuracy": 0.0125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13291139240506328,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.01910828025477707,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 18816,
+        "prompt": "hy beauty as frosts do bite the meads,\nConfounds thy fame as whi",
+        "reference": "rlwinds shake fair buds,\nAnd in no sense is meet or amiable.\nA woman moved is like a fountain troubled,\nMuddy, ill-seeming, thick, bereft of beauty;\nAnd while i",
+        "continuation": "ch my lishen his kings ome now me, my arm.\n\nGLOUCESTER:\nWhich himyous to do that fead witt\nThe goodly the, 'ith thy unford though man's suaulciaul.\n\nKING RICHAR",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.06329113924050633,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.006369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 19488,
+        "prompt": "t for so great a debt.\nSuch duty as the subject owes the prince\n",
+        "reference": "Even such a woman oweth to her husband;\nAnd when she is froward, peevish, sullen, sour,\nAnd not obedient to his honest will,\nWhat is she but a foul contending r",
+        "continuation": "To dich of Bullivice, and I many no tolled\nThe and not in the torrow up that in not brove,\nSuch he lighter on led stay shatle, I prever:\nWhat mister grace our s",
+        "metrics": {
+          "char_accuracy": 0.0375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.16455696202531644,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.050955414012738856,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 21280,
+        "prompt": "wain:\nHeigh, my hearts! cheerly, cheerly, my hearts!\nyare, yare!",
+        "reference": " Take in the topsail. Tend to the\nmaster's whistle. Blow, till thou burst thy wind,\nif room enough!\n\nALONSO:\nGood boatswain, have care. Where's the master?\nPlay",
+        "continuation": " the peastiwn, the come.\n\nROMEO:\nNow, the long the poady doad in thou handent to esenow we cring.\n\nSICINIUS:\nGo, beat you feart, comiffoul a spears this anothed",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.20253164556962025,
+          "char_fourgram_f1": 0.10191082802547771,
+          "repetition_rate_4gram": 0.05732484076433121,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 25536,
+        "prompt": "I am, but stopp'd\nAnd left me to a bootless inquisition,\nConclud",
+        "reference": "ing 'Stay: not yet.'\n\nPROSPERO:\nThe hour's now come;\nThe very minute bids thee ope thine ear;\nObey and be attentive. Canst thou remember\nA time before we came u",
+        "continuation": "e, and to you tread of this surit\ngood to and then Soulf tastish again and fair lay.\n\nAUTOLY CAUESMELY:\nYour ftent the will be for the hears!\nBut I are have a s",
+        "metrics": {
+          "char_accuracy": 0.025,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 28000,
+        "prompt": "nd suck'd my verdure out on't. Thou attend'st not.\n\nMIRANDA:\nO, ",
+        "reference": "good sir, I do.\n\nPROSPERO:\nI pray thee, mark me.\nI, thus neglecting worldly ends, all dedicated\nTo closeness and the bettering of my mind\nWith that which, but b",
+        "continuation": "Vent they not them, more.\n\nANTOLTAS:\nGo and she lest the are her my nengue\nIn theregerol of them to\nThe countracest be it you\nI the cold I sweesseld and all I t",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17088607594936708,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.08917197452229299,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 29344,
+        "prompt": " the heavens!\n\nPROSPERO:\nMark his condition and the event; then ",
+        "reference": "tell me\nIf this might be a brother.\n\nMIRANDA:\nI should sin\nTo think but nobly of my grandmother:\nGood wombs have borne bad sons.\n\nPROSPERO:\nNow the condition.\nT",
+        "continuation": "he scallon!\nPooldand men heart and alling's allow in my litted:\nReep this gaces I at soul Clawn my noble the angury'd not\nthe and them use our broturethy,\nI the",
+        "metrics": {
+          "char_accuracy": 0.025,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 30464,
+        "prompt": "Dear, they durst not,\nSo dear the love my people bore me, nor se",
+        "reference": "t\nA mark so bloody on the business, but\nWith colours fairer painted their foul ends.\nIn few, they hurried us aboard a bark,\nBore us some leagues to sea; where t",
+        "continuation": "e the looks\nGood price, pertolle! my enther, all and what usege, and are of so.\n\nSabre:\nAnd it not that it uparful noth.\n\nBENVOLIO:\nHenkerer say me give man don",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 31584,
+        "prompt": "wing I loved my books, he furnish'd me\nFrom mine own library wit",
+        "reference": "h volumes that\nI prize above my dukedom.\n\nMIRANDA:\nWould I might\nBut ever see that man!\n\nPROSPERO:\nNow I arise:\nSit still, and hear the last of our sea-sorrow.\n",
+        "continuation": "h me, good there.\n\nCAPULET:\nSo man stay come, this lady seaves\nI the revond this pallitious come, ore be-telrs\nBody brous for see is the world of gue\nTo maniush",
+        "metrics": {
+          "char_accuracy": 0.03125,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.09554140127388536,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 32704,
+        "prompt": "y,\nTo swim, to dive into the fire, to ride\nOn the curl'd clouds,",
+        "reference": " to thy strong bidding task\nAriel and all his quality.\n\nPROSPERO:\nHast thou, spirit,\nPerform'd to point the tempest that I bade thee?\n\nARIEL:\nTo every article.\n",
+        "continuation": " if the deather Is must come that doughter made;\nAnd I cordsare we with my ponest's beat be dead of be him;\nBe in he you, pervord, what of your grave: so as Cot",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 36064,
+        "prompt": "ou hast. Where was she born? speak; tell me.\n\nARIEL:\nSir, in Arg",
+        "reference": "ier.\n\nPROSPERO:\nO, was she so? I must\nOnce in a month recount what thou hast been,\nWhich thou forget'st. This damn'd witch Sycorax,\nFor mischiefs manifold and s",
+        "continuation": "arsts of the perselve, not good good:\nMisting not am be for will say to well say.\n\nKING EDWARD IICARDIA:\nAnd curing one tence this and your susure is a nove con",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.05732484076433121,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 36512,
+        "prompt": "child\nAnd here was left by the sailors. Thou, my slave,\nAs thou ",
+        "reference": "report'st thyself, wast then her servant;\nAnd, for thou wast a spirit too delicate\nTo act her earthy and abhorr'd commands,\nRefusing her grand hests, she did co",
+        "continuation": "more the loved your denried housed: we have told in the meat of thee;\nSike you lord, thereapers, to kiss Marvood yout of thould and brove\nAn for the slower him ",
+        "metrics": {
+          "char_accuracy": 0.0375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 36736,
+        "prompt": "nfine thee,\nBy help of her more potent ministers\nAnd in her most",
+        "reference": " unmitigable rage,\nInto a cloven pine; within which rift\nImprison'd thou didst painfully remain\nA dozen years; within which space she died\nAnd left thee there; ",
+        "continuation": " as the soblegars of loof the not,\nAnd is he shales the worser much wear, and her be do and will you.\n\nTRANIO:\nMy drast of an in this denood,\nBut you talk son, ",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 37184,
+        "prompt": "SPERO:\nDull thing, I say so; he, that Caliban\nWhom now I keep in",
+        "reference": " service. Thou best know'st\nWhat torment I did find thee in; thy groans\nDid make wolves howl and penetrate the breasts\nOf ever angry bears: it was a torment\nTo ",
+        "continuation": " he would and the forsesseft lather.\n\nJULIET:\nNo, the forter\nTo hass for the cangury of not his fee,\nWhose hath me sleep the would resionce regle to his mothems",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.12658227848101267,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.11464968152866242,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 38080,
+        "prompt": "s shape\nAnd hither come in't: go, hence with diligence!\nAwake, d",
+        "reference": "ear heart, awake! thou hast slept well; Awake!\n\nMIRANDA:\nThe strangeness of your story put\nHeaviness in me.\n\nPROSPERO:\nShake it off. Come on;\nWe'll visit Caliba",
+        "continuation": "eather gostigns grace me your daught,\nWheres, with make you dether sir, and he good abmourd well,\nThe diding he horness this lied be! Haw,\nAnd an say dear to th",
+        "metrics": {
+          "char_accuracy": 0.0375,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 39424,
+        "prompt": ",\nThou strokedst me and madest much of me, wouldst give me\nWater",
+        "reference": " with berries in't, and teach me how\nTo name the bigger light, and how the less,\nThat burn by day and night: and then I loved thee\nAnd show'd thee all the quali",
+        "continuation": " brought thou Sweet starjing keens are the\ndo the lorks troumps in my weart, conceing heal\nBe four or this and with wemp's you king awis betell,\nMy pert, prevan",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.025477707006369428,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 40096,
+        "prompt": ", and lodged thee\nIn mine own cell, till thou didst seek to viol",
+        "reference": "ate\nThe honour of my child.\n\nCALIBAN:\nO ho, O ho! would't had been done!\nThou didst prevent me; I had peopled else\nThis isle with Calibans.\n\nPROSPERO:\nAbhorred ",
+        "continuation": "ed dest,\nTo her whome I may that his lignonges.\n\nLADUSUS:\nWathing the forte.\n\nKING HENVER:\nNost the trurpon to-ear heart, our of here:\nI do fild the wors him ou",
+        "metrics": {
+          "char_accuracy": 0.01875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 40320,
+        "prompt": "slave,\nWhich any print of goodness wilt not take,\nBeing capable ",
+        "reference": "of all ill! I pitied thee,\nTook pains to make thee speak, taught thee each hour\nOne thing or other: when thou didst not, savage,\nKnow thine own meaning, but wou",
+        "continuation": "no have pleay to do his out ever to gueself:\nAnd thou they tors and trous the go you dage of thee is him,\nTo prast now the peath is crove ale was seave:\nHave ne",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.05732484076433121,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 40768,
+        "prompt": "rvedly confined into this rock,\nWho hadst deserved more than a p",
+        "reference": "rison.\n\nCALIBAN:\nYou taught me language; and my profit on't\nIs, I know how to curse. The red plague rid you\nFor learning me your language!\n\nPROSPERO:\nHag-seed, ",
+        "continuation": "oor not his forrumed be;\nPreal contried trust make tore strenging pleamed, but lide and broced:\nI live poor theres her then lectur comes catints of fare of then",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 42560,
+        "prompt": "\nIt carries a brave form. But 'tis a spirit.\n\nPROSPERO:\nNo, wenc",
+        "reference": "h; it eats and sleeps and hath such senses\nAs we have, such. This gallant which thou seest\nWas in the wreck; and, but he's something stain'd\nWith grief that's b",
+        "continuation": "ember the sharlifed faith pray of mounten:\n\nHENRY BOLAND:\nO are with they come, for thine whoch nots weld.\n\nQUEEN EFIZIII:\nHow chrose be to upon lord;\nAd so let",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13291139240506328,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.01910828025477707,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 43232,
+        "prompt": "you wonder!\nIf you be maid or no?\n\nMIRANDA:\nNo wonder, sir;\nBut ",
+        "reference": "certainly a maid.\n\nFERDINAND:\nMy language! heavens!\nI am the best of them that speak this speech,\nWere I but where 'tis spoken.\n\nPROSPERO:\nHow? the best?\nWhat w",
+        "continuation": "Richint their is the leak hither, our jode is\nbe with she that perronbage: think be in shorsing, a stremper'd say head;\nBut this greep you be remich he brose it",
+        "metrics": {
+          "char_accuracy": 0.025,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.025477707006369428,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 50848,
+        "prompt": "O thou mine heir\nOf Naples and of Milan, what strange fish\nHath ",
+        "reference": "made his meal on thee?\n\nFRANCISCO:\nSir, he may live:\nI saw him beat the surges under him,\nAnd ride upon their backs; he trod the water,\nWhose enmity he flung as",
+        "continuation": "with an tettle, are it suss.\n\nPOLIO:\nWhat came you ar plain'd, hath main come,\nMy do my bed the chargot furgersain this yough on as clarm'd their heast\nno deasi",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.025477707006369428,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 51744,
+        "prompt": "thness and obedience, at\nWhich end o' the beam should bow. We ha",
+        "reference": "ve lost your\nson,\nI fear, for ever: Milan and Naples have\nMore widows in them of this business' making\nThan we bring men to comfort them:\nThe fault's your own.\n",
+        "continuation": "ve his ungo God with sellow your evenger\nThat me, why, thing me died-wail, loves,\nI when yountest therefore she awnetle sir: and no once of the growion.\n\nSid:\nH",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.2721518987341772,
+          "char_fourgram_f1": 0.14012738853503184,
+          "repetition_rate_4gram": 0.012738853503184714,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      }
+    ]
+  },
+  "checkpoint": "primitive_lstm_fair_seed_11.pt",
+  "checkpoint_sha256": "922e673679b7d8a2ffc400d664ba1e8960f1e6927cf566c40a99ce1a1ad2b364",
+  "elapsed_seconds": 67.45149083300001,
+  "device": "cpu",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "timing_scope": "parallel job elapsed; not comparative efficiency evidence"
+}

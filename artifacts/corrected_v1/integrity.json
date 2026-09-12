@@ -1,0 +1,8 @@
+{
+  "checkpoints": 72,
+  "heldout_losses_recomputed": 72,
+  "validation_losses_recomputed": 72,
+  "continuations_checked": 4608,
+  "code_sha256": "20fdba9a3f29555f63cdd9dfffeddd266c8f3bcd80bab5faa81b796710873772",
+  "all_passed": true
+}

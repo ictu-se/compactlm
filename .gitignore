@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.DS_Store
+*.tmp
+artifacts/reproduction/
+artifacts/reproduced_assets/
+artifacts/small_run/
+
+# Manuscript sources, templates, documents and private configuration stay local.
+*.tex
+*.bib
+*.cls
+*.bst
+*.bbl
+*.aux
+*.log
+*.pdf
+*.docx
+*.zip
+.env
+.env.*

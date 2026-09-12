@@ -1,0 +1,1206 @@
+{
+  "signature": "6c0fff19fcfc7e9bf5c6fba36777f2e92878185d78ed5c57db8c0e0e6bdcc724",
+  "code_sha256": "20fdba9a3f29555f63cdd9dfffeddd266c8f3bcd80bab5faa81b796710873772",
+  "config": {
+    "version": 1,
+    "sequence_length": 64,
+    "batch_size": 32,
+    "steps_per_epoch": 100,
+    "max_epochs": 50,
+    "patience": 5,
+    "min_delta": 0.002,
+    "learning_rate": 0.001,
+    "prompts": 32,
+    "continuation": 160,
+    "temperature": 0.8,
+    "threads": 1,
+    "alphabet": "closed_corpus",
+    "evaluation": "full_disjoint_blocks"
+  },
+  "corpus": {
+    "dataset": "sherlock_holmes",
+    "sha256": "e79b7c0c6341d620d5716eb48bb2631138c881409231aa5e26c20ed2fb79631a",
+    "characters": 562138,
+    "vocabulary": 88,
+    "split_sizes": [
+      505924,
+      28107,
+      28107
+    ],
+    "heldout_only_characters": [
+      "è"
+    ]
+  },
+  "model": "Primitive Peephole LSTM Fair",
+  "seed": 11,
+  "params": 32106,
+  "best_epoch": 50,
+  "best_val_loss": 1.7466487477345372,
+  "final_test_loss": 1.6979551086610367,
+  "test_ppl": 5.462765201194804,
+  "evaluation_tokens": 28106,
+  "stop_reason": "max_epochs_reached",
+  "completed": true,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.443737008571625,
+      "val_loss": 2.9160882443166294
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.7176100850105285,
+      "val_loss": 2.603324875206928
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.487232716083527,
+      "val_loss": 2.447092645186797
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.3567496871948244,
+      "val_loss": 2.350328274692054
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.278032796382904,
+      "val_loss": 2.278352086352155
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.2076401901245117,
+      "val_loss": 2.222125101452543
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.153968732357025,
+      "val_loss": 2.177091464142625
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.1126154851913452,
+      "val_loss": 2.141697790905529
+    },
+    {
+      "epoch": 9,
+      "train_loss": 2.0821058797836303,
+      "val_loss": 2.1118627497456486
+    },
+    {
+      "epoch": 10,
+      "train_loss": 2.0447012424468993,
+      "val_loss": 2.0841291023557877
+    },
+    {
+      "epoch": 11,
+      "train_loss": 2.0210735201835632,
+      "val_loss": 2.0608503194684227
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.9965055775642395,
+      "val_loss": 2.0408950127851564
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.9810479927062987,
+      "val_loss": 2.0216043839155717
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.9639902019500732,
+      "val_loss": 2.003864335766095
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.9533165276050568,
+      "val_loss": 1.986424058610024
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.9262582290172576,
+      "val_loss": 1.9746042781051585
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.9195033621788025,
+      "val_loss": 1.9593450046388108
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.903544353246689,
+      "val_loss": 1.948341955148155
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.8904217195510864,
+      "val_loss": 1.934018594976219
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.8759364902973175,
+      "val_loss": 1.9243692209277299
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.869799920320511,
+      "val_loss": 1.9120293013745675
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.8564592599868774,
+      "val_loss": 1.9007753277048898
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.8479372203350066,
+      "val_loss": 1.8937682321654734
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.8396720564365387,
+      "val_loss": 1.881630812693616
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.8377668142318726,
+      "val_loss": 1.8727790554553971
+    },
+    {
+      "epoch": 26,
+      "train_loss": 1.822947803735733,
+      "val_loss": 1.8633913755976736
+    },
+    {
+      "epoch": 27,
+      "train_loss": 1.812760008573532,
+      "val_loss": 1.8573538201275834
+    },
+    {
+      "epoch": 28,
+      "train_loss": 1.8106561374664307,
+      "val_loss": 1.8494295979923756
+    },
+    {
+      "epoch": 29,
+      "train_loss": 1.8017828524112702,
+      "val_loss": 1.8430543379165063
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.79479829788208,
+      "val_loss": 1.8346726838900917
+    },
+    {
+      "epoch": 31,
+      "train_loss": 1.7879034185409546,
+      "val_loss": 1.8279090055594502
+    },
+    {
+      "epoch": 32,
+      "train_loss": 1.7804035019874573,
+      "val_loss": 1.8231792264007414
+    },
+    {
+      "epoch": 33,
+      "train_loss": 1.7725340807437897,
+      "val_loss": 1.8188801445605058
+    },
+    {
+      "epoch": 34,
+      "train_loss": 1.771487432718277,
+      "val_loss": 1.8118259944602246
+    },
+    {
+      "epoch": 35,
+      "train_loss": 1.7747168385982512,
+      "val_loss": 1.8055710970002425
+    },
+    {
+      "epoch": 36,
+      "train_loss": 1.7578090310096741,
+      "val_loss": 1.79936059585188
+    },
+    {
+      "epoch": 37,
+      "train_loss": 1.7512081480026245,
+      "val_loss": 1.7956587315657584
+    },
+    {
+      "epoch": 38,
+      "train_loss": 1.7442617726325989,
+      "val_loss": 1.7915670375488733
+    },
+    {
+      "epoch": 39,
+      "train_loss": 1.7428359615802764,
+      "val_loss": 1.785622241954604
+    },
+    {
+      "epoch": 40,
+      "train_loss": 1.7371536695957184,
+      "val_loss": 1.7819030661010524
+    },
+    {
+      "epoch": 41,
+      "train_loss": 1.731583263874054,
+      "val_loss": 1.7763290351661916
+    },
+    {
+      "epoch": 42,
+      "train_loss": 1.7244948661327362,
+      "val_loss": 1.7736056945438123
+    },
+    {
+      "epoch": 43,
+      "train_loss": 1.7279009544849395,
+      "val_loss": 1.7702526610864486
+    },
+    {
+      "epoch": 44,
+      "train_loss": 1.723279331922531,
+      "val_loss": 1.7669066947812688
+    },
+    {
+      "epoch": 45,
+      "train_loss": 1.7183479130268098,
+      "val_loss": 1.7624046647624172
+    },
+    {
+      "epoch": 46,
+      "train_loss": 1.7124376511573791,
+      "val_loss": 1.7590496106257365
+    },
+    {
+      "epoch": 47,
+      "train_loss": 1.7070650804042815,
+      "val_loss": 1.7549652555510895
+    },
+    {
+      "epoch": 48,
+      "train_loss": 1.705673587322235,
+      "val_loss": 1.7510600808353378
+    },
+    {
+      "epoch": 49,
+      "train_loss": 1.6996316421031952,
+      "val_loss": 1.7477423010929058
+    },
+    {
+      "epoch": 50,
+      "train_loss": 1.6964634263515472,
+      "val_loss": 1.7466487477345372
+    }
+  ],
+  "generation": {
+    "greedy": [
+      {
+        "start_index": 224,
+        "prompt": "and\nforestalling it if possible. He was kind to her also in his ",
+        "reference": "bluff,\nboisterous fashion, and on the whole they seemed to be a happy couple.\nAnd yet she had some secret sorrow, this woman. She would often be lost\nin deep th",
+        "continuation": "a contranger of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the wa",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10759493670886076,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.732484076433121,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 1120,
+        "prompt": "out the\ncreature, Mr. Holmes, and, indeed, he has little to do w",
+        "reference": "ith my story.”\n\n“I am glad of all details,” remarked my friend, “whether they seem to\nyou to be relevant or not.”\n\n“I shall try not to miss anything of importan",
+        "continuation": "hich the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to t",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.7388535031847133,
+          "distinct_word_bigram_ratio": 0.34285714285714286
+        }
+      },
+      {
+        "start_index": 1568,
+        "prompt": "led\nhair and whiskers, and a perpetual smell of drink. Twice sin",
+        "reference": "ce I have\nbeen with them he has been quite drunk, and yet Mr. Rucastle seemed to\ntake no notice of it. His wife is a very tall and strong woman with a\nsour face",
+        "continuation": "ger of the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.7452229299363057,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 2016,
+        "prompt": " two days after my arrival at the Copper Beeches my life was ver",
+        "reference": "y\nquiet; on the third, Mrs. Rucastle came down just after breakfast and\nwhispered something to her husband.\n\n“‘Oh, yes,’ said he, turning to me, ‘we are very mu",
+        "continuation": "y a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a s",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.821656050955414,
+          "distinct_word_bigram_ratio": 0.24324324324324326
+        }
+      },
+      {
+        "start_index": 3136,
+        "prompt": " floor. A chair had been\nplaced close to the central window, wit",
+        "reference": "h its back turned towards it. In\nthis I was asked to sit, and then Mr. Rucastle, walking up and down on\nthe other side of the room, began to tell me a series of",
+        "continuation": "h the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the ",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.17088607594936708,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 3360,
+        "prompt": " the funniest\nstories that I have ever listened to. You cannot i",
+        "reference": "magine how comical he\nwas, and I laughed until I was quite weary. Mrs. Rucastle, however, who\nhas evidently no sense of humour, never so much as smiled, but sat",
+        "continuation": "t with the stroom to the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to t",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.7898089171974523,
+          "distinct_word_bigram_ratio": 0.2777777777777778
+        }
+      },
+      {
+        "start_index": 4032,
+        "prompt": "which\nmy employer had an immense _répertoire_, and which he told",
+        "reference": " inimitably.\nThen he handed me a yellow-backed novel, and moving my chair a little\nsideways, that my own shadow might not fall upon the page, he begged me\nto re",
+        "continuation": " the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the w",
+        "metrics": {
+          "char_accuracy": 0.1375,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 4256,
+        "prompt": "ad aloud to him. I read for about ten minutes, beginning in the\n",
+        "reference": "heart of a chapter, and then suddenly, in the middle of a sentence, he\nordered me to cease and to change my dress.\n\n“You can easily imagine, Mr. Holmes, how cur",
+        "continuation": "conting and the stroom to the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.2647058823529412
+        }
+      },
+      {
+        "start_index": 5600,
+        "prompt": "ixed upon\nme with a most searching gaze. She said nothing, but I",
+        "reference": " am convinced\nthat she had divined that I had a mirror in my hand and had seen what\nwas behind me. She rose at once.\n\n“‘Jephro,’ said she, ‘there is an impertin",
+        "continuation": " had the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to t",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.08227848101265822,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.7388535031847133,
+          "distinct_word_bigram_ratio": 0.34285714285714286
+        }
+      },
+      {
+        "start_index": 6048,
+        "prompt": "way.’\n\n“‘Surely it would be better to take no notice.’\n\n“‘No, no",
+        "reference": ", we should have him loitering here always. Kindly turn round\nand wave him away like that.’\n\n“I did as I was told, and at the same instant Mrs. Rucastle drew do",
+        "continuation": "t the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 6496,
+        "prompt": "teresting one.”\n\n“You will find it rather disconnected, I fear, ",
+        "reference": "and there may prove to\nbe little relation between the different incidents of which I speak. On\nthe very first day that I was at the Copper Beeches, Mr. Rucastle",
+        "continuation": "and the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to th",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.04375,
+          "char_trigram_f1": 0.13291139240506328,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.7452229299363057,
+          "distinct_word_bigram_ratio": 0.34285714285714286
+        }
+      },
+      {
+        "start_index": 7168,
+        "prompt": " I\nhad given. ‘It’s only Carlo, my mastiff. I call him mine, but",
+        "reference": " really\nold Toller, my groom, is the only man who can do anything with him. We\nfeed him once a day, and not too much then, so that he is always as\nkeen as musta",
+        "continuation": " the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the w",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 8288,
+        "prompt": " chill to my heart\nwhich I do not think that any burglar could h",
+        "reference": "ave done.\n\n“And now I have a very strange experience to tell you. I had, as you\nknow, cut off my hair in London, and I had placed it in a great coil at\nthe bott",
+        "continuation": "is a contranger of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.7197452229299363,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 8512,
+        "prompt": "om of my trunk. One evening, after the child was in bed, I\nbegan",
+        "reference": " to amuse myself by examining the furniture of my room and by\nrearranging my own little things. There was an old chest of drawers in\nthe room, the two upper one",
+        "continuation": " of the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to th",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.11464968152866242,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 8736,
+        "prompt": "s empty and open, the lower one locked. I\nhad filled the first t",
+        "reference": "wo with my linen, and as I had still much to pack\naway I was naturally annoyed at not having the use of the third drawer.\nIt struck me that it might have been f",
+        "continuation": "he strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.2857142857142857
+        }
+      },
+      {
+        "start_index": 9408,
+        "prompt": "ed in the drawer? With\ntrembling hands I undid my trunk, turned ",
+        "reference": "out the contents, and drew\nfrom the bottom my own hair. I laid the two tresses together, and I\nassure you that they were identical. Was it not extraordinary? Pu",
+        "continuation": "to the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.2857142857142857
+        }
+      },
+      {
+        "start_index": 11200,
+        "prompt": " that I was not offended. ‘By the way,’ said I, ‘you seem\nto hav",
+        "reference": "e quite a suite of spare rooms up there, and one of them has the\nshutters up.’\n\n“He looked surprised and, as it seemed to me, a little startled at my\nremark.\n\n“",
+        "continuation": "e the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.10759493670886076,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.821656050955414,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 11424,
+        "prompt": "‘Photography is one of my hobbies,’ said he. ‘I have made my dar",
+        "reference": "k room\nup there. But, dear me! what an observant young lady we have come upon.\nWho would have believed it? Who would have ever believed it?’ He spoke\nin a jesti",
+        "continuation": "e the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 12768,
+        "prompt": "\nthem, so that I had an admirable opportunity. I turned the key ",
+        "reference": "gently\nin the lock, opened the door, and slipped through.\n\n“There was a little passage in front of me, unpapered and uncarpeted,\nwhich turned at a right angle a",
+        "continuation": "the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the wa",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 12992,
+        "prompt": "t the farther end. Round this corner\nwere three doors in a line,",
+        "reference": " the first and third of which were open.\nThey each led into an empty room, dusty and cheerless, with two windows\nin the one and one in the other, so thick with ",
+        "continuation": " and the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to t",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.7388535031847133,
+          "distinct_word_bigram_ratio": 0.34285714285714286
+        }
+      },
+      {
+        "start_index": 13440,
+        "prompt": "ned at\nthe other with stout cord. The door itself was locked as ",
+        "reference": "well, and the\nkey was not there. This barricaded door corresponded clearly with the\nshuttered window outside, and yet I could see by the glimmer from\nbeneath it",
+        "continuation": "the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the wa",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 15008,
+        "prompt": "k?’ I asked.\n\n“‘Why do you think that I lock this door?’\n\n“‘I am",
+        "reference": " sure that I do not know.’\n\n“‘It is to keep people out who have no business there. Do you see?’ He\nwas still smiling in the most amiable manner.\n\n“‘I am sure if",
+        "continuation": " a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a st",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 15904,
+        "prompt": "would be well. Of course I might have fled from the house,\nbut m",
+        "reference": "y curiosity was almost as strong as my fears. My mind was soon\nmade up. I would send you a wire. I put on my hat and cloak, went down\nto the office, which is ab",
+        "continuation": "e the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the ",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 16576,
+        "prompt": "in my joy at\nthe thought of seeing you. I had no difficulty in g",
+        "reference": "etting leave to come\ninto Winchester this morning, but I must be back before three o’clock,\nfor Mr. and Mrs. Rucastle are going on a visit, and will be away all",
+        "continuation": "ood the stroom to the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.05063291139240506,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.8089171974522293,
+          "distinct_word_bigram_ratio": 0.22857142857142856
+        }
+      },
+      {
+        "start_index": 18368,
+        "prompt": "Miss Alice Rucastle, if I remember right, who was said to\nhave g",
+        "reference": "one to America. You were chosen, doubtless, as resembling her in\nheight, figure, and the colour of your hair. Hers had been cut off,\nvery possibly in some illne",
+        "continuation": "o the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 19264,
+        "prompt": "it?” I ejaculated.\n\n“My dear Watson, you as a medical man are co",
+        "reference": "ntinually gaining light as\nto the tendencies of a child by the study of the parents. Don’t you see\nthat the converse is equally valid. I have frequently gained ",
+        "continuation": "ntranger of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a ",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.13291139240506328,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.2571428571428571
+        }
+      },
+      {
+        "start_index": 22848,
+        "prompt": "he shrieked, “you thieves! Spies and\nthieves! I have caught you,",
+        "reference": " have I? You are in my power. I’ll serve\nyou!” He turned and clattered down the stairs as hard as he could go.\n\n“He’s gone for the dog!” cried Miss Hunter.\n\n“I ",
+        "continuation": " and the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to t",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.7388535031847133,
+          "distinct_word_bigram_ratio": 0.34285714285714286
+        }
+      },
+      {
+        "start_index": 23072,
+        "prompt": "have my revolver,” said I.\n\n“Better close the front door,” cried",
+        "reference": " Holmes, and we all rushed down the\nstairs together. We had hardly reached the hall when we heard the\nbaying of a hound, and then a scream of agony, with a horr",
+        "continuation": " the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the w",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 23520,
+        "prompt": "uick, quick, or it’ll be too late!”\n\nHolmes and I rushed out and",
+        "reference": " round the angle of the house, with Toller\nhurrying behind us. There was the huge famished brute, its black muzzle\nburied in Rucastle’s throat, while he writhed",
+        "continuation": " the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the w",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      },
+      {
+        "start_index": 24640,
+        "prompt": " enough to tell what I know.”\n\n“Then, pray, sit down, and let us",
+        "reference": " hear it for there are several points\non which I must confess that I am still in the dark.”\n\n“I will soon make it clear to you,” said she; “and I’d have done so",
+        "continuation": " a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a st",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 26656,
+        "prompt": "s.”\n\n“Mr. Fowler was a very kind-spoken, free-handed gentleman,”",
+        "reference": " said Mrs.\nToller serenely.\n\n“And in this way he managed that your good man should have no want of\ndrink, and that a ladder should be ready at the moment when y",
+        "continuation": " said Holmes was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom",
+        "metrics": {
+          "char_accuracy": 0.1375,
+          "prefix_match_ratio": 0.0375,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.7515923566878981,
+          "distinct_word_bigram_ratio": 0.2647058823529412
+        }
+      },
+      {
+        "start_index": 27328,
+        "prompt": "r house with the copper\nbeeches in front of the door. Mr. Rucast",
+        "reference": "le survived, but was always a\nbroken man, kept alive solely through the care of his devoted wife.\nThey still live with their old servants, who probably know so ",
+        "continuation": "er of the strought of the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to the was a strong the stroom to ",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13291139240506328,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.7515923566878981,
+          "distinct_word_bigram_ratio": 0.3142857142857143
+        }
+      }
+    ],
+    "sampled": [
+      {
+        "start_index": 224,
+        "prompt": "and\nforestalling it if possible. He was kind to her also in his ",
+        "reference": "bluff,\nboisterous fashion, and on the whole they seemed to be a happy couple.\nAnd yet she had some secret sorrow, this woman. She would often be lost\nin deep th",
+        "continuation": "see to and with have no mathered to mothoned agous and of the hof he, withour seemed. I could inchem, with his ray of room, and by deat once eart of the pace of",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.22784810126582278,
+          "char_fourgram_f1": 0.1337579617834395,
+          "repetition_rate_4gram": 0.11464968152866242,
+          "distinct_word_bigram_ratio": 0.9696969696969697
+        }
+      },
+      {
+        "start_index": 1120,
+        "prompt": "out the\ncreature, Mr. Holmes, and, indeed, he has little to do w",
+        "reference": "ith my story.”\n\n“I am glad of all details,” remarked my friend, “whether they seem to\nyou to be relevant or not.”\n\n“I shall try not to miss anything of importan",
+        "continuation": "ith the macked now\nto raid be it an our sake it an expolice of the over it, proter.”\n\n“This word with the wodgnetriose becoule pose at thene\na lape who Tecure t",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.08917197452229299,
+          "distinct_word_bigram_ratio": 0.96875
+        }
+      },
+      {
+        "start_index": 1568,
+        "prompt": "led\nhair and whiskers, and a perpetual smell of drink. Twice sin",
+        "reference": "ce I have\nbeen with them he has been quite drunk, and yet Mr. Rucastle seemed to\ntake no notice of it. His wife is a very tall and strong woman with a\nsour face",
+        "continuation": "gon, Mr. Holmes\npole of should so came a will to cast to is bet mentlan to a dring Late of the\neveryep for a refore in rectows of a mation. I a do was in\nsold s",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.20253164556962025,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.050955414012738856,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 2016,
+        "prompt": " two days after my arrival at the Copper Beeches my life was ver",
+        "reference": "y\nquiet; on the third, Mrs. Rucastle came down just after breakfast and\nwhispered something to her husband.\n\n“‘Oh, yes,’ said he, turning to me, ‘we are very mu",
+        "continuation": "y a choupestors\nupon the staw and\nbrought.”\n\n“I sheince. I appence of did a havor as he were that\ndown Stander of her down.\n\n“‘And which the\ntile!’\n\n“‘I would I",
+        "metrics": {
+          "char_accuracy": 0.03125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.17088607594936708,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.025477707006369428,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 3136,
+        "prompt": " floor. A chair had been\nplaced close to the central window, wit",
+        "reference": "h its back turned towards it. In\nthis I was asked to sit, and then Mr. Rucastle, walking up and down on\nthe other side of the room, began to tell me a series of",
+        "continuation": "h hard the was room, all that see should one ould\npelling faced to in the one at of the misted in the\nroopfer which courd, I which no\nconcentry\nfight, and strus",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.27848101265822783,
+          "char_fourgram_f1": 0.15286624203821655,
+          "repetition_rate_4gram": 0.09554140127388536,
+          "distinct_word_bigram_ratio": 0.96875
+        }
+      },
+      {
+        "start_index": 3360,
+        "prompt": " the funniest\nstories that I have ever listened to. You cannot i",
+        "reference": "magine how comical he\nwas, and I laughed until I was quite weary. Mrs. Rucastle, however, who\nhas evidently no sense of humour, never so much as smiled, but sat",
+        "continuation": "n the lime\nnow the some mered of suthious a somested the lobmilless a thout in the given the roomsed Sirn,\nand hes not was an of rempochruster. The dear over mo",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.09554140127388536,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4032,
+        "prompt": "which\nmy employer had an immense _répertoire_, and which he told",
+        "reference": " inimitably.\nThen he handed me a yellow-backed novel, and moving my chair a little\nsideways, that my own shadow might not fall upon the page, he begged me\nto re",
+        "continuation": " him of is mized with the dear into the befing to aciand\nwho her wall, and you a manth she, whelly\naddy speblery your have presents, when exclock he was her\neig",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.20253164556962025,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4256,
+        "prompt": "ad aloud to him. I read for about ten minutes, beginning in the\n",
+        "reference": "heart of a chapter, and then suddenly, in the middle of a sentence, he\nordered me to cease and to change my dress.\n\n“You can easily imagine, Mr. Holmes, how cur",
+        "continuation": "the sone of which one dhatter. I with the crall passibe\nfor other, then\nwill down to solace of forned with which the ip the stranking plusted. If dow the stroke",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.12658227848101267,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.15286624203821655,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 5600,
+        "prompt": "ixed upon\nme with a most searching gaze. She said nothing, but I",
+        "reference": " am convinced\nthat she had divined that I had a mirror in my hand and had seen what\nwas behind me. She rose at once.\n\n“‘Jephro,’ said she, ‘there is an impertin",
+        "continuation": " small rood as with the pase of night will theh The gen. There gives, the extrising unse for the reatuation, and sout weally\nhad to the is bet what the deal bry",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6048,
+        "prompt": "way.’\n\n“‘Surely it would be better to take no notice.’\n\n“‘No, no",
+        "reference": ", we should have him loitering here always. Kindly turn round\nand wave him away like that.’\n\n“I did as I was told, and at the same instant Mrs. Rucastle drew do",
+        "continuation": " mening remarked that I hose that you innow a daugting that then he hate who had case of my some into oud his frakout. “The paser what his coman from he hour\ngr",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6496,
+        "prompt": "teresting one.”\n\n“You will find it rather disconnected, I fear, ",
+        "reference": "and there may prove to\nbe little relation between the different incidents of which I speak. On\nthe very first day that I was at the Copper Beeches, Mr. Rucastle",
+        "continuation": "pucted him.\n\n“I will dussone us distelf upon the munting the battressed now once at seven it important of the mall, ouch of the\nbet\nI welled, craile good, “at a",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.05732484076433121,
+          "distinct_word_bigram_ratio": 0.9666666666666667
+        }
+      },
+      {
+        "start_index": 7168,
+        "prompt": " I\nhad given. ‘It’s only Carlo, my mastiff. I call him mine, but",
+        "reference": " really\nold Toller, my groom, is the only man who can do anything with him. We\nfeed him once a day, and not too much then, so that he is always as\nkeen as musta",
+        "continuation": " with wosmerally thinks and not look a lown and reat, think of the kindersed it in in humpless and like undence at of\nthe mall with was\nlittle proscomes given i",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.24050632911392406,
+          "char_fourgram_f1": 0.10191082802547771,
+          "repetition_rate_4gram": 0.08917197452229299,
+          "distinct_word_bigram_ratio": 0.9666666666666667
+        }
+      },
+      {
+        "start_index": 8288,
+        "prompt": " chill to my heart\nwhich I do not think that any burglar could h",
+        "reference": "ave done.\n\n“And now I have a very strange experience to tell you. I had, as you\nknow, cut off my hair in London, and I had placed it in a great coil at\nthe bott",
+        "continuation": "is my and her math that a with the windows up that in you come this under\nstreet with I carder batrial be remartted, and our of our light to more on fation frin",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 8512,
+        "prompt": "om of my trunk. One evening, after the child was in bed, I\nbegan",
+        "reference": " to amuse myself by examining the furniture of my room and by\nrearranging my own little things. There was an old chest of drawers in\nthe room, the two upper one",
+        "continuation": " in his allow, and very criming had appering on his had was in\na preaped into my may his froch me to my it wording good that a\nintioned to his find-can out of\nt",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.10191082802547771,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 8736,
+        "prompt": "s empty and open, the lower one locked. I\nhad filled the first t",
+        "reference": "wo with my linen, and as I had still much to pack\naway I was naturally annoyed at not having the use of the third drawer.\nIt struck me that it might have been f",
+        "continuation": "he displaints, the leather,\nplain. It was at thot and\ntring to be one who his he sust-long aften it the somestle’s bight. I house fon fret,” said Holmes. “Howl ",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 9408,
+        "prompt": "ed in the drawer? With\ntrembling hands I undid my trunk, turned ",
+        "reference": "out the contents, and drew\nfrom the bottom my own hair. I laid the two tresses together, and I\nassure you that they were identical. Was it not extraordinary? Pu",
+        "continuation": "the one rown prossire, Stor him be there was ruse of res, shing to to done of the strops bown the your fore to your kid the worth the\nrooms without a priscose i",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.21518987341772153,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.10191082802547771,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 11200,
+        "prompt": " that I was not offended. ‘By the way,’ said I, ‘you seem\nto hav",
+        "reference": "e quite a suite of spare rooms up there, and one of them has the\nshutters up.’\n\n“He looked surprised and, as it seemed to me, a little startled at my\nremark.\n\n“",
+        "continuation": "e with\nhis carely at monoward, so hoom, and in the lettered made of mist. The toomenters sming or mause strance of a conser, and thot\nthe langers client made ev",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.22151898734177214,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 11424,
+        "prompt": "‘Photography is one of my hobbies,’ said he. ‘I have made my dar",
+        "reference": "k room\nup there. But, dear me! what an observant young lady we have come upon.\nWho would have believed it? Who would have ever believed it?’ He spoke\nin a jesti",
+        "continuation": "taring you sturned that he hanced from-chared the grvote the gaghing the papers of. I and of a fice\nof it of had noivssew a mentinait.”\n\n“Dor which he had to on",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.08917197452229299,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 12768,
+        "prompt": "\nthem, so that I had an admirable opportunity. I turned the key ",
+        "reference": "gently\nin the lock, opened the door, and slipped through.\n\n“There was a little passage in front of me, unpapered and uncarpeted,\nwhich turned at a right angle a",
+        "continuation": "out, and remarless of sacked the windermanthous wherred by the keniparsie her geat of roosing at his lose I had start of Lordentrigld two would very spettor wit",
+        "metrics": {
+          "char_accuracy": 0.03125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17088607594936708,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 12992,
+        "prompt": "t the farther end. Round this corner\nwere three doors in a line,",
+        "reference": " the first and third of which were open.\nThey each led into an empty room, dusty and cheerless, with two windows\nin the one and one in the other, so thick with ",
+        "continuation": "” a spest in heiss, with turn. Who gat erre had a mane to see of his face, the besible of my like to site me that I could not to\nexsity\ncontery clootthout for h",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 13440,
+        "prompt": "ned at\nthe other with stout cord. The door itself was locked as ",
+        "reference": "well, and the\nkey was not there. This barricaded door corresponded clearly with the\nshuttered window outside, and yet I could see by the glimmer from\nbeneath it",
+        "continuation": "Coloned a lend in me not not the surm that you did upon\nstank and ever it\nme said or perle. It have tulk, inno mory the\npor betwared the go.\n\n“What a sappent be",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 15008,
+        "prompt": "k?’ I asked.\n\n“‘Why do you think that I lock this door?’\n\n“‘I am",
+        "reference": " sure that I do not know.’\n\n“‘It is to keep people out who have no business there. Do you see?’ He\nwas still smiling in the most amiable manner.\n\n“‘I am sure if",
+        "continuation": "sered to were the deattorn, or fellow what I am\ntook that evatelf fightat.\nI was never. I arrided upon you seint, who ly which quared, ald to propferelattan anr",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17088607594936708,
+          "char_fourgram_f1": 0.11464968152866242,
+          "repetition_rate_4gram": 0.025477707006369428,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 15904,
+        "prompt": "would be well. Of course I might have fled from the house,\nbut m",
+        "reference": "y curiosity was almost as strong as my fears. My mind was soon\nmade up. I would send you a wire. I put on my hat and cloak, went down\nto the office, which is ab",
+        "continuation": "ather in of a came of an our offoor sursile to the manty menry back whiced the rengare in the swome shooguade, and the good the\ntorbare a line know and of the j",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.11464968152866242,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 16576,
+        "prompt": "in my joy at\nthe thought of seeing you. I had no difficulty in g",
+        "reference": "etting leave to come\ninto Winchester this morning, but I must be back before three o’clock,\nfor Mr. and Mrs. Rucastle are going on a visit, and will be away all",
+        "continuation": "ir. On firt, be I fount.”\n\n“What I and say fate she lars, come two inness well sat to miriout to hiss in the were the regring lives in the quate after and man s",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.21518987341772153,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 0.9705882352941176
+        }
+      },
+      {
+        "start_index": 18368,
+        "prompt": "Miss Alice Rucastle, if I remember right, who was said to\nhave g",
+        "reference": "one to America. You were chosen, doubtless, as resembling her in\nheight, figure, and the colour of your hair. Hers had been cut off,\nvery possibly in some illne",
+        "continuation": "ong to his had not the cerity\nthat I could by a looked, alone which in the see to while that the wished strease uouiner and so mone hinst, fore do thread not an",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.08917197452229299,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 19264,
+        "prompt": "it?” I ejaculated.\n\n“My dear Watson, you as a medical man are co",
+        "reference": "ntinually gaining light as\nto the tendencies of a child by the study of the parents. Don’t you see\nthat the converse is equally valid. I have frequently gained ",
+        "continuation": "uld bing the celat for the took we ase of the room as for whole infe the kentertaning is are blends, with seigh in the carager worded, site, dull, with heard in",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.10191082802547771,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 22848,
+        "prompt": "he shrieked, “you thieves! Spies and\nthieves! I have caught you,",
+        "reference": " have I? You are in my power. I’ll serve\nyou!” He turned and clattered down the stairs as hard as he could go.\n\n“He’s gone for the dog!” cried Miss Hunter.\n\n“I ",
+        "continuation": " which he won of seef the have matting he hear into all that\ncomporest, there lade it us\nson a mattendy, anx. The give closan to the dein and ank fore who had g",
+        "metrics": {
+          "char_accuracy": 0.04375,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.044585987261146494,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 23072,
+        "prompt": "have my revolver,” said I.\n\n“Better close the front door,” cried",
+        "reference": " Holmes, and we all rushed down the\nstairs together. We had hardly reached the hall when we heard the\nbaying of a hound, and then a scream of agony, with a horr",
+        "continuation": " to a cloppiout in the bastinen. I would beet of Holmes turning a dive which you why giga\nslew is had a done are of the dary workended and roove and who sominke",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.22784810126582278,
+          "char_fourgram_f1": 0.11464968152866242,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 23520,
+        "prompt": "uick, quick, or it’ll be too late!”\n\nHolmes and I rushed out and",
+        "reference": " round the angle of the house, with Toller\nhurrying behind us. There was the huge famished brute, its black muzzle\nburied in Rucastle’s throat, while he writhed",
+        "continuation": " the foor a mush\nEned a cours, which to me a toon the workeys commorar the press to to prestire, to the forge of the with my must good, and he have his for my a",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.23417721518987342,
+          "char_fourgram_f1": 0.11464968152866242,
+          "repetition_rate_4gram": 0.12738853503184713,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 24640,
+        "prompt": " enough to tell what I know.”\n\n“Then, pray, sit down, and let us",
+        "reference": " hear it for there are several points\non which I must confess that I am still in the dark.”\n\n“I will soon make it clear to you,” said she; “and I’d have done so",
+        "continuation": "e vellemes then gittle tol. I know in good but it men wark, Dom Lagget of his with over of the man to the possount—utriever of be to cherught to your man that w",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.08917197452229299,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 26656,
+        "prompt": "s.”\n\n“Mr. Fowler was a very kind-spoken, free-handed gentleman,”",
+        "reference": " said Mrs.\nToller serenely.\n\n“And in this way he managed that your good man should have no want of\ndrink, and that a ladder should be ready at the moment when y",
+        "continuation": " said do the\nfrom in the round in in a pointy with by no have more to your befich, whech the Mar!”\n\n“Well, ang and we sin your deefer, which a from the good her",
+        "metrics": {
+          "char_accuracy": 0.15,
+          "prefix_match_ratio": 0.0375,
+          "char_trigram_f1": 0.2848101265822785,
+          "char_fourgram_f1": 0.1592356687898089,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 27328,
+        "prompt": "r house with the copper\nbeeches in front of the door. Mr. Rucast",
+        "reference": "le survived, but was always a\nbroken man, kept alive solely through the care of his devoted wife.\nThey still live with their old servants, who probably know so ",
+        "continuation": "an you leatesting is quure care Stable which I would cheter a room been at the was his ould you and a not bet was ason it this out. Holmes, me and did, and I we",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.16455696202531644,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.09554140127388536,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      }
+    ]
+  },
+  "checkpoint": "primitive_peephole_lstm_fair_seed_11.pt",
+  "checkpoint_sha256": "a7391c1c781ebd713a6331dd40cbdc297a97e0bd8164c07dfa88e0db27977f94",
+  "elapsed_seconds": 75.75656487499998,
+  "device": "cpu",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "timing_scope": "parallel job elapsed; not comparative efficiency evidence"
+}

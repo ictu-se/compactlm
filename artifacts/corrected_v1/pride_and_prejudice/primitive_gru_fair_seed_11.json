@@ -1,0 +1,1204 @@
+{
+  "signature": "f3fc43a2cdfb740df0768e5777299ef3afd8cf31ad800ac00e350115e27f5513",
+  "code_sha256": "20fdba9a3f29555f63cdd9dfffeddd266c8f3bcd80bab5faa81b796710873772",
+  "config": {
+    "version": 1,
+    "sequence_length": 64,
+    "batch_size": 32,
+    "steps_per_epoch": 100,
+    "max_epochs": 50,
+    "patience": 5,
+    "min_delta": 0.002,
+    "learning_rate": 0.001,
+    "prompts": 32,
+    "continuation": 160,
+    "temperature": 0.8,
+    "threads": 1,
+    "alphabet": "closed_corpus",
+    "evaluation": "full_disjoint_blocks"
+  },
+  "corpus": {
+    "dataset": "pride_and_prejudice",
+    "sha256": "302aa4dfe7c4211413f82033e26ccd9e7a098a7041e41c08daa0776afda1017c",
+    "characters": 728265,
+    "vocabulary": 91,
+    "split_sizes": [
+      655438,
+      36413,
+      36414
+    ],
+    "heldout_only_characters": []
+  },
+  "model": "Primitive GRU Fair",
+  "seed": 11,
+  "params": 32860,
+  "best_epoch": 50,
+  "best_val_loss": 1.4710475641280154,
+  "final_test_loss": 1.4803020439685377,
+  "test_ppl": 4.394272744071413,
+  "evaluation_tokens": 36413,
+  "stop_reason": "max_epochs_reached",
+  "completed": true,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.251187720298767,
+      "val_loss": 2.7954223508770935
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.5890407299995424,
+      "val_loss": 2.467879602833919
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.346250252723694,
+      "val_loss": 2.27081080833451
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.1837293338775634,
+      "val_loss": 2.127870871682069
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.055938336849213,
+      "val_loss": 2.0254783934189122
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.9796482849121093,
+      "val_loss": 1.9533144887903031
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.9153078949451448,
+      "val_loss": 1.8958830430614257
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.8654571425914765,
+      "val_loss": 1.848759521589978
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.8126495444774628,
+      "val_loss": 1.8094203609117476
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.781039388179779,
+      "val_loss": 1.7728950293472963
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.7465982735157013,
+      "val_loss": 1.7466097595690895
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.7228509092330933,
+      "val_loss": 1.720833336378498
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.700114072561264,
+      "val_loss": 1.6996322664522567
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.6777268731594086,
+      "val_loss": 1.6807827727946294
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.6563540506362915,
+      "val_loss": 1.6634159238996131
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.6423341977596282,
+      "val_loss": 1.6500708257236625
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.6392734301090242,
+      "val_loss": 1.6376526042758457
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.6183350372314453,
+      "val_loss": 1.6234888424391958
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.6052687740325928,
+      "val_loss": 1.6134576239088767
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.5880151832103728,
+      "val_loss": 1.6024893639468236
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.5875094246864319,
+      "val_loss": 1.592746409848144
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.5759883260726928,
+      "val_loss": 1.583815857825352
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.5693685114383698,
+      "val_loss": 1.5753903892372094
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.5571099174022676,
+      "val_loss": 1.5693760611756116
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.5559876489639282,
+      "val_loss": 1.5608958131492001
+    },
+    {
+      "epoch": 26,
+      "train_loss": 1.5431277322769166,
+      "val_loss": 1.5559168707390716
+    },
+    {
+      "epoch": 27,
+      "train_loss": 1.5354812622070313,
+      "val_loss": 1.5493172921414664
+    },
+    {
+      "epoch": 28,
+      "train_loss": 1.524457070827484,
+      "val_loss": 1.5433592424934335
+    },
+    {
+      "epoch": 29,
+      "train_loss": 1.5244804918766022,
+      "val_loss": 1.5402868883329264
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.5201127982139588,
+      "val_loss": 1.5332002422907294
+    },
+    {
+      "epoch": 31,
+      "train_loss": 1.51520152926445,
+      "val_loss": 1.5334216874994369
+    },
+    {
+      "epoch": 32,
+      "train_loss": 1.5055309987068177,
+      "val_loss": 1.5256840694242686
+    },
+    {
+      "epoch": 33,
+      "train_loss": 1.5116937720775605,
+      "val_loss": 1.5215821384034758
+    },
+    {
+      "epoch": 34,
+      "train_loss": 1.500794141292572,
+      "val_loss": 1.5155662265070635
+    },
+    {
+      "epoch": 35,
+      "train_loss": 1.4971382522583008,
+      "val_loss": 1.5124808972214232
+    },
+    {
+      "epoch": 36,
+      "train_loss": 1.4893776154518128,
+      "val_loss": 1.5094160871768698
+    },
+    {
+      "epoch": 37,
+      "train_loss": 1.4885378897190094,
+      "val_loss": 1.505610298274913
+    },
+    {
+      "epoch": 38,
+      "train_loss": 1.4791570687294007,
+      "val_loss": 1.5030749699289716
+    },
+    {
+      "epoch": 39,
+      "train_loss": 1.4806497979164124,
+      "val_loss": 1.5005519030500896
+    },
+    {
+      "epoch": 40,
+      "train_loss": 1.478663980960846,
+      "val_loss": 1.497968665115338
+    },
+    {
+      "epoch": 41,
+      "train_loss": 1.4688525640964507,
+      "val_loss": 1.49423490916322
+    },
+    {
+      "epoch": 42,
+      "train_loss": 1.4699214935302733,
+      "val_loss": 1.4917255641732337
+    },
+    {
+      "epoch": 43,
+      "train_loss": 1.4636448812484741,
+      "val_loss": 1.4885543696267205
+    },
+    {
+      "epoch": 44,
+      "train_loss": 1.4623692655563354,
+      "val_loss": 1.4858420419258218
+    },
+    {
+      "epoch": 45,
+      "train_loss": 1.4491251766681672,
+      "val_loss": 1.4820676766083056
+    },
+    {
+      "epoch": 46,
+      "train_loss": 1.4654557621479034,
+      "val_loss": 1.4816968155787251
+    },
+    {
+      "epoch": 47,
+      "train_loss": 1.4575011813640595,
+      "val_loss": 1.4775913575449109
+    },
+    {
+      "epoch": 48,
+      "train_loss": 1.452360827922821,
+      "val_loss": 1.474702667249738
+    },
+    {
+      "epoch": 49,
+      "train_loss": 1.4520753026008606,
+      "val_loss": 1.4715985886201772
+    },
+    {
+      "epoch": 50,
+      "train_loss": 1.4489356982707977,
+      "val_loss": 1.4710475641280154
+    }
+  ],
+  "generation": {
+    "greedy": [
+      {
+        "start_index": 448,
+        "prompt": " so widely\ndifferent from what they were then, that every unplea",
+        "reference": "sant circumstance\nattending it ought to be forgotten. You must learn some of my\nphilosophy. Think only of the past as its remembrance gives you\npleasure.”\n\n“I c",
+        "continuation": "sure to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a s",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.7961783439490446,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 672,
+        "prompt": "annot give you credit for any philosophy of the kind. _Your_\nret",
+        "reference": "rospections must be so totally void of reproach, that the contentment\narising from them is not of philosophy, but, what is much better, of\nignorance. But with _",
+        "continuation": "urned to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.06329113924050633,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.7898089171974523,
+          "distinct_word_bigram_ratio": 0.20454545454545456
+        }
+      },
+      {
+        "start_index": 2464,
+        "prompt": "began to\ntake a proper direction.”\n\n“I am almost afraid of askin",
+        "reference": "g what you thought of me when we met at\nPemberley. You blamed me for coming?”\n\n“No, indeed, I felt nothing but surprise.”\n\n“Your surprise could not be greater t",
+        "continuation": "g to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.8152866242038217,
+          "distinct_word_bigram_ratio": 0.2
+        }
+      },
+      {
+        "start_index": 3136,
+        "prompt": " wishes\nintroduced themselves, I can hardly tell, but I believe ",
+        "reference": "in about half\nan hour after I had seen you.”\n\nHe then told her of Georgiana’s delight in her acquaintance, and of her\ndisappointment at its sudden interruption;",
+        "continuation": "to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.06329113924050633,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.17777777777777778
+        }
+      },
+      {
+        "start_index": 3360,
+        "prompt": " which naturally leading to\nthe cause of that interruption, she ",
+        "reference": "soon learnt that his resolution of\nfollowing her from Derbyshire in quest of her sister had been formed\nbefore he quitted the inn, and that his gravity and thou",
+        "continuation": "was not the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.05063291139240506,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.7961783439490446,
+          "distinct_word_bigram_ratio": 0.20454545454545456
+        }
+      },
+      {
+        "start_index": 4032,
+        "prompt": "the discussion of _their_ affairs. Darcy was delighted with\nthei",
+        "reference": "r engagement; his friend had given him the earliest information of\nit.\n\n“I must ask whether you were surprised?” said Elizabeth.\n\n“Not at all. When I went away,",
+        "continuation": "r manner was not a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a m",
+        "metrics": {
+          "char_accuracy": 0.125,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.056962025316455694,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.8152866242038217,
+          "distinct_word_bigram_ratio": 0.2
+        }
+      },
+      {
+        "start_index": 4704,
+        "prompt": "t. He had never had\nthe slightest suspicion. I told him, moreove",
+        "reference": "r, that I believed myself\nmistaken in supposing, as I had done, that your sister was indifferent\nto him; and as I could easily perceive that his attachment to h",
+        "continuation": "d to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.056962025316455694,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.8152866242038217,
+          "distinct_word_bigram_ratio": 0.2
+        }
+      },
+      {
+        "start_index": 6496,
+        "prompt": "4 by George Allen._]]\n\nCHAPTER LIX.\n\n[Illustration]\n\n“My dear Li",
+        "reference": "zzy, where can you have been walking to?” was a question\nwhich Elizabeth received from Jane as soon as she entered the room, and\nfrom all the others when they s",
+        "continuation": "zzy, and she had not be a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a s",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.03125,
+          "char_trigram_f1": 0.08860759493670886,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.24444444444444444
+        }
+      },
+      {
+        "start_index": 8288,
+        "prompt": "s as these\na good memory is unpardonable. This is the last time ",
+        "reference": "I shall ever\nremember it myself.”\n\nMiss Bennet still looked all amazement. Elizabeth again, and more\nseriously, assured her of its truth.\n\n“Good heaven! can it ",
+        "continuation": "to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.03164556962025317,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.17777777777777778
+        }
+      },
+      {
+        "start_index": 8960,
+        "prompt": "myself more\ndelight. But we considered it, we talked of it as im",
+        "reference": "possible. And do you\nreally love him quite well enough? Oh, Lizzy! do anything rather than\nmarry without affection. Are you quite sure that you feel what you ou",
+        "continuation": "possible and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a ",
+        "metrics": {
+          "char_accuracy": 0.13125,
+          "prefix_match_ratio": 0.05,
+          "char_trigram_f1": 0.06329113924050633,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.8343949044585988,
+          "distinct_word_bigram_ratio": 0.13953488372093023
+        }
+      },
+      {
+        "start_index": 10304,
+        "prompt": "tle did you\ntell me of what passed at Pemberley and Lambton! I o",
+        "reference": "we all that I know\nof it to another, not to you.”\n\nElizabeth told her the motives of her secrecy. She had been unwilling to\nmention Bingley; and the unsettled s",
+        "continuation": "ften the considerable of the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.08860759493670886,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.6942675159235668,
+          "distinct_word_bigram_ratio": 0.2682926829268293
+        }
+      },
+      {
+        "start_index": 11200,
+        "prompt": "rdly help laughing at so convenient a proposal; yet\nwas really v",
+        "reference": "exed that her mother should be always giving him such an\nepithet.\n\nAs soon as they entered, Bingley looked at her so expressively, and\nshook hands with such war",
+        "continuation": "ery assure to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a mo",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.25
+        }
+      },
+      {
+        "start_index": 12096,
+        "prompt": "r,\nsaying,--\n\n“I am quite sorry, Lizzy, that you should be force",
+        "reference": "d to have that\ndisagreeable man all to yourself; but I hope you will not mind it. It is\nall for Jane’s sake, you know; and there is no occasion for talking to\nh",
+        "continuation": "d to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0375,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.8152866242038217,
+          "distinct_word_bigram_ratio": 0.2
+        }
+      },
+      {
+        "start_index": 12320,
+        "prompt": "im except just now and then; so do not put yourself to inconveni",
+        "reference": "ence.”\n\nDuring their walk, it was resolved that Mr. Bennet’s consent should be\nasked in the course of the evening: Elizabeth reserved to herself the\napplication",
+        "continuation": "ent of the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a s",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.7961783439490446,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 14560,
+        "prompt": "rence?”\n\n“None at all. We all know him to be a proud, unpleasant",
+        "reference": " sort of man; but\nthis would be nothing if you really liked him.”\n\n“I do, I do like him,” she replied, with tears in her eyes; “I love him.\nIndeed he has no imp",
+        "continuation": " of the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.02531645569620253,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.8152866242038217,
+          "distinct_word_bigram_ratio": 0.18181818181818182
+        }
+      },
+      {
+        "start_index": 15008,
+        "prompt": "whom I should never dare refuse anything, which he\ncondescended ",
+        "reference": "to ask. I now give it to _you_, if you are resolved on\nhaving him. But let me advise you to think better of it. I know your\ndisposition, Lizzy. I know that you ",
+        "continuation": "to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.03164556962025317,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.17777777777777778
+        }
+      },
+      {
+        "start_index": 16352,
+        "prompt": "Darcy\nhad voluntarily done for Lydia. He heard her with astonish",
+        "reference": "ment.\n\n“This is an evening of wonders, indeed! And so, Darcy did everything;\nmade up the match, gave the money, paid the fellow’s debts, and got him\nhis commiss",
+        "continuation": "ing to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a su",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0379746835443038,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.802547770700637,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 16800,
+        "prompt": "im to-morrow, he will rant and storm about\nhis love for you, and",
+        "reference": " there will be an end of the matter.”\n\nHe then recollected her embarrassment a few days before on his reading\nMr. Collins’s letter; and after laughing at her so",
+        "continuation": " the considerable of the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a s",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.7197452229299363,
+          "distinct_word_bigram_ratio": 0.2619047619047619
+        }
+      },
+      {
+        "start_index": 19040,
+        "prompt": "year, and very likely more! ’Tis as good as a lord! And a\nspecia",
+        "reference": "l licence--you must and shall be married by a special licence.\nBut, my dearest love, tell me what dish Mr. Darcy is particularly fond\nof, that I may have it to-",
+        "continuation": "lly as the considerable of the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a mo",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.08227848101265822,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.6815286624203821,
+          "distinct_word_bigram_ratio": 0.30952380952380953
+        }
+      },
+      {
+        "start_index": 19488,
+        "prompt": " was still something to be wished for. But the morrow\npassed off",
+        "reference": " much better than she expected; for Mrs. Bennet luckily stood\nin such awe of her intended son-in-law, that she ventured not to speak\nto him, unless it was in he",
+        "continuation": " the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a s",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.056962025316455694,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.8853503184713376,
+          "distinct_word_bigram_ratio": 0.13333333333333333
+        }
+      },
+      {
+        "start_index": 22400,
+        "prompt": " did you look as if you did not care about me?”\n\n“Because you we",
+        "reference": "re grave and silent, and gave me no encouragement.”\n\n“But I was embarrassed.”\n\n“And so was I.”\n\n“You might have talked to me more when you came to dinner.”\n\n“A ",
+        "continuation": "re a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a s",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.0189873417721519,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.8980891719745223,
+          "distinct_word_bigram_ratio": 0.13043478260869565
+        }
+      },
+      {
+        "start_index": 24640,
+        "prompt": "en overrated, Elizabeth had never yet answered Mrs. Gardiner’s\nl",
+        "reference": "ong letter; but now, having _that_ to communicate which she knew would\nbe most welcome, she was almost ashamed to find that her uncle and aunt\nhad already lost ",
+        "continuation": "etter which he was a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.16455696202531644,
+          "char_fourgram_f1": 0.11464968152866242,
+          "repetition_rate_4gram": 0.7961783439490446,
+          "distinct_word_bigram_ratio": 0.18181818181818182
+        }
+      },
+      {
+        "start_index": 25088,
+        "prompt": " cross to write. You supposed more than really existed.\nBut _now",
+        "reference": "_ suppose as much as you choose; give a loose to your fancy,\nindulge your imagination in every possible flight which the subject will\nafford, and unless you bel",
+        "continuation": " her assure to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a m",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.7707006369426752,
+          "distinct_word_bigram_ratio": 0.25
+        }
+      },
+      {
+        "start_index": 25760,
+        "prompt": "n Jane; she\nonly smiles, I laugh. Mr. Darcy sends you all the lo",
+        "reference": "ve in the world that\ncan be spared from me. You are all to come to Pemberley at Christmas.\nYours,” etc.\n\nMr. Darcy’s letter to Lady Catherine was in a different",
+        "continuation": "ok the considerable of the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.7070063694267515,
+          "distinct_word_bigram_ratio": 0.2619047619047619
+        }
+      },
+      {
+        "start_index": 26208,
+        "prompt": " Mr. Darcy. Console Lady Catherine as well as\n     you can. But,",
+        "reference": " if I were you, I would stand by the nephew. He has\n     more to give.\n\n“Yours sincerely,” etc.\n\nMiss Bingley’s congratulations to her brother on his approachin",
+        "continuation": " and she had not be a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such ",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.04430379746835443,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.7898089171974523,
+          "distinct_word_bigram_ratio": 0.20454545454545456
+        }
+      },
+      {
+        "start_index": 26880,
+        "prompt": "ur sides of paper were\ninsufficient to contain all her delight, ",
+        "reference": "and all her earnest desire of\nbeing loved by her sister.\n\nBefore any answer could arrive from Mr. Collins, or any congratulations\nto Elizabeth from his wife, th",
+        "continuation": "and she had not be a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a",
+        "metrics": {
+          "char_accuracy": 0.13125,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.02531645569620253,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.7961783439490446,
+          "distinct_word_bigram_ratio": 0.2
+        }
+      },
+      {
+        "start_index": 28672,
+        "prompt": " from all this took from the season of courtship much of its\nple",
+        "reference": "asure, it added to the hope of the future; and she looked forward\nwith delight to the time when they should be removed from society so\nlittle pleasing to either",
+        "continuation": "asure to her at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a ",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.03125,
+          "char_trigram_f1": 0.0759493670886076,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.7898089171974523,
+          "distinct_word_bigram_ratio": 0.20454545454545456
+        }
+      },
+      {
+        "start_index": 29568,
+        "prompt": "felicity in so unusual a form, that she still was occasionally n",
+        "reference": "ervous\nand invariably silly.\n\nMr. Bennet missed his second daughter exceedingly; his affection for her\ndrew him oftener from home than anything else could do. H",
+        "continuation": "ot the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a",
+        "metrics": {
+          "char_accuracy": 0.0375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.006329113924050633,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.8726114649681529,
+          "distinct_word_bigram_ratio": 0.13333333333333333
+        }
+      },
+      {
+        "start_index": 30016,
+        "prompt": "s_ easy temper, or _her_ affectionate heart. The darling wish of",
+        "reference": " his\nsisters was then gratified: he bought an estate in a neighbouring county\nto Derbyshire; and Jane and Elizabeth, in addition to every other source\nof happin",
+        "continuation": " the was and such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.8343949044585988,
+          "distinct_word_bigram_ratio": 0.1590909090909091
+        }
+      },
+      {
+        "start_index": 31808,
+        "prompt": "plained to her that, by\nhis wife at least, if not by himself, su",
+        "reference": "ch a hope was cherished. The\nletter was to this effect:--\n\n     /* “My dear Lizzy, */\n\n     “I wish you joy. If you love Mr. Darcy half so well as I do my dear\n",
+        "continuation": "ch a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a m",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.03125,
+          "char_trigram_f1": 0.0189873417721519,
+          "char_fourgram_f1": 0.012738853503184714,
+          "repetition_rate_4gram": 0.910828025477707,
+          "distinct_word_bigram_ratio": 0.13043478260869565
+        }
+      },
+      {
+        "start_index": 32032,
+        "prompt": "     Wickham, you must be very happy. It is a great comfort to h",
+        "reference": "ave you\n     so rich; and when you have nothing else to do, I hope you will\n     think of us. I am sure Wickham would like a place at court very\n     much; and ",
+        "continuation": "er at the such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a mos",
+        "metrics": {
+          "char_accuracy": 0.13125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0379746835443038,
+          "char_fourgram_f1": 0.006369426751592357,
+          "repetition_rate_4gram": 0.8535031847133758,
+          "distinct_word_bigram_ratio": 0.17777777777777778
+        }
+      },
+      {
+        "start_index": 32928,
+        "prompt": ", and heedless of the future, must be very insufficient to\ntheir",
+        "reference": " support; and whenever they changed their quarters, either Jane or\nherself were sure of being applied to for some little assistance towards\ndischarging their bi",
+        "continuation": " manner was not a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a most a such a mo",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.0189873417721519,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.821656050955414,
+          "distinct_word_bigram_ratio": 0.18181818181818182
+        }
+      }
+    ],
+    "sampled": [
+      {
+        "start_index": 448,
+        "prompt": " so widely\ndifferent from what they were then, that every unplea",
+        "reference": "sant circumstance\nattending it ought to be forgotten. You must learn some of my\nphilosophy. Think only of the past as its remembrance gives you\npleasure.”\n\n“I c",
+        "continuation": "se your wife lenginith, with the family was son of the\nsiggiven of proposisted a stance, and carries and so mak this. Elizabeth such acted this to interestance,",
+        "metrics": {
+          "char_accuracy": 0.03125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.16455696202531644,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 672,
+        "prompt": "annot give you credit for any philosophy of the kind. _Your_\nret",
+        "reference": "rospections must be so totally void of reproach, that the contentment\narising from them is not of philosophy, but, what is much better, of\nignorance. But with _",
+        "continuation": "lance of viced her hope of complains of my sat see the kindness, tanisage ficely as good to gratition a most an a coming to must have nothing in in the is perso",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.189873417721519,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 2464,
+        "prompt": "began to\ntake a proper direction.”\n\n“I am almost afraid of askin",
+        "reference": "g what you thought of me when we met at\nPemberley. You blamed me for coming?”\n\n“No, indeed, I felt nothing but surprise.”\n\n“Your surprise could not be greater t",
+        "continuation": "g to my such inconcentations was not sister, and there can be a felt she were adiate the certied her house himself it acclone of thereformating many being his a",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 3136,
+        "prompt": " wishes\nintroduced themselves, I can hardly tell, but I believe ",
+        "reference": "in about half\nan hour after I had seen you.”\n\nHe then told her of Georgiana’s delight in her acquaintance, and of her\ndisappointment at its sudden interruption;",
+        "continuation": "and pursage\na suppain of them the could epance in eowill meminly as without my sister should bret in meann. Hu\nhave been a felf of incleavest me entered, the co",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.05732484076433121,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 3360,
+        "prompt": " which naturally leading to\nthe cause of that interruption, she ",
+        "reference": "soon learnt that his resolution of\nfollowing her from Derbyshire in quest of her sister had been formed\nbefore he quitted the inn, and that his gravity and thou",
+        "continuation": "had partion in upays mothing my sires to marrially askurned when their be he had not his\nconcern to offered him. And who shall prother in\nBingley, with the left",
+        "metrics": {
+          "char_accuracy": 0.125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.21518987341772153,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.025477707006369428,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4032,
+        "prompt": "the discussion of _their_ affairs. Darcy was delighted with\nthei",
+        "reference": "r engagement; his friend had given him the earliest information of\nit.\n\n“I must ask whether you were surprised?” said Elizabeth.\n\n“Not at all. When I went away,",
+        "continuation": "r opervinations moment should never delighted in unjoyment, as Mr. Collins for fret the genings and\nit, I have\nshould civility, and surcome is be, to was a said",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.16455696202531644,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4704,
+        "prompt": "t. He had never had\nthe slightest suspicion. I told him, moreove",
+        "reference": "r, that I believed myself\nmistaken in supposing, as I had done, that your sister was indifferent\nto him; and as I could easily perceive that his attachment to h",
+        "continuation": "d about them pated that towardsho,\nMiss Collins, she invitation to deseffings to means tender farowed tears into this daughters all her propersons to magage, yo",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6496,
+        "prompt": "4 by George Allen._]]\n\nCHAPTER LIX.\n\n[Illustration]\n\n“My dear Li",
+        "reference": "zzy, where can you have been walking to?” was a question\nwhich Elizabeth received from Jane as soon as she entered the room, and\nfrom all the others when they s",
+        "continuation": "zzy, when Mrs. Bennet was not be to me himsest, you have not to did as Mr. Colineading to offer to up to\nofferform in look said I have might really justiems him",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.05,
+          "char_trigram_f1": 0.189873417721519,
+          "char_fourgram_f1": 0.12738853503184713,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 8288,
+        "prompt": "s as these\na good memory is unpardonable. This is the last time ",
+        "reference": "I shall ever\nremember it myself.”\n\nMiss Bennet still looked all amazement. Elizabeth again, and more\nseriously, assured her of its truth.\n\n“Good heaven! can it ",
+        "continuation": "my suculas in a your sevent. But their midement as\nsome been a last sister would nothing my the wishation. My would respected in to peaciust; and from that his ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.044585987261146494,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 8960,
+        "prompt": "myself more\ndelight. But we considered it, we talked of it as im",
+        "reference": "possible. And do you\nreally love him quite well enough? Oh, Lizzy! do anything rather than\nmarry without affection. Are you quite sure that you feel what you ou",
+        "continuation": "ported much as in the prosid her onder for it to Wickham in desired him to\nyour to hope subjrete. In understand the\nputing with every perable. But on person, an",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 10304,
+        "prompt": "tle did you\ntell me of what passed at Pemberley and Lambton! I o",
+        "reference": "we all that I know\nof it to another, not to you.”\n\nElizabeth told her the motives of her secrecy. She had been unwilling to\nmention Bingley; and the unsettled s",
+        "continuation": "r all the feeling without her are\noffers.”\n\n“But, _net wats again, and happiness, when you ask a be, is unendered to\nmy too best not exceroust bothes of so more",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.26582278481012656,
+          "char_fourgram_f1": 0.14012738853503184,
+          "repetition_rate_4gram": 0.0,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 11200,
+        "prompt": "rdly help laughing at so convenient a proposal; yet\nwas really v",
+        "reference": "exed that her mother should be always giving him such an\nepithet.\n\nAs soon as they entered, Bingley looked at her so expressively, and\nshook hands with such war",
+        "continuation": "iose manners; and I dresenttending in Lady Collins, antterferved the\nhouse and suppose and without be. There were to an spist feel of such mich of his say withe",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.20253164556962025,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 12096,
+        "prompt": "r,\nsaying,--\n\n“I am quite sorry, Lizzy, that you should be force",
+        "reference": "d to have that\ndisagreeable man all to yourself; but I hope you will not mind it. It is\nall for Jane’s sake, you know; and there is no occasion for talking to\nh",
+        "continuation": ", and this into your all their minuse\nand side after you madies of she must be were never, and she forthing, “and answered to manner,\nwould not enough her affer",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.24050632911392406,
+          "char_fourgram_f1": 0.14012738853503184,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 12320,
+        "prompt": "im except just now and then; so do not put yourself to inconveni",
+        "reference": "ence.”\n\nDuring their walk, it was resolved that Mr. Bennet’s consent should be\nasked in the course of the evening: Elizabeth reserved to herself the\napplication",
+        "continuation": "ng her as they wist to introduce miriss! in her in his walking to felt the most eighed am, with her dressting if it was of the deeself spear?”\n\n“Than is good to",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2468354430379747,
+          "char_fourgram_f1": 0.1464968152866242,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 14560,
+        "prompt": "rence?”\n\n“None at all. We all know him to be a proud, unpleasant",
+        "reference": " sort of man; but\nthis would be nothing if you really liked him.”\n\n“I do, I do like him,” she replied, with tears in her eyes; “I love him.\nIndeed he has no imp",
+        "continuation": "\nthe always so farkance of the saiduded was all me that that Elizabeth was attention me who much and go a may own sented in least hows, and been her to all not ",
+        "metrics": {
+          "char_accuracy": 0.04375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 15008,
+        "prompt": "whom I should never dare refuse anything, which he\ncondescended ",
+        "reference": "to ask. I now give it to _you_, if you are resolved on\nhaving him. But let me advise you to think better of it. I know your\ndisposition, Lizzy. I know that you ",
+        "continuation": "to Cathereness own atfalking to being the aspear, when a man brong to\none of the gament whole I shall socitute to marriage. I am suppressove to a not all that I",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 16352,
+        "prompt": "Darcy\nhad voluntarily done for Lydia. He heard her with astonish",
+        "reference": "ment.\n\n“This is an evening of wonders, indeed! And so, Darcy did everything;\nmade up the match, gave the money, paid the fellow’s debts, and got him\nhis commiss",
+        "continuation": " which little delight to Delf just. SI\ncircume of stay paising to periass as of his daughter recomsely abodh over to be of see highryty fach on who was the will",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 16800,
+        "prompt": "im to-morrow, he will rant and storm about\nhis love for you, and",
+        "reference": " there will be an end of the matter.”\n\nHe then recollected her embarrassment a few days before on his reading\nMr. Collins’s letter; and after laughing at her so",
+        "continuation": " that Elizabeth; and with all this difficient,\nshe decentider that she much of success most\nbehavours the ven of the not enough her acquaming to Longbournness r",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.189873417721519,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.050955414012738856,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 19040,
+        "prompt": "year, and very likely more! ’Tis as good as a lord! And a\nspecia",
+        "reference": "l licence--you must and shall be married by a special licence.\nBut, my dearest love, tell me what dish Mr. Darcy is particularly fond\nof, that I may have it to-",
+        "continuation": "lly, and anower ever aftery become durractions within dear friends to cirdessing again, so own on every great of a sentain\nher caning, been to see hope to I hav",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 19488,
+        "prompt": " was still something to be wished for. But the morrow\npassed off",
+        "reference": " much better than she expected; for Mrs. Bennet luckily stood\nin such awe of her intended son-in-law, that she ventured not to speak\nto him, unless it was in he",
+        "continuation": "cence of was not really above as his serees with alling in her feel to\nall the day, but a thought be to be so settle in the lighly surtrys has we much at hersel",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2468354430379747,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.03184713375796178,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 22400,
+        "prompt": " did you look as if you did not care about me?”\n\n“Because you we",
+        "reference": "re grave and silent, and gave me no encouragement.”\n\n“But I was embarrassed.”\n\n“And so was I.”\n\n“You might have talked to me more when you came to dinner.”\n\n“A ",
+        "continuation": "re so such entreghing with, to\ninclued to her asserse of Longbourn.\n\n“I mean_ soon a moment and in this respectesters, that Mr. Collins whole under to make to h",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.01910828025477707,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 24640,
+        "prompt": "en overrated, Elizabeth had never yet answered Mrs. Gardiner’s\nl",
+        "reference": "ong letter; but now, having _that_ to communicate which she knew would\nbe most welcome, she was almost ashamed to find that her uncle and aunt\nhad already lost ",
+        "continuation": "eaves was a farration]\n\n“How who trust ill a could real possiblute the family room. He dear brother she suppose with Wickham more amment who party; voome silly ",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.012738853503184714,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 25088,
+        "prompt": " cross to write. You supposed more than really existed.\nBut _now",
+        "reference": "_ suppose as much as you choose; give a loose to your fancy,\nindulge your imagination in every possible flight which the subject will\nafford, and unless you bel",
+        "continuation": " congrath, for do;--                                                                                                                                            ",
+        "metrics": {
+          "char_accuracy": 0.1375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.006329113924050633,
+          "char_fourgram_f1": 0.0,
+          "repetition_rate_4gram": 0.8662420382165605,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 25760,
+        "prompt": "n Jane; she\nonly smiles, I laugh. Mr. Darcy sends you all the lo",
+        "reference": "ve in the world that\ncan be spared from me. You are all to come to Pemberley at Christmas.\nYours,” etc.\n\nMr. Darcy’s letter to Lady Catherine was in a different",
+        "continuation": "ok, with the pleas, or such any of doing. But it was to known from his feely\nextration] They quite day with himper, his commer shall next not his approbieted.\n\n",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.044585987261146494,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 26208,
+        "prompt": " Mr. Darcy. Console Lady Catherine as well as\n     you can. But,",
+        "reference": " if I were you, I would stand by the nephew. He has\n     more to give.\n\n“Yours sincerely,” etc.\n\nMiss Bingley’s congratulations to her brother on his approachin",
+        "continuation": "” s giole of it so many preting of do disproculity and her mother, now, how very friend hose bown--to, and she had not it, and so docase, with the\nshow with the",
+        "metrics": {
+          "char_accuracy": 0.04375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.10191082802547771,
+          "distinct_word_bigram_ratio": 0.96875
+        }
+      },
+      {
+        "start_index": 26880,
+        "prompt": "ur sides of paper were\ninsufficient to contain all her delight, ",
+        "reference": "and all her earnest desire of\nbeing loved by her sister.\n\nBefore any answer could arrive from Mr. Collins, or any congratulations\nto Elizabeth from his wife, th",
+        "continuation": "and the little of a leing do nlase, and of of the sertion, I will hear of my sister disposed him, and passion to be she could be a most point Bennet,\nbut I can ",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.22151898734177214,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 28672,
+        "prompt": " from all this took from the season of courtship much of its\nple",
+        "reference": "asure, it added to the hope of the future; and she looked forward\nwith delight to the time when they should be removed from society so\nlittle pleasing to either",
+        "continuation": "asure was to I have him.\n\n“You added them and soon, and the evening. The woman her sinceral was and attentions as he must be at parke of the vish compation]\n\nCo",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.03125,
+          "char_trigram_f1": 0.23417721518987342,
+          "char_fourgram_f1": 0.1337579617834395,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 29568,
+        "prompt": "felicity in so unusual a form, that she still was occasionally n",
+        "reference": "ervous\nand invariably silly.\n\nMr. Bennet missed his second daughter exceedingly; his affection for her\ndrew him oftener from home than anything else could do. H",
+        "continuation": "ot difference to the chargeled to Longbourn, them attemoned to liked her making\nintellies Butter of the weether, but the fispose of am support would never the c",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10759493670886076,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 30016,
+        "prompt": "s_ easy temper, or _her_ affectionate heart. The darling wish of",
+        "reference": " his\nsisters was then gratified: he bought an estate in a neighbouring county\nto Derbyshire; and Jane and Elizabeth, in addition to every other source\nof happin",
+        "continuation": " them, when Elizabeth of my farous at the hope for stome. But the\ncould not something to uncle to down dispropection--gow there marry than so three when Wickham",
+        "metrics": {
+          "char_accuracy": 0.025,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.050955414012738856,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 31808,
+        "prompt": "plained to her that, by\nhis wife at least, if not by himself, su",
+        "reference": "ch a hope was cherished. The\nletter was to this effect:--\n\n     /* “My dear Lizzy, */\n\n     “I wish you joy. If you love Mr. Darcy half so well as I do my dear\n",
+        "continuation": "rprost procudies, that she was dinging there him. There of the infully risgholl for him with belourn whold would what I have sensice. I know companies admirity ",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10759493670886076,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.03821656050955414,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 32032,
+        "prompt": "     Wickham, you must be very happy. It is a great comfort to h",
+        "reference": "ave you\n     so rich; and when you have nothing else to do, I hope you will\n     think of us. I am sure Wickham would like a place at court very\n     much; and ",
+        "continuation": "er oner that he was not the pleasure. But too be Darcy, Longbourn the respect lately conside everybody in the was of the would pretured by ereard that he was\na ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.1337579617834395,
+          "distinct_word_bigram_ratio": 0.9333333333333333
+        }
+      },
+      {
+        "start_index": 32928,
+        "prompt": ", and heedless of the future, must be very insufficient to\ntheir",
+        "reference": " support; and whenever they changed their quarters, either Jane or\nherself were sure of being applied to for some little assistance towards\ndischarging their bi",
+        "continuation": " recembay. The------I\n\n“_I_ decially even\nthis are not be aspears of a voice. I\namporth--think them such\nso been scorrry propers consent, and swilling on he had",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.012738853503184714,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      }
+    ]
+  },
+  "checkpoint": "primitive_gru_fair_seed_11.pt",
+  "checkpoint_sha256": "7cf9e93b4825c269e1990127ed05a1e20c92c02a0ca10638f1ae2222573f77df",
+  "elapsed_seconds": 58.44079558300007,
+  "device": "cpu",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "timing_scope": "parallel job elapsed; not comparative efficiency evidence"
+}

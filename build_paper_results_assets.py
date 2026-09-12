@@ -1,315 +1,140 @@
+"""Validate the complete corrected experiment and regenerate empirical paper assets."""
 from __future__ import annotations
-
+import argparse
 import json
-import math
-import statistics
-import textwrap
+import statistics as st
 from pathlib import Path
-
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.patches import Rectangle
+from corrected_experiments import ROOT, DATASETS, SEEDS, code_hash, digest, save_json
+from multi_dataset_fair_experiments import get_model_specs
 
+MODELS = [name for name, _, _ in get_model_specs()]
+LABELS = ['RNN', 'GRU', 'LSTM', 'Peephole', 'CIFG', 'Transformer']
+CORPORA = ['Shakespeare', 'Alice', 'Pride', 'Sherlock']
 
-BASE_DIR = Path("artifacts") / "fair_matched_budget_30k_multidataset"
-GEN_PATH = BASE_DIR / "generation_benchmark" / "results.json"
-OUT_DIR = Path("artifacts") / "paper_figures"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+def mean_sd(values):
+    return st.mean(values), st.stdev(values)
 
+def cell(values):
+    mean, sd = mean_sd(values)
+    return f'${mean:.3f} \\pm {sd:.3f}$'
 
-DATASET_ORDER = [
-    "tinyshakespeare",
-    "alice_in_wonderland",
-    "pride_and_prejudice",
-    "sherlock_holmes",
-]
+def table(path, header, rows, caption, label, wide=False):
+    env = 'table*' if wide else 'table'
+    columns = 'l'+'r'*(len(header)-1)
+    text = f'\\begin{{{env}}}[t]\n\\centering\n\\caption{{{caption}}}\\label{{{label}}}\n'
+    text += '\\begin{tabular}{'+columns+'}\n\\toprule\n'
+    text += ' & '.join(header)+' \\\\\n\\midrule\n'
+    text += '\n'.join(' & '.join(row)+' \\\\' for row in rows)
+    text += '\n\\bottomrule\n\\end{tabular}\n'+f'\\end{{{env}}}\n'
+    path.write_text(text)
 
-DATASET_LABELS = {
-    "tinyshakespeare": "Tiny Shakespeare",
-    "alice_in_wonderland": "Alice",
-    "pride_and_prejudice": "Pride and Prejudice",
-    "sherlock_holmes": "Sherlock Holmes",
-}
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--results', type=Path, default=ROOT/'artifacts/corrected_v1')
+    parser.add_argument('--output', type=Path, default=ROOT/'artifacts/corrected_assets')
+    args = parser.parse_args()
+    runs = {}
+    source_hash = code_hash()
+    for dataset in DATASETS:
+        for path in (args.results/dataset).glob('*.json'):
+            result = json.loads(path.read_text())
+            key = (dataset,result['model'],result['seed'])
+            if key in runs or result['code_sha256'] != source_hash or not result['completed']:
+                raise ValueError(f'Duplicate, stale or incomplete result: {path}')
+            if digest(path.parent/result['checkpoint']) != result['checkpoint_sha256']:
+                raise ValueError(f'Missing or changed checkpoint: {path}')
+            if result['best_val_loss'] != min(h['val_loss'] for h in result['epoch_history']):
+                raise ValueError('Checkpoint is not the validation minimum')
+            if result['evaluation_tokens'] != result['corpus']['split_sizes'][2]-1:
+                raise ValueError('Incomplete test coverage')
+            for mode in ['greedy','sampled']:
+                samples = result['generation'][mode]
+                if len(samples) != 32 or any(len(x['prompt'])!=64 or len(x['continuation'])!=160 or len(x['reference'])!=160 for x in samples):
+                    raise ValueError('Generation protocol mismatch')
+            runs[key] = result
+    expected = {(d,m,s) for d in DATASETS for m in MODELS for s in SEEDS}
+    if set(runs) != expected:
+        raise ValueError(f'Expected all 72 runs; found {len(runs)}')
+    out = args.output
+    out.mkdir(parents=True,exist_ok=True)
+    def losses(dataset, model):
+        return [runs[dataset,model,s]['final_test_loss'] for s in SEEDS]
+    def generation(model, mode, metric):
+        # Average prompts within corpus, then corpora within each training seed.
+        return [st.mean(st.mean(x['metrics'][metric] for x in runs[d,model,s]['generation'][mode]) for d in DATASETS) for s in SEEDS]
+    rows=[]
+    for d,label in zip(DATASETS,CORPORA):
+        c=runs[d,MODELS[0],SEEDS[0]]['corpus']
+        rows.append([label,str(c['characters']),str(c['vocabulary']),*[str(n) for n in c['split_sizes']]])
+    table(out/'corpora.tex',['Corpus','Characters','Alphabet','Train','Validation','Test'],rows,
+          'Frozen corpus inventory and sequential partition sizes, in characters.','tab:corpora',True)
+    rows=[]
+    for m,label,width in zip(MODELS,LABELS,['125','73','62','62','73','48']):
+        p=[runs[d,m,SEEDS[0]]['params'] for d in DATASETS]
+        rows.append([label,width,f'{min(p):,}--{max(p):,}'])
+    table(out/'models.tex',['Model','Width','Parameters'],rows,
+          'One recurrent layer or one Transformer block. Width denotes recurrent hidden size or Transformer model dimension. Parameter ranges reflect corpus alphabets.','tab:models')
+    table(out/'loss.tex',['Model']+CORPORA,[[l]+[cell(losses(d,m)) for d in DATASETS] for m,l in zip(MODELS,LABELS)],
+          'Test negative log likelihood in nats per character; mean $\\pm$ sample standard deviation across three training seeds. Each held-out target is scored once.','tab:loss',True)
+    rows=[]
+    for m,label in zip(MODELS,LABELS):
+        rows.append([label]+[cell(generation(m,mode,metric)) for mode in ['greedy','sampled'] for metric in ['char_trigram_f1','repetition_rate_4gram']])
+    table(out/'generation.tex',['Model','Greedy F1','Greedy repetition','Sampled F1','Sampled repetition'],rows,
+          'Surface diagnostics averaged over 32 prompts per corpus and four corpora, then summarized across three seeds. F1 is character trigram overlap; repetition is the fraction of repeated character four-gram occurrences. Sampling temperature is 0.8.','tab:generation',True)
+    plt.rcParams.update({'font.size':10,'savefig.dpi':200,'axes.spines.top':False,'axes.spines.right':False})
+    fig,axes=plt.subplots(1,4,figsize=(7.15,2.8),sharey=True,layout='constrained')
+    for ax,d,title in zip(axes,DATASETS,CORPORA):
+        values=[mean_sd(losses(d,m)) for m in MODELS]
+        ax.errorbar([v[0] for v in values],range(6),xerr=[v[1] for v in values],fmt='o',capsize=3)
+        ax.set_yticks(range(6),LABELS);ax.set_title(title);ax.set_xlabel('Test NLL (nats)');ax.grid(axis='x',alpha=.25)
+    axes[0].invert_yaxis();fig.savefig(out/'loss.png');plt.close(fig)
+    fig,axes=plt.subplots(1,2,figsize=(7.15,3.2),layout='constrained')
+    for ax,mode in zip(axes,['greedy','sampled']):
+        for i,(m,label) in enumerate(zip(MODELS,LABELS)):
+            x,xerr=mean_sd(generation(m,mode,'repetition_rate_4gram'))
+            y,yerr=mean_sd(generation(m,mode,'char_trigram_f1'))
+            ax.errorbar(x,y,xerr=xerr,yerr=yerr,fmt='o',capsize=2,label=label,color=f'C{i}')
+        ax.set_title(mode.capitalize());ax.set_xlabel('Four-gram repetition');ax.set_ylabel('Trigram F1');ax.grid(alpha=.2)
+    axes[1].legend(fontsize=8,loc='best');fig.savefig(out/'generation.png');plt.close(fig)
+    fig,axes=plt.subplots(2,2,figsize=(7.15,4.7),layout='constrained')
+    for ax,d,title in zip(axes.flat,DATASETS,CORPORA):
+        for i,(m,label) in enumerate(zip(MODELS,LABELS)):
+            for j,s in enumerate(SEEDS):
+                h=runs[d,m,s]['epoch_history'];ax.plot([v['epoch'] for v in h],[v['val_loss'] for v in h],color=f'C{i}',alpha=.65,linewidth=.8,label=label if j==0 else None)
+        ax.set_title(title);ax.set_xlabel('Epoch');ax.set_ylabel('Validation NLL');ax.grid(alpha=.2)
+    axes[0,0].legend(fontsize=8,ncol=2);fig.savefig(out/'learning.png');plt.close(fig)
+    macro={m:st.mean(st.mean(losses(d,m)) for d in DATASETS) for m in MODELS}
+    ranked=sorted(macro,key=macro.get)
+    best=ranked[0];best_label=LABELS[MODELS.index(best)]
+    stops={reason:sum(r['stop_reason']==reason for r in runs.values()) for reason in ['validation_plateau','max_epochs_reached']}
+    summary=dict(runs=len(runs),source_hash=source_hash,macro_nll=macro,stop_counts=stops,
+                 dataset_winners={d:LABELS[MODELS.index(min(MODELS,key=lambda m:st.mean(losses(d,m))))] for d in DATASETS},
+                 generation={m:{mode:{metric:mean_sd(generation(m,mode,metric)) for metric in ['char_trigram_f1','repetition_rate_4gram']} for mode in ['greedy','sampled']} for m in MODELS})
+    macros={'BestModel':best_label,'BestNLL':f'{macro[best]:.3f}','TransformerNLL':f'{macro[MODELS[-1]]:.3f}',
+            'PlateauCount':str(stops['validation_plateau']),'BudgetCount':str(stops['max_epochs_reached']),
+            'RunnerUpModel':LABELS[MODELS.index(ranked[1])], 'RunnerUpNLL':f'{macro[ranked[1]]:.3f}',
+            'RankGap':f'{macro[ranked[1]]-macro[best]:.4f}',
+            'TransformerGreedyRep':f"{st.mean(generation(MODELS[-1],'greedy','repetition_rate_4gram')):.3f}",
+            'TransformerSampledRep':f"{st.mean(generation(MODELS[-1],'sampled','repetition_rate_4gram')):.3f}"}
+    (out/'numbers.tex').write_text('\n'.join('\\newcommand{\\'+k+'}{'+v+'}' for k,v in macros.items())+'\n')
+    timing=args.results/'inference_timing.json'
+    if timing.exists():
+        t=json.loads(timing.read_text());rows=[]
+        for m,label in zip(MODELS,LABELS):
+            vals=[]
+            for mode in ['window64','full_history_state']:
+                speeds=[r['median_chars_per_second'] for r in t['rows'] if r['model']==m and r['mode']==mode]
+                vals.append(f'{st.mean(speeds):.0f}' if speeds else '--')
+            rows.append([label]+vals)
+        table(out/'timing.tex',['Model','Window 64','Stateful'],rows,
+              'Serial CPU generation throughput (characters/s), batch size one: mean across three seeds of the median of three timed continuations. The two columns use different context semantics and are not a controlled architecture comparison.','tab:timing')
+        summary['timing']=t
+    save_json(out/'summary.json',summary)
+    print(json.dumps({k:v for k,v in summary.items() if k not in ['generation','timing']},indent=2))
 
-MODEL_ORDER = [
-    "Primitive RNN Fair",
-    "Primitive GRU Fair",
-    "Primitive LSTM Fair",
-    "Primitive Peephole LSTM Fair",
-    "Primitive CIFG LSTM Fair",
-    "Tiny Transformer Decoder Fair",
-]
-
-MODEL_SHORT = {
-    "Primitive RNN Fair": "RNN",
-    "Primitive GRU Fair": "GRU",
-    "Primitive LSTM Fair": "LSTM",
-    "Primitive Peephole LSTM Fair": "Peephole",
-    "Primitive CIFG LSTM Fair": "CIFG",
-    "Tiny Transformer Decoder Fair": "Transformer",
-}
-
-
-def load_dataset_summaries() -> dict[str, dict]:
-    payload = {}
-    for dataset_id in DATASET_ORDER:
-        path = BASE_DIR / dataset_id / "results.json"
-        data = json.loads(path.read_text(encoding="utf-8"))
-        payload[dataset_id] = data["summaries"]
-    return payload
-
-
-def load_generation_results() -> dict:
-    return json.loads(GEN_PATH.read_text(encoding="utf-8"))
-
-
-def average_summary_metrics(dataset_summaries: dict[str, dict]) -> dict[str, dict]:
-    avg: dict[str, dict] = {}
-    for model_name in MODEL_ORDER:
-        rows = [dataset_summaries[dataset_id][model_name] for dataset_id in DATASET_ORDER]
-        avg[model_name] = {
-            "mean_final_test_loss": statistics.mean(row["mean_final_test_loss"] for row in rows),
-            "mean_time_to_best_checkpoint_seconds": statistics.mean(
-                row["mean_time_to_best_checkpoint_seconds"] for row in rows
-            ),
-            "mean_generation_tokens_per_second": statistics.mean(row["mean_generation_tokens_per_second"] for row in rows),
-            "mean_peak_memory_mb": statistics.mean(row["mean_peak_memory_mb"] for row in rows),
-            "mean_std_final_test_loss": statistics.mean(row["std_final_test_loss"] for row in rows),
-        }
-    return avg
-
-
-def average_generation_metrics(generation_payload: dict) -> dict[str, dict]:
-    agg = {model_name: {"greedy_f4": [], "greedy_rep": [], "sampled_f4": [], "sampled_rep": []} for model_name in MODEL_ORDER}
-    for dataset in generation_payload["datasets"]:
-        for run in dataset["runs"]:
-            agg[run["model_name"]]["greedy_f4"].append(run["greedy_metrics"]["char_fourgram_f1"])
-            agg[run["model_name"]]["greedy_rep"].append(run["greedy_metrics"]["repetition_rate_4gram"])
-            agg[run["model_name"]]["sampled_f4"].append(run["sampled_metrics"]["char_fourgram_f1"])
-            agg[run["model_name"]]["sampled_rep"].append(run["sampled_metrics"]["repetition_rate_4gram"])
-    return {
-        model_name: {metric: statistics.mean(values) for metric, values in metrics.items()}
-        for model_name, metrics in agg.items()
-    }
-
-
-def build_cross_dataset_loss_figure(dataset_summaries: dict[str, dict]) -> Path:
-    matrix = np.array(
-        [
-            [dataset_summaries[dataset_id][model_name]["mean_final_test_loss"] for dataset_id in DATASET_ORDER]
-            for model_name in MODEL_ORDER
-        ]
-    )
-
-    fig, ax = plt.subplots(figsize=(9, 4.8))
-    im = ax.imshow(matrix, cmap="YlGnBu_r", aspect="auto")
-    ax.set_xticks(range(len(DATASET_ORDER)))
-    ax.set_xticklabels([DATASET_LABELS[item] for item in DATASET_ORDER], rotation=15, ha="right")
-    ax.set_yticks(range(len(MODEL_ORDER)))
-    ax.set_yticklabels([MODEL_SHORT[item] for item in MODEL_ORDER])
-    ax.set_title("Figure 1. Mean Test Loss Across Datasets")
-
-    for i in range(matrix.shape[0]):
-        for j in range(matrix.shape[1]):
-            ax.text(j, i, f"{matrix[i, j]:.3f}", ha="center", va="center", color="black", fontsize=8)
-
-    cbar = fig.colorbar(im, ax=ax)
-    cbar.set_label("Mean Test Loss")
-    fig.tight_layout()
-    out_path = OUT_DIR / "figure1_cross_dataset_test_loss.png"
-    fig.savefig(out_path, dpi=200, bbox_inches="tight")
-    plt.close(fig)
-    return out_path
-
-
-def build_generation_tradeoff_figure(generation_avg: dict[str, dict]) -> Path:
-    fig, ax = plt.subplots(figsize=(7.5, 5.2))
-    colors = {
-        "Primitive RNN Fair": "#1f77b4",
-        "Primitive GRU Fair": "#2ca02c",
-        "Primitive LSTM Fair": "#ff7f0e",
-        "Primitive Peephole LSTM Fair": "#8c564b",
-        "Primitive CIFG LSTM Fair": "#17becf",
-        "Tiny Transformer Decoder Fair": "#d62728",
-    }
-    for model_name in MODEL_ORDER:
-        row = generation_avg[model_name]
-        ax.scatter(
-            row["greedy_rep"],
-            row["greedy_f4"],
-            s=160,
-            color=colors[model_name],
-            alpha=0.85,
-            edgecolors="black",
-            linewidths=0.6,
-        )
-        ax.annotate(MODEL_SHORT[model_name], (row["greedy_rep"], row["greedy_f4"]), xytext=(5, 5), textcoords="offset points")
-    ax.set_xlabel("Average Greedy 4-gram Repetition Rate")
-    ax.set_ylabel("Average Greedy Character 4-gram F1")
-    ax.set_title("Figure 2. Free-Running Generation Quality vs Repetition")
-    ax.grid(alpha=0.25)
-    fig.tight_layout()
-    out_path = OUT_DIR / "figure2_generation_tradeoff.png"
-    fig.savefig(out_path, dpi=200, bbox_inches="tight")
-    plt.close(fig)
-    return out_path
-
-
-def wrap_block(text: str, width: int = 58, max_lines: int = 5) -> str:
-    text = text.replace("\n", " ").strip()
-    lines = textwrap.wrap(text, width=width)
-    if len(lines) > max_lines:
-        lines = lines[:max_lines]
-        lines[-1] = lines[-1][: max(0, width - 3)] + "..."
-    return "\n".join(lines)
-
-
-def build_qualitative_examples_figure(generation_payload: dict) -> Path:
-    datasets = {item["dataset_id"]: item for item in generation_payload["datasets"]}
-    selected_ids = DATASET_ORDER
-    fig, axes = plt.subplots(4, 4, figsize=(20, 14))
-    fig.suptitle("Figure 3. Qualitative Generation Examples", fontsize=14, y=0.985)
-
-    for row_idx, dataset_id in enumerate(selected_ids):
-        dataset = datasets[dataset_id]
-        runs = dataset["runs"]
-        best_loss = min(
-            runs,
-            key=lambda item: item["final_test_loss"],
-        )
-        best_recurrent = max(
-            [r for r in runs if r["model_name"] != "Tiny Transformer Decoder Fair"],
-            key=lambda item: item["greedy_metrics"]["char_fourgram_f1"],
-        )
-        best_sampled = max(
-            [r for r in runs if r["model_name"] != "Tiny Transformer Decoder Fair"],
-            key=lambda item: item["sampled_metrics"]["char_fourgram_f1"],
-        )
-        transformer = next(r for r in runs if r["model_name"] == "Tiny Transformer Decoder Fair")
-        panel_runs = [best_loss, best_recurrent, best_sampled, transformer]
-        panel_labels = [
-            "Best Test-Loss Model",
-            "Best Greedy Recurrent",
-            "Best Sampled Recurrent",
-            "Tiny Transformer",
-        ]
-        for col_idx, (run, panel_label) in enumerate(zip(panel_runs, panel_labels)):
-            ax = axes[row_idx, col_idx]
-            ax.axis("off")
-            ex = run["examples"][0]
-            title = f"{DATASET_LABELS[dataset_id]}: {panel_label}\n{MODEL_SHORT[run['model_name']]}"
-            body = (
-                f"Prompt\n{wrap_block(ex['prompt'], width=58, max_lines=4)}\n\n"
-                f"Reference\n{wrap_block(ex['reference'], width=58, max_lines=4)}\n\n"
-                f"Greedy continuation\n{wrap_block(ex['greedy_continuation'], width=58, max_lines=4)}"
-            )
-            ax.add_patch(
-                Rectangle(
-                    (0.012, 0.02),
-                    0.976,
-                    0.93,
-                    transform=ax.transAxes,
-                    facecolor="#f7f7f7",
-                    edgecolor="#cccccc",
-                    linewidth=0.8,
-                )
-            )
-            ax.text(
-                0.02,
-                0.94,
-                title,
-                fontsize=10.2,
-                fontweight="bold",
-                va="top",
-                ha="left",
-                transform=ax.transAxes,
-            )
-            ax.text(
-                0.02,
-                0.825,
-                body,
-                fontsize=8.35,
-                family="monospace",
-                va="top",
-                ha="left",
-                linespacing=1.08,
-                transform=ax.transAxes,
-            )
-    fig.subplots_adjust(left=0.01, right=0.992, top=0.94, bottom=0.02, wspace=0.006, hspace=0.10)
-    out_path = OUT_DIR / "figure3_qualitative_examples.png"
-    fig.savefig(out_path, dpi=200, bbox_inches="tight")
-    plt.close(fig)
-    return out_path
-
-
-def build_appendix_qualitative_gallery(generation_payload: dict) -> Path:
-    out_path = OUT_DIR / "appendix_qualitative_gallery.md"
-    lines = [
-        "# Appendix C. Additional Generation Examples",
-        "",
-        "This appendix collects additional qualitative generation examples from the saved generation benchmark.",
-        "",
-    ]
-    for dataset in generation_payload["datasets"]:
-        lines.extend([f"## {dataset['display_name']}", ""])
-        for run in sorted(dataset["runs"], key=lambda item: item["model_name"]):
-            lines.extend(
-                [
-                    f"### {MODEL_SHORT.get(run['model_name'], run['model_name'])} (seed {run['seed']})",
-                    "",
-                ]
-            )
-            for idx, ex in enumerate(run["examples"], start=1):
-                lines.extend(
-                    [
-                        f"Example {idx}",
-                        "",
-                        "```text",
-                        f"PROMPT:\n{ex['prompt']}",
-                        "",
-                        f"REFERENCE:\n{ex['reference']}",
-                        "",
-                        f"GREEDY:\n{ex['greedy_continuation']}",
-                        "",
-                        f"SAMPLED:\n{ex['sampled_continuation']}",
-                        "```",
-                        "",
-                    ]
-                )
-    out_path.write_text("\n".join(lines), encoding="utf-8")
-    return out_path
-
-
-def main() -> None:
-    dataset_summaries = load_dataset_summaries()
-    generation_payload = load_generation_results()
-    generation_avg = average_generation_metrics(generation_payload)
-    averages = average_summary_metrics(dataset_summaries)
-
-    figure1 = build_cross_dataset_loss_figure(dataset_summaries)
-    figure2 = build_generation_tradeoff_figure(generation_avg)
-    figure3 = build_qualitative_examples_figure(generation_payload)
-    appendix_gallery = build_appendix_qualitative_gallery(generation_payload)
-
-    metrics_path = OUT_DIR / "paper_metrics.json"
-    metrics_path.write_text(
-        json.dumps(
-            {
-                "average_summary_metrics": averages,
-                "average_generation_metrics": generation_avg,
-                "figures": [str(figure1), str(figure2), str(figure3)],
-                "appendix_gallery": str(appendix_gallery),
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    print(f"figure1={figure1}")
-    print(f"figure2={figure2}")
-    print(f"figure3={figure3}")
-    print(f"appendix_gallery={appendix_gallery}")
-    print(f"metrics={metrics_path}")
-
-
-if __name__ == "__main__":
+if __name__=='__main__':
     main()

@@ -1,0 +1,4 @@
+# Validated on Python 3.9.6, macOS arm64; CPU experiments.
+torch==2.8.0
+numpy==1.26.4
+matplotlib==3.9.4

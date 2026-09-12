@@ -1,12 +1,7 @@
+from __future__ import annotations
+import torch
 from torch import nn
-
 from primitive_peephole_lstm import PrimitivePeepholeLSTMBackbone
-from primitive_usage_helpers import train_variant_until_test_reverses
-
-# USAGE FILE
-# This file does not define the primitive peephole LSTM architecture itself.
-# It only shows how to use the architecture inside a character-level language-model workflow.
-
 
 class PrimitiveCharPeepholeLSTMLanguageModel(nn.Module):
     # Equation set (B1) in primitive_peephole_lstm_usage.md:
@@ -24,26 +19,3 @@ class PrimitiveCharPeepholeLSTMLanguageModel(nn.Module):
         hidden_sequence, _ = self.backbone(embedded)
         logits = self.output(hidden_sequence)
         return logits
-
-
-def train_until_test_reverses() -> None:
-    train_variant_until_test_reverses(
-        model_factory=lambda vocab_size: PrimitiveCharPeepholeLSTMLanguageModel(vocab_size, embed_dim=32, hidden_dim=64),
-        checkpoint_filename="primitive_peephole_lstm_best_checkpoint.pt",
-        report_filename="primitive_peephole_lstm_report.md",
-        report_title="Primitive Peephole LSTM Report",
-        usage_filename="primitive_peephole_lstm_usage.py",
-        architecture_filename="primitive_peephole_lstm.py",
-        usage_markdown_filename="primitive_peephole_lstm_usage.md",
-        explanation_heading="Why Peephole LSTM Behaves Differently",
-        explanation_lines=[
-            "The gates can inspect the cell state directly through the peephole terms.",
-            "That can help the model make finer gating decisions about memory timing.",
-            "It is still a causal recurrent model, unlike the bidirectional variants.",
-            "So it is a closer drop-in comparison against the ordinary LSTM.",
-        ],
-    )
-
-
-if __name__ == "__main__":
-    train_until_test_reverses()

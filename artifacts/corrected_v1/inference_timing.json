@@ -1,0 +1,411 @@
+{
+  "rows": [
+    {
+      "model": "Primitive CIFG LSTM Fair",
+      "seed": 11,
+      "mode": "window64",
+      "seconds": [
+        0.1972937910000001,
+        0.2008859999999999,
+        0.19527300000000003
+      ],
+      "median_chars_per_second": 648.7786531508228,
+      "checkpoint_sha256": "9912498991015dbf83d43e5f2a606b4b96f26e813f930c7578aaeead189bfffc"
+    },
+    {
+      "model": "Primitive CIFG LSTM Fair",
+      "seed": 11,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006485000000000074,
+        0.006488249999999862,
+        0.006490458000000032
+      ],
+      "median_chars_per_second": 19727.969791546675,
+      "checkpoint_sha256": "9912498991015dbf83d43e5f2a606b4b96f26e813f930c7578aaeead189bfffc"
+    },
+    {
+      "model": "Primitive CIFG LSTM Fair",
+      "seed": 19,
+      "mode": "window64",
+      "seconds": [
+        0.194000583,
+        0.1933572079999999,
+        0.1963716670000002
+      ],
+      "median_chars_per_second": 659.7918316565059,
+      "checkpoint_sha256": "1bc59883ca2eea2bbfac8f7d6b276aec7c0fd1feda3b0b966bd0ceed52addd4c"
+    },
+    {
+      "model": "Primitive CIFG LSTM Fair",
+      "seed": 19,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006809000000000065,
+        0.006756708000000167,
+        0.006747457999999984
+      ],
+      "median_chars_per_second": 18944.136700889965,
+      "checkpoint_sha256": "1bc59883ca2eea2bbfac8f7d6b276aec7c0fd1feda3b0b966bd0ceed52addd4c"
+    },
+    {
+      "model": "Primitive CIFG LSTM Fair",
+      "seed": 7,
+      "mode": "window64",
+      "seconds": [
+        0.19034462499999982,
+        0.19366820800000006,
+        0.1988181670000002
+      ],
+      "median_chars_per_second": 660.9241719219086,
+      "checkpoint_sha256": "9c1a10d48ad511a149e63c8098751cc78211c759edb426e357e2d59587fcddfe"
+    },
+    {
+      "model": "Primitive CIFG LSTM Fair",
+      "seed": 7,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006641624999999873,
+        0.006615124999999722,
+        0.006589958999999812
+      ],
+      "median_chars_per_second": 19349.596568470795,
+      "checkpoint_sha256": "9c1a10d48ad511a149e63c8098751cc78211c759edb426e357e2d59587fcddfe"
+    },
+    {
+      "model": "Primitive GRU Fair",
+      "seed": 11,
+      "mode": "window64",
+      "seconds": [
+        0.19042133399999983,
+        0.1869808749999997,
+        0.18625550000000013
+      ],
+      "median_chars_per_second": 684.5619906313958,
+      "checkpoint_sha256": "540d5243c8b004bfca1f984e0c400d11e9caf1816805e4fae4e26a7f2dd0b328"
+    },
+    {
+      "model": "Primitive GRU Fair",
+      "seed": 11,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006093166000000316,
+        0.006111084000000044,
+        0.006128083000000117
+      ],
+      "median_chars_per_second": 20945.547467519522,
+      "checkpoint_sha256": "540d5243c8b004bfca1f984e0c400d11e9caf1816805e4fae4e26a7f2dd0b328"
+    },
+    {
+      "model": "Primitive GRU Fair",
+      "seed": 19,
+      "mode": "window64",
+      "seconds": [
+        0.18585433299999998,
+        0.18471187500000052,
+        0.18533299999999997
+      ],
+      "median_chars_per_second": 690.648724188353,
+      "checkpoint_sha256": "aff324956e6097c84718922a0e8d14d4c930a9703d896ac5f30d775f7bd9afd0"
+    },
+    {
+      "model": "Primitive GRU Fair",
+      "seed": 19,
+      "mode": "full_history_state",
+      "seconds": [
+        0.0063067499999993615,
+        0.006502916999999719,
+        0.006310541000000391
+      ],
+      "median_chars_per_second": 20283.52244284477,
+      "checkpoint_sha256": "aff324956e6097c84718922a0e8d14d4c930a9703d896ac5f30d775f7bd9afd0"
+    },
+    {
+      "model": "Primitive GRU Fair",
+      "seed": 7,
+      "mode": "window64",
+      "seconds": [
+        0.18471429199999978,
+        0.18419858300000058,
+        0.18416829099999976
+      ],
+      "median_chars_per_second": 694.902196940351,
+      "checkpoint_sha256": "9a61556e97e223f441a3f6c949fdc51cb6565d8f1dc643bc0097d10d7d7a05a0"
+    },
+    {
+      "model": "Primitive GRU Fair",
+      "seed": 7,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006003416999999622,
+        0.006006333000000197,
+        0.005992208000000332
+      ],
+      "median_chars_per_second": 21321.19091510852,
+      "checkpoint_sha256": "9a61556e97e223f441a3f6c949fdc51cb6565d8f1dc643bc0097d10d7d7a05a0"
+    },
+    {
+      "model": "Primitive LSTM Fair",
+      "seed": 11,
+      "mode": "window64",
+      "seconds": [
+        0.16269291700000021,
+        0.1660944579999999,
+        0.1696214170000001
+      ],
+      "median_chars_per_second": 770.6458213072955,
+      "checkpoint_sha256": "922e673679b7d8a2ffc400d664ba1e8960f1e6927cf566c40a99ce1a1ad2b364"
+    },
+    {
+      "model": "Primitive LSTM Fair",
+      "seed": 11,
+      "mode": "full_history_state",
+      "seconds": [
+        0.005740832999999945,
+        0.00567383300000035,
+        0.005515625000000135
+      ],
+      "median_chars_per_second": 22559.705229250158,
+      "checkpoint_sha256": "922e673679b7d8a2ffc400d664ba1e8960f1e6927cf566c40a99ce1a1ad2b364"
+    },
+    {
+      "model": "Primitive LSTM Fair",
+      "seed": 19,
+      "mode": "window64",
+      "seconds": [
+        0.1716915840000004,
+        0.16668929099999996,
+        0.16943724999999965
+      ],
+      "median_chars_per_second": 755.4419113860752,
+      "checkpoint_sha256": "4c31d84146b004e157855d8568bd852a3f323ab4aec463c11ba0440565b28964"
+    },
+    {
+      "model": "Primitive LSTM Fair",
+      "seed": 19,
+      "mode": "full_history_state",
+      "seconds": [
+        0.005883124999999545,
+        0.0060568749999996285,
+        0.005848166999999904
+      ],
+      "median_chars_per_second": 21757.14437480249,
+      "checkpoint_sha256": "4c31d84146b004e157855d8568bd852a3f323ab4aec463c11ba0440565b28964"
+    },
+    {
+      "model": "Primitive LSTM Fair",
+      "seed": 7,
+      "mode": "window64",
+      "seconds": [
+        0.16823833399999977,
+        0.16501204199999986,
+        0.17022254199999942
+      ],
+      "median_chars_per_second": 760.8254133091937,
+      "checkpoint_sha256": "20dd3b20d3c01fa0e5b26144ceaf6e1e2db8e42b61a26b80356699aa85cfb23c"
+    },
+    {
+      "model": "Primitive LSTM Fair",
+      "seed": 7,
+      "mode": "full_history_state",
+      "seconds": [
+        0.005617208000000318,
+        0.005807374999999837,
+        0.005624041999999996
+      ],
+      "median_chars_per_second": 22759.43173966341,
+      "checkpoint_sha256": "20dd3b20d3c01fa0e5b26144ceaf6e1e2db8e42b61a26b80356699aa85cfb23c"
+    },
+    {
+      "model": "Primitive Peephole LSTM Fair",
+      "seed": 11,
+      "mode": "window64",
+      "seconds": [
+        0.19749433399999994,
+        0.20683291599999976,
+        0.19653829099999953
+      ],
+      "median_chars_per_second": 648.1198594791081,
+      "checkpoint_sha256": "13fbafc70ba35d5c33b947dad9354a31ee3cfc31ee47bba4d121206f44513e06"
+    },
+    {
+      "model": "Primitive Peephole LSTM Fair",
+      "seed": 11,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006120250000000382,
+        0.006098292000000782,
+        0.006095416000000853
+      ],
+      "median_chars_per_second": 20989.483612785938,
+      "checkpoint_sha256": "13fbafc70ba35d5c33b947dad9354a31ee3cfc31ee47bba4d121206f44513e06"
+    },
+    {
+      "model": "Primitive Peephole LSTM Fair",
+      "seed": 19,
+      "mode": "window64",
+      "seconds": [
+        0.1993866250000007,
+        0.19769087499999927,
+        0.20243966700000016
+      ],
+      "median_chars_per_second": 641.9688381805928,
+      "checkpoint_sha256": "6677d858e5ed76edee7f2b5c5585684a6d04f2a627033283cd579ce28657ef40"
+    },
+    {
+      "model": "Primitive Peephole LSTM Fair",
+      "seed": 19,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006314707999999669,
+        0.006225499999999329,
+        0.0061839170000013155
+      ],
+      "median_chars_per_second": 20560.59754236829,
+      "checkpoint_sha256": "6677d858e5ed76edee7f2b5c5585684a6d04f2a627033283cd579ce28657ef40"
+    },
+    {
+      "model": "Primitive Peephole LSTM Fair",
+      "seed": 7,
+      "mode": "window64",
+      "seconds": [
+        0.19827933300000034,
+        0.20480124999999916,
+        0.19444991599999994
+      ],
+      "median_chars_per_second": 645.5539166051148,
+      "checkpoint_sha256": "a5f49a1f3ed5de0b6bc36e7a9ee7942a97a45423166fadb0eea277718bd9c1b0"
+    },
+    {
+      "model": "Primitive Peephole LSTM Fair",
+      "seed": 7,
+      "mode": "full_history_state",
+      "seconds": [
+        0.006080208000000198,
+        0.006173583000000704,
+        0.006320999999999799
+      ],
+      "median_chars_per_second": 20733.50273252751,
+      "checkpoint_sha256": "a5f49a1f3ed5de0b6bc36e7a9ee7942a97a45423166fadb0eea277718bd9c1b0"
+    },
+    {
+      "model": "Primitive RNN Fair",
+      "seed": 11,
+      "mode": "window64",
+      "seconds": [
+        0.07563658299999965,
+        0.07516333300000078,
+        0.07491679199999979
+      ],
+      "median_chars_per_second": 1702.9580101244137,
+      "checkpoint_sha256": "8cf332466da72789e1a12c021138ad07b0872459aace893e8bf372c5e861da3b"
+    },
+    {
+      "model": "Primitive RNN Fair",
+      "seed": 11,
+      "mode": "full_history_state",
+      "seconds": [
+        0.0034605830000007387,
+        0.0034510830000016313,
+        0.003459416000000104
+      ],
+      "median_chars_per_second": 37000.464818338165,
+      "checkpoint_sha256": "8cf332466da72789e1a12c021138ad07b0872459aace893e8bf372c5e861da3b"
+    },
+    {
+      "model": "Primitive RNN Fair",
+      "seed": 19,
+      "mode": "window64",
+      "seconds": [
+        0.07352004200000017,
+        0.07214304200000043,
+        0.0728582090000014
+      ],
+      "median_chars_per_second": 1756.837036716035,
+      "checkpoint_sha256": "c9adcc21b260cc3556ad879bacad45ef4f2178239d65bb4e724d3042a5091861"
+    },
+    {
+      "model": "Primitive RNN Fair",
+      "seed": 19,
+      "mode": "full_history_state",
+      "seconds": [
+        0.0035059589999999474,
+        0.0034198340000006766,
+        0.0034709579999994133
+      ],
+      "median_chars_per_second": 36877.42692363942,
+      "checkpoint_sha256": "c9adcc21b260cc3556ad879bacad45ef4f2178239d65bb4e724d3042a5091861"
+    },
+    {
+      "model": "Primitive RNN Fair",
+      "seed": 7,
+      "mode": "window64",
+      "seconds": [
+        0.07278449999999914,
+        0.07424054200000008,
+        0.07413254199999919
+      ],
+      "median_chars_per_second": 1726.6371359557777,
+      "checkpoint_sha256": "0cefdd2864421abe61fcf7d932d192a601ad0aa7f3bee17c90abcd57aae6a083"
+    },
+    {
+      "model": "Primitive RNN Fair",
+      "seed": 7,
+      "mode": "full_history_state",
+      "seconds": [
+        0.0035139170000011433,
+        0.003483083000000775,
+        0.003487041999999718
+      ],
+      "median_chars_per_second": 36707.32959339473,
+      "checkpoint_sha256": "0cefdd2864421abe61fcf7d932d192a601ad0aa7f3bee17c90abcd57aae6a083"
+    },
+    {
+      "model": "Tiny Transformer Decoder Fair",
+      "seed": 11,
+      "mode": "window64",
+      "seconds": [
+        0.021917333000001094,
+        0.021322833999999347,
+        0.021150666000000484
+      ],
+      "median_chars_per_second": 6002.954391522437,
+      "checkpoint_sha256": "83b6e389dbb9d24b7cf9336d805a8ea69a0440c87f7f42107ebaa02552d42eac"
+    },
+    {
+      "model": "Tiny Transformer Decoder Fair",
+      "seed": 19,
+      "mode": "window64",
+      "seconds": [
+        0.02143845900000052,
+        0.021368416999999695,
+        0.021853832999999767
+      ],
+      "median_chars_per_second": 5970.578389052912,
+      "checkpoint_sha256": "923fc5767c95434121e6c0b8c5ac804cc5bb024ca423e15dd4e3f6fc16898a91"
+    },
+    {
+      "model": "Tiny Transformer Decoder Fair",
+      "seed": 7,
+      "mode": "window64",
+      "seconds": [
+        0.021261416999999838,
+        0.021241583999998426,
+        0.021183541999999278
+      ],
+      "median_chars_per_second": 6025.915958057059,
+      "checkpoint_sha256": "c16be4459d35248601fbae9584c83f40d5e1be23349a348865af6a01675e7cec"
+    }
+  ],
+  "hardware": "Apple M4 Max",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "threads": 1,
+  "batch_size": 1,
+  "prompt_length": 64,
+  "continuation": 128,
+  "warmups": 1,
+  "repeats": 3,
+  "scope": "serial CPU wall time including prefill and token selection; no training speed claim"
+}

@@ -1,0 +1,381 @@
+{
+  "config": {
+    "version": 1,
+    "sequence_length": 64,
+    "batch_size": 32,
+    "steps_per_epoch": 100,
+    "max_epochs": 50,
+    "patience": 5,
+    "min_delta": 0.002,
+    "learning_rate": 0.001,
+    "prompts": 32,
+    "continuation": 160,
+    "temperature": 0.8,
+    "threads": 1,
+    "alphabet": "closed_corpus",
+    "evaluation": "full_disjoint_blocks"
+  },
+  "jobs": [
+    [
+      "tinyshakespeare",
+      "Primitive RNN Fair",
+      7
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive RNN Fair",
+      11
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive RNN Fair",
+      19
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive GRU Fair",
+      7
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive GRU Fair",
+      11
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive GRU Fair",
+      19
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive LSTM Fair",
+      7
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive LSTM Fair",
+      11
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive LSTM Fair",
+      19
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive Peephole LSTM Fair",
+      7
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive Peephole LSTM Fair",
+      11
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive Peephole LSTM Fair",
+      19
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive CIFG LSTM Fair",
+      7
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive CIFG LSTM Fair",
+      11
+    ],
+    [
+      "tinyshakespeare",
+      "Primitive CIFG LSTM Fair",
+      19
+    ],
+    [
+      "tinyshakespeare",
+      "Tiny Transformer Decoder Fair",
+      7
+    ],
+    [
+      "tinyshakespeare",
+      "Tiny Transformer Decoder Fair",
+      11
+    ],
+    [
+      "tinyshakespeare",
+      "Tiny Transformer Decoder Fair",
+      19
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive RNN Fair",
+      7
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive RNN Fair",
+      11
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive RNN Fair",
+      19
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive GRU Fair",
+      7
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive GRU Fair",
+      11
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive GRU Fair",
+      19
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive LSTM Fair",
+      7
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive LSTM Fair",
+      11
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive LSTM Fair",
+      19
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive Peephole LSTM Fair",
+      7
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive Peephole LSTM Fair",
+      11
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive Peephole LSTM Fair",
+      19
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive CIFG LSTM Fair",
+      7
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive CIFG LSTM Fair",
+      11
+    ],
+    [
+      "alice_in_wonderland",
+      "Primitive CIFG LSTM Fair",
+      19
+    ],
+    [
+      "alice_in_wonderland",
+      "Tiny Transformer Decoder Fair",
+      7
+    ],
+    [
+      "alice_in_wonderland",
+      "Tiny Transformer Decoder Fair",
+      11
+    ],
+    [
+      "alice_in_wonderland",
+      "Tiny Transformer Decoder Fair",
+      19
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive RNN Fair",
+      7
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive RNN Fair",
+      11
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive RNN Fair",
+      19
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive GRU Fair",
+      7
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive GRU Fair",
+      11
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive GRU Fair",
+      19
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive LSTM Fair",
+      7
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive LSTM Fair",
+      11
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive LSTM Fair",
+      19
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive Peephole LSTM Fair",
+      7
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive Peephole LSTM Fair",
+      11
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive Peephole LSTM Fair",
+      19
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive CIFG LSTM Fair",
+      7
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive CIFG LSTM Fair",
+      11
+    ],
+    [
+      "pride_and_prejudice",
+      "Primitive CIFG LSTM Fair",
+      19
+    ],
+    [
+      "pride_and_prejudice",
+      "Tiny Transformer Decoder Fair",
+      7
+    ],
+    [
+      "pride_and_prejudice",
+      "Tiny Transformer Decoder Fair",
+      11
+    ],
+    [
+      "pride_and_prejudice",
+      "Tiny Transformer Decoder Fair",
+      19
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive RNN Fair",
+      7
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive RNN Fair",
+      11
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive RNN Fair",
+      19
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive GRU Fair",
+      7
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive GRU Fair",
+      11
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive GRU Fair",
+      19
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive LSTM Fair",
+      7
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive LSTM Fair",
+      11
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive LSTM Fair",
+      19
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive Peephole LSTM Fair",
+      7
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive Peephole LSTM Fair",
+      11
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive Peephole LSTM Fair",
+      19
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive CIFG LSTM Fair",
+      7
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive CIFG LSTM Fair",
+      11
+    ],
+    [
+      "sherlock_holmes",
+      "Primitive CIFG LSTM Fair",
+      19
+    ],
+    [
+      "sherlock_holmes",
+      "Tiny Transformer Decoder Fair",
+      7
+    ],
+    [
+      "sherlock_holmes",
+      "Tiny Transformer Decoder Fair",
+      11
+    ],
+    [
+      "sherlock_holmes",
+      "Tiny Transformer Decoder Fair",
+      19
+    ]
+  ],
+  "source_hash": "20fdba9a3f29555f63cdd9dfffeddd266c8f3bcd80bab5faa81b796710873772"
+}

@@ -1,0 +1,1154 @@
+{
+  "signature": "37923d73b7e6db38c17dec297b2e76fdc01c70b3f0bd021888bd289ba8fa2808",
+  "code_sha256": "20fdba9a3f29555f63cdd9dfffeddd266c8f3bcd80bab5faa81b796710873772",
+  "config": {
+    "version": 1,
+    "sequence_length": 64,
+    "batch_size": 32,
+    "steps_per_epoch": 100,
+    "max_epochs": 50,
+    "patience": 5,
+    "min_delta": 0.002,
+    "learning_rate": 0.001,
+    "prompts": 32,
+    "continuation": 160,
+    "temperature": 0.8,
+    "threads": 1,
+    "alphabet": "closed_corpus",
+    "evaluation": "full_disjoint_blocks"
+  },
+  "corpus": {
+    "dataset": "alice_in_wonderland",
+    "sha256": "a4c81ef23eb99f8b14be2474be0410b708cc99293ce6d88cf6799335926639b9",
+    "characters": 144530,
+    "vocabulary": 75,
+    "split_sizes": [
+      130077,
+      7226,
+      7227
+    ],
+    "heldout_only_characters": []
+  },
+  "model": "Primitive RNN Fair",
+  "seed": 19,
+  "params": 31600,
+  "best_epoch": 40,
+  "best_val_loss": 1.5631552345777466,
+  "final_test_loss": 1.6299366828249064,
+  "test_ppl": 5.103551565838183,
+  "evaluation_tokens": 7226,
+  "stop_reason": "validation_plateau",
+  "completed": true,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.9316148161888123,
+      "val_loss": 2.49626939608564
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.342619762420654,
+      "val_loss": 2.2176713166022384
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.121414619684219,
+      "val_loss": 2.0712191022721127
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.9981955802440643,
+      "val_loss": 1.9808749421327585
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.9067235863208771,
+      "val_loss": 1.9096778019571798
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.8426524651050569,
+      "val_loss": 1.8579515841262977
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.7830016350746154,
+      "val_loss": 1.8202436696616837
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.7337355482578278,
+      "val_loss": 1.7840580849829017
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.7053479719161988,
+      "val_loss": 1.753629537932188
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.6738666462898255,
+      "val_loss": 1.7388248198090128
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.645486706495285,
+      "val_loss": 1.7209408748851103
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.6252944409847259,
+      "val_loss": 1.702593252848589
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.5926758980751037,
+      "val_loss": 1.692108961059148
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.5802542293071746,
+      "val_loss": 1.674403986419361
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.559471389055252,
+      "val_loss": 1.664152937628406
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.5470722174644471,
+      "val_loss": 1.6468773146896627
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.5394865596294403,
+      "val_loss": 1.6410098277161278
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.5302346599102021,
+      "val_loss": 1.631424473957207
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.5079830944538117,
+      "val_loss": 1.6256583982685446
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.5020376718044282,
+      "val_loss": 1.6147985565291143
+    },
+    {
+      "epoch": 21,
+      "train_loss": 1.4891142880916595,
+      "val_loss": 1.6169315768443178
+    },
+    {
+      "epoch": 22,
+      "train_loss": 1.4814493405818938,
+      "val_loss": 1.6079546992424039
+    },
+    {
+      "epoch": 23,
+      "train_loss": 1.4661955869197845,
+      "val_loss": 1.6017601567568664
+    },
+    {
+      "epoch": 24,
+      "train_loss": 1.4644180297851563,
+      "val_loss": 1.5983274983864755
+    },
+    {
+      "epoch": 25,
+      "train_loss": 1.4538277614116668,
+      "val_loss": 1.5956618470716641
+    },
+    {
+      "epoch": 26,
+      "train_loss": 1.4461651051044464,
+      "val_loss": 1.59042360087992
+    },
+    {
+      "epoch": 27,
+      "train_loss": 1.4414867293834686,
+      "val_loss": 1.5835516019510976
+    },
+    {
+      "epoch": 28,
+      "train_loss": 1.4333505463600158,
+      "val_loss": 1.5869643658172714
+    },
+    {
+      "epoch": 29,
+      "train_loss": 1.4271844244003296,
+      "val_loss": 1.5805855700218967
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.41936173081398,
+      "val_loss": 1.5801819660754353
+    },
+    {
+      "epoch": 31,
+      "train_loss": 1.4107113230228423,
+      "val_loss": 1.5776333438648897
+    },
+    {
+      "epoch": 32,
+      "train_loss": 1.4189073741436005,
+      "val_loss": 1.5697134061503162
+    },
+    {
+      "epoch": 33,
+      "train_loss": 1.4016099071502686,
+      "val_loss": 1.5736834083213938
+    },
+    {
+      "epoch": 34,
+      "train_loss": 1.3993300914764404,
+      "val_loss": 1.5690523214901195
+    },
+    {
+      "epoch": 35,
+      "train_loss": 1.3883880186080932,
+      "val_loss": 1.56355975299558
+    },
+    {
+      "epoch": 36,
+      "train_loss": 1.3890060698986053,
+      "val_loss": 1.5662631489578829
+    },
+    {
+      "epoch": 37,
+      "train_loss": 1.3865192008018494,
+      "val_loss": 1.566309765878433
+    },
+    {
+      "epoch": 38,
+      "train_loss": 1.3913091540336608,
+      "val_loss": 1.563749039065879
+    },
+    {
+      "epoch": 39,
+      "train_loss": 1.3794373190402984,
+      "val_loss": 1.566358411320353
+    },
+    {
+      "epoch": 40,
+      "train_loss": 1.3721864688396455,
+      "val_loss": 1.5631552345777466
+    }
+  ],
+  "generation": {
+    "greedy": [
+      {
+        "start_index": 0,
+        "prompt": "me like an honest man.”\n\nThere was a general clapping of hands a",
+        "reference": "t this: it was the first really\nclever thing the King had said that day.\n\n“That _proves_ his guilt,” said the Queen.\n\n“It proves nothing of the sort!” said Alic",
+        "continuation": "nd the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the sam",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.21518987341772153,
+          "char_fourgram_f1": 0.1337579617834395,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.24324324324324326
+        }
+      },
+      {
+        "start_index": 224,
+        "prompt": "e. “Why, you don’t even know\nwhat they’re about!”\n\n“Read them,” ",
+        "reference": "said the King.\n\nThe White Rabbit put on his spectacles. “Where shall I begin, please\nyour Majesty?” he asked.\n\n“Begin at the beginning,” the King said gravely, ",
+        "continuation": "said the Mock Turtle she was a little was the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her an",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.05625,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.6114649681528662,
+          "distinct_word_bigram_ratio": 0.4722222222222222
+        }
+      },
+      {
+        "start_index": 448,
+        "prompt": "“and go on till you\ncome to the end: then stop.”\n\nThese were the",
+        "reference": " verses the White Rabbit read:—\n\n“They told me you had been to her,\n    And mentioned me to him:\nShe gave me a good character,\n    But said I could not swim.\n\nH",
+        "continuation": " thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to ",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.19444444444444445
+        }
+      },
+      {
+        "start_index": 672,
+        "prompt": "e sent them word I had not gone\n    (We know it to be true):\nIf ",
+        "reference": "she should push the matter on,\n    What would become of you?\n\nI gave her one, they gave him two,\n    You gave us three or more;\nThey all returned from him to yo",
+        "continuation": "the time the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing the tim",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.08860759493670886,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.7452229299363057,
+          "distinct_word_bigram_ratio": 0.3548387096774194
+        }
+      },
+      {
+        "start_index": 896,
+        "prompt": "u,\n    Though they were mine before.\n\nIf I or she should chance ",
+        "reference": "to be\n    Involved in this affair,\nHe trusts to you to set them free,\n    Exactly as we were.\n\nMy notion was that you had been\n    (Before she had this fit)\nAn ",
+        "continuation": "of the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thi",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.03821656050955414,
+          "repetition_rate_4gram": 0.8152866242038217,
+          "distinct_word_bigram_ratio": 0.24324324324324326
+        }
+      },
+      {
+        "start_index": 1120,
+        "prompt": "obstacle that came between\n    Him, and ourselves, and it.\n\nDon’",
+        "reference": "t let him know she liked them best,\n    For this must ever be\nA secret, kept from all the rest,\n    Between yourself and me.”\n\n“That’s the most important piece ",
+        "continuation": "t be a little was the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to ",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.7197452229299363,
+          "distinct_word_bigram_ratio": 0.32432432432432434
+        }
+      },
+      {
+        "start_index": 1344,
+        "prompt": "of evidence we’ve heard yet,” said the\nKing, rubbing his hands; ",
+        "reference": "“so now let the jury—”\n\n“If any one of them can explain it,” said Alice, (she had grown so\nlarge in the last few minutes that she wasn’t a bit afraid of\ninterru",
+        "continuation": "and the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing the time the",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.732484076433121,
+          "distinct_word_bigram_ratio": 0.3548387096774194
+        }
+      },
+      {
+        "start_index": 1568,
+        "prompt": "pting him,) “I’ll give him sixpence. _I_ don’t believe there’s\na",
+        "reference": "n atom of meaning in it.”\n\nThe jury all wrote down on their slates, “_She_ doesn’t believe there’s\nan atom of meaning in it,” but none of them attempted to expl",
+        "continuation": " long the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the ",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.802547770700637,
+          "distinct_word_bigram_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "start_index": 1792,
+        "prompt": "ain the\npaper.\n\n“If there’s no meaning in it,” said the King, “t",
+        "reference": "hat saves a world of\ntrouble, you know, as we needn’t try to find any. And yet I don’t\nknow,” he went on, spreading out the verses on his knee, and looking at\nt",
+        "continuation": "he poor for the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her an",
+        "metrics": {
+          "char_accuracy": 0.1375,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.11392405063291139,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.2972972972972973
+        }
+      },
+      {
+        "start_index": 2016,
+        "prompt": "hem with one eye; “I seem to see some meaning in them, after all",
+        "reference": ".\n“—_said I could not swim_—” you can’t swim, can you?” he added, turning\nto the Knave.\n\nThe Knave shook his head sadly. “Do I look like it?” he said. (Which he",
+        "continuation": " the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.025477707006369428,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.19444444444444445
+        }
+      },
+      {
+        "start_index": 2240,
+        "prompt": "\ncertainly did _not_, being made entirely of cardboard.)\n\n“All r",
+        "reference": "ight, so far,” said the King, and he went on muttering over the\nverses to himself: “‘_We know it to be true_—’ that’s the jury, of\ncourse—‘_I gave her one, they",
+        "continuation": "ound the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the s",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1962025316455696,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.8152866242038217,
+          "distinct_word_bigram_ratio": 0.24324324324324326
+        }
+      },
+      {
+        "start_index": 2464,
+        "prompt": " gave him two_—’ why, that must be what he\ndid with the tarts, y",
+        "reference": "ou know—”\n\n“But, it goes on ‘_they all returned from him to you_,’” said Alice.\n\n“Why, there they are!” said the King triumphantly, pointing to the\ntarts on the",
+        "continuation": "ou know when the Mock Turtle said the Duchess took the same the thing to her and the same the thing to her and the same the thing to her and the same the thing ",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.04375,
+          "char_trigram_f1": 0.22784810126582278,
+          "char_fourgram_f1": 0.15286624203821655,
+          "repetition_rate_4gram": 0.5477707006369427,
+          "distinct_word_bigram_ratio": 0.5
+        }
+      },
+      {
+        "start_index": 2688,
+        "prompt": " table. “Nothing can be clearer than _that_. Then\nagain—‘_before",
+        "reference": " she had this fit_—’ you never had fits, my dear, I\nthink?” he said to the Queen.\n\n“Never!” said the Queen furiously, throwing an inkstand at the Lizard\nas she ",
+        "continuation": " the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing the time the re",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.17088607594936708,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.7452229299363057,
+          "distinct_word_bigram_ratio": 0.3548387096774194
+        }
+      },
+      {
+        "start_index": 2912,
+        "prompt": "spoke. (The unfortunate little Bill had left off writing on his\n",
+        "reference": "slate with one finger, as he found it made no mark; but he now hastily\nbegan again, using the ink, that was trickling down his face, as long\nas it lasted.)\n\n“Th",
+        "continuation": "the poor for the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her a",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10126582278481013,
+          "char_fourgram_f1": 0.03184713375796178,
+          "repetition_rate_4gram": 0.7579617834394905,
+          "distinct_word_bigram_ratio": 0.2972972972972973
+        }
+      },
+      {
+        "start_index": 3136,
+        "prompt": "en the words don’t _fit_ you,” said the King, looking round the\n",
+        "reference": "court with a smile. There was a dead silence.\n\n“It’s a pun!” the King added in an offended tone, and everybody\nlaughed, “Let the jury consider their verdict,” t",
+        "continuation": "snow and she was a little was the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same t",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.6751592356687898,
+          "distinct_word_bigram_ratio": 0.40540540540540543
+        }
+      },
+      {
+        "start_index": 3360,
+        "prompt": "he King said, for\nabout the twentieth time that day.\n\n“No, no!” ",
+        "reference": "said the Queen. “Sentence first—verdict afterwards.”\n\n“Stuff and nonsense!” said Alice loudly. “The idea of having the\nsentence first!”\n\n“Hold your tongue!” sai",
+        "continuation": "said the Mock Turtle she was a little was the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her an",
+        "metrics": {
+          "char_accuracy": 0.13125,
+          "prefix_match_ratio": 0.05625,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.6114649681528662,
+          "distinct_word_bigram_ratio": 0.4722222222222222
+        }
+      },
+      {
+        "start_index": 3584,
+        "prompt": "d the Queen, turning purple.\n\n“I won’t!” said Alice.\n\n“Off with ",
+        "reference": "her head!” the Queen shouted at the top of her voice. Nobody\nmoved.\n\n“Who cares for you?” said Alice, (she had grown to her full size by\nthis time.) “You’re not",
+        "continuation": "the door and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her a",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.7898089171974523,
+          "distinct_word_bigram_ratio": 0.2702702702702703
+        }
+      },
+      {
+        "start_index": 3808,
+        "prompt": "hing but a pack of cards!”\n\nAt this the whole pack rose up into ",
+        "reference": "the air, and came flying down upon\nher: she gave a little scream, half of fright and half of anger, and\ntried to beat them off, and found herself lying on the b",
+        "continuation": "the thing in a little thing to the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.25949367088607594,
+          "char_fourgram_f1": 0.1464968152866242,
+          "repetition_rate_4gram": 0.732484076433121,
+          "distinct_word_bigram_ratio": 0.3333333333333333
+        }
+      },
+      {
+        "start_index": 4032,
+        "prompt": "ank, with her\nhead in the lap of her sister, who was gently brus",
+        "reference": "hing away some dead\nleaves that had fluttered down from the trees upon her face.\n\n“Wake up, Alice dear!” said her sister; “Why, what a long sleep you’ve\nhad!”\n\n",
+        "continuation": "t had the thing the time the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think t",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.10759493670886076,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.7197452229299363,
+          "distinct_word_bigram_ratio": 0.40625
+        }
+      },
+      {
+        "start_index": 4256,
+        "prompt": "“Oh, I’ve had such a curious dream!” said Alice, and she told he",
+        "reference": "r\nsister, as well as she could remember them, all these strange\nAdventures of hers that you have just been reading about; and when she\nhad finished, her sister ",
+        "continuation": "r head to herself, “I don’t see the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you ",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.12658227848101267,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.554140127388535,
+          "distinct_word_bigram_ratio": 0.5483870967741935
+        }
+      },
+      {
+        "start_index": 4480,
+        "prompt": "kissed her, and said, “It _was_ a curious\ndream, dear, certainly",
+        "reference": ": but now run in to your tea; it’s getting late.”\nSo Alice got up and ran off, thinking while she ran, as well she might,\nwhat a wonderful dream it had been.\n\nB",
+        "continuation": " the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing",
+        "metrics": {
+          "char_accuracy": 0.05,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.0949367088607595,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.8280254777070064,
+          "distinct_word_bigram_ratio": 0.19444444444444445
+        }
+      },
+      {
+        "start_index": 4704,
+        "prompt": "ut her sister sat still just as she left her, leaning her head o",
+        "reference": "n her\nhand, watching the setting sun, and thinking of little Alice and all\nher wonderful Adventures, till she too began dreaming after a fashion,\nand this was h",
+        "continuation": "f the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thin",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2468354430379747,
+          "char_fourgram_f1": 0.1592356687898089,
+          "repetition_rate_4gram": 0.821656050955414,
+          "distinct_word_bigram_ratio": 0.24324324324324326
+        }
+      },
+      {
+        "start_index": 4928,
+        "prompt": "er dream:—\n\nFirst, she dreamed of little Alice herself, and once",
+        "reference": " again the tiny\nhands were clasped upon her knee, and the bright eager eyes were\nlooking up into hers—she could hear the very tones of her voice, and\nsee that q",
+        "continuation": " the time the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing the ti",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.7452229299363057,
+          "distinct_word_bigram_ratio": 0.3548387096774194
+        }
+      },
+      {
+        "start_index": 5152,
+        "prompt": "ueer little toss of her head to keep back the wandering hair\ntha",
+        "reference": "t _would_ always get into her eyes—and still as she listened, or\nseemed to listen, the whole place around her became alive with the\nstrange creatures of her lit",
+        "continuation": "t she was a little was the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thin",
+        "metrics": {
+          "char_accuracy": 0.14375,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.11464968152866242,
+          "repetition_rate_4gram": 0.7070063694267515,
+          "distinct_word_bigram_ratio": 0.3783783783783784
+        }
+      },
+      {
+        "start_index": 5376,
+        "prompt": "tle sister’s dream.\n\nThe long grass rustled at her feet as the W",
+        "reference": "hite Rabbit hurried by—the\nfrightened Mouse splashed his way through the neighbouring pool—she\ncould hear the rattle of the teacups as the March Hare and his fr",
+        "continuation": "hite Rabbit was a little thing to the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the th",
+        "metrics": {
+          "char_accuracy": 0.15625,
+          "prefix_match_ratio": 0.075,
+          "char_trigram_f1": 0.24050632911392406,
+          "char_fourgram_f1": 0.1464968152866242,
+          "repetition_rate_4gram": 0.6687898089171974,
+          "distinct_word_bigram_ratio": 0.3888888888888889
+        }
+      },
+      {
+        "start_index": 5600,
+        "prompt": "iends\nshared their never-ending meal, and the shrill voice of th",
+        "reference": "e Queen\nordering off her unfortunate guests to execution—once more the pig-baby\nwas sneezing on the Duchess’s knee, while plates and dishes crashed\naround it—on",
+        "continuation": "e time the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing the time ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.7452229299363057,
+          "distinct_word_bigram_ratio": 0.3548387096774194
+        }
+      },
+      {
+        "start_index": 5824,
+        "prompt": "ce more the shriek of the Gryphon, the squeaking of the\nLizard’s",
+        "reference": " slate-pencil, and the choking of the suppressed guinea-pigs,\nfilled the air, mixed up with the distant sobs of the miserable Mock\nTurtle.\n\nSo she sat on, with ",
+        "continuation": " and the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing the time th",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.16455696202531644,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.7261146496815286,
+          "distinct_word_bigram_ratio": 0.3870967741935484
+        }
+      },
+      {
+        "start_index": 6048,
+        "prompt": "closed eyes, and half believed herself in\nWonderland, though she",
+        "reference": " knew she had but to open them again, and all\nwould change to dull reality—the grass would be only rustling in the\nwind, and the pool rippling to the waving of ",
+        "continuation": " said to the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same t",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.22151898734177214,
+          "char_fourgram_f1": 0.1464968152866242,
+          "repetition_rate_4gram": 0.7834394904458599,
+          "distinct_word_bigram_ratio": 0.2702702702702703
+        }
+      },
+      {
+        "start_index": 6272,
+        "prompt": "the reeds—the rattling\nteacups would change to tinkling sheep-be",
+        "reference": "lls, and the Queen’s shrill\ncries to the voice of the shepherd boy—and the sneeze of the baby, the\nshriek of the Gryphon, and all the other queer noises, would ",
+        "continuation": "at of the time the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing t",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.12738853503184713,
+          "repetition_rate_4gram": 0.7133757961783439,
+          "distinct_word_bigram_ratio": 0.40625
+        }
+      },
+      {
+        "start_index": 6496,
+        "prompt": "change\n(she knew) to the confused clamour of the busy farm-yard—",
+        "reference": "while the\nlowing of the cattle in the distance would take the place of the Mock\nTurtle’s heavy sobs.\n\nLastly, she pictured to herself how this same little siste",
+        "continuation": "” she said to the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the s",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.22784810126582278,
+          "char_fourgram_f1": 0.1464968152866242,
+          "repetition_rate_4gram": 0.7643312101910829,
+          "distinct_word_bigram_ratio": 0.3157894736842105
+        }
+      },
+      {
+        "start_index": 6720,
+        "prompt": "r of hers\nwould, in the after-time, be herself a grown woman; an",
+        "reference": "d how she would\nkeep, through all her riper years, the simple and loving heart of her\nchildhood: and how she would gather about her other little children,\nand m",
+        "continuation": "d the replied the right you think the thing the time the replied the right you think the thing the time the replied the right you think the thing the time the r",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.06962025316455696,
+          "char_fourgram_f1": 0.01910828025477707,
+          "repetition_rate_4gram": 0.7452229299363057,
+          "distinct_word_bigram_ratio": 0.375
+        }
+      },
+      {
+        "start_index": 6944,
+        "prompt": "ake _their_ eyes bright and eager with many a strange tale,\nperh",
+        "reference": "aps even with the dream of Wonderland of long ago: and how she\nwould feel with all their simple sorrows, and find a pleasure in all\ntheir simple joys, rememberi",
+        "continuation": "aps and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and the same the thing to her and th",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.12025316455696203,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.8089171974522293,
+          "distinct_word_bigram_ratio": 0.24324324324324326
+        }
+      }
+    ],
+    "sampled": [
+      {
+        "start_index": 0,
+        "prompt": "me like an honest man.”\n\nThere was a general clapping of hands a",
+        "reference": "t this: it was the first really\nclever thing the King had said that day.\n\n“That _proves_ his guilt,” said the Queen.\n\n“It proves nothing of the sort!” said Alic",
+        "continuation": "nd\nplame\nto a little drear\nscreadr on, “then begar\nany makes, and made her suchesirg she was this me said there’s now regain.\n\n“Exlloned.\n\n“Turrecked on the tim",
+        "metrics": {
+          "char_accuracy": 0.1375,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.20253164556962025,
+          "char_fourgram_f1": 0.12738853503184713,
+          "repetition_rate_4gram": 0.012738853503184714,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 224,
+        "prompt": "e. “Why, you don’t even know\nwhat they’re about!”\n\n“Read them,” ",
+        "reference": "said the King.\n\nThe White Rabbit put on his spectacles. “Where shall I begin, please\nyour Majesty?” he asked.\n\n“Begin at the beginning,” the King said gravely, ",
+        "continuation": "said the Caterpillar to see int—as the rest only say curuss,’ wouldn’t surner\nthat when you muck in at here here, and be a little come of a gain, the rest a mut",
+        "metrics": {
+          "char_accuracy": 0.125,
+          "prefix_match_ratio": 0.05625,
+          "char_trigram_f1": 0.189873417721519,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 0.96875
+        }
+      },
+      {
+        "start_index": 448,
+        "prompt": "“and go on till you\ncome to the end: then stop.”\n\nThese were the",
+        "reference": " verses the White Rabbit read:—\n\n“They told me you had been to her,\n    And mentioned me to him:\nShe gave me a good character,\n    But said I could not swim.\n\nH",
+        "continuation": "y to go heads it make the plase up of triels, and the poold how not in the when she had cight to herself, you know and said the Cat remoine of make all the good",
+        "metrics": {
+          "char_accuracy": 0.1,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.27848101265822783,
+          "char_fourgram_f1": 0.1464968152866242,
+          "repetition_rate_4gram": 0.11464968152866242,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 672,
+        "prompt": "e sent them word I had not gone\n    (We know it to be true):\nIf ",
+        "reference": "she should push the matter on,\n    What would become of you?\n\nI gave her one, they gave him two,\n    You gave us three or more;\nThey all returned from him to yo",
+        "continuation": "Soure’s poor for she would be of before, bus voice she said there won’t have how not.”\n\n“I had down at the worg on deep and the trees of the Dormouse divall so,",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 896,
+        "prompt": "u,\n    Though they were mine before.\n\nIf I or she should chance ",
+        "reference": "to be\n    Involved in this affair,\nHe trusts to you to set them free,\n    Exactly as we were.\n\nMy notion was that you had been\n    (Before she had this fit)\nAn ",
+        "continuation": "to make were on her hand her wost!” said the Mouse was any looking it had _that it: whes to have got to merious, “so she was very thing had plan the Queen, and ",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.01875,
+          "char_trigram_f1": 0.2468354430379747,
+          "char_fourgram_f1": 0.12738853503184713,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 1120,
+        "prompt": "obstacle that came between\n    Him, and ourselves, and it.\n\nDon’",
+        "reference": "t let him know she liked them best,\n    For this must ever be\nA secret, kept from all the rest,\n    Between yourself and me.”\n\n“That’s the most important piece ",
+        "continuation": "t was large said,\nbut the trumes.\n\nThe Queen in the table the thous, and Alice here,” said Alice, “julouted thought the distant up any moing her callen it must ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.12738853503184713,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 1344,
+        "prompt": "of evidence we’ve heard yet,” said the\nKing, rubbing his hands; ",
+        "reference": "“so now let the jury—”\n\n“If any one of them can explain it,” said Alice, (she had grown so\nlarge in the last few minutes that she wasn’t a bit afraid of\ninterru",
+        "continuation": "and a pighting rings of the garden to her. The Cat, “I dalke to go done, I’m don’t were other out of the purioned the liosing all turned to the thing were her a",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.1518987341772152,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.1337579617834395,
+          "distinct_word_bigram_ratio": 0.9696969696969697
+        }
+      },
+      {
+        "start_index": 1568,
+        "prompt": "pting him,) “I’ll give him sixpence. _I_ don’t believe there’s\na",
+        "reference": "n atom of meaning in it.”\n\nThe jury all wrote down on their slates, “_She_ doesn’t believe there’s\nan atom of meaning in it,” but none of them attempted to expl",
+        "continuation": " time.\n\n“It’s _now yer how way in the sure your was it was each out thrie there was any\nattence.\n\n“Song of thing no a mears that her is the cance in a diffea wh",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.18354430379746836,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 1792,
+        "prompt": "ain the\npaper.\n\n“If there’s no meaning in it,” said the King, “t",
+        "reference": "hat saves a world of\ntrouble, you know, as we needn’t try to find any. And yet I don’t\nknow,” he went on, spreading out the verses on his knee, and looking at\nt",
+        "continuation": "hey, and the thougly at the eat, and she had not arto redance was all the cauring about it, and see her saw in a gring very he gosely up off the made of her cro",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.11464968152866242,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 2016,
+        "prompt": "hem with one eye; “I seem to see some meaning in them, after all",
+        "reference": ".\n“—_said I could not swim_—” you can’t swim, can you?” he added, turning\nto the Knave.\n\nThe Knave shook his head sadly. “Do I look like it?” he said. (Which he",
+        "continuation": "\nseauted.\n\n“Come their who something agave again,” said the Mock Turtle sighthe,”\n\n“It whiculihed there to go was, you mad to sied of the door, who const the st",
+        "metrics": {
+          "char_accuracy": 0.03125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.05732484076433121,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 2240,
+        "prompt": "\ncertainly did _not_, being made entirely of cardboard.)\n\n“All r",
+        "reference": "ight, so far,” said the King, and he went on muttering over the\nverses to himself: “‘_We know it to be true_—’ that’s the jury, of\ncourse—‘_I gave her one, they",
+        "continuation": "ather amather she were founds and then he could herself, amalaid the came again. “What please into the\nhand change of beat of the pool Tight more she can dood, ",
+        "metrics": {
+          "char_accuracy": 0.125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2468354430379747,
+          "char_fourgram_f1": 0.1337579617834395,
+          "repetition_rate_4gram": 0.10191082802547771,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 2464,
+        "prompt": " gave him two_—’ why, that must be what he\ndid with the tarts, y",
+        "reference": "ou know—”\n\n“But, it goes on ‘_they all returned from him to you_,’” said Alice.\n\n“Why, there they are!” said the King triumphantly, pointing to the\ntarts on the",
+        "continuation": "er how she\nherself of the rid_ hall was no not to that he did an its was nore and\nthe please halking Sidly\ngreat dook its finding them, and she was hears would ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.08917197452229299,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 2688,
+        "prompt": " table. “Nothing can be clearer than _that_. Then\nagain—‘_before",
+        "reference": " she had this fit_—’ you never had fits, my dear, I\nthink?” he said to the Queen.\n\n“Never!” said the Queen furiously, throwing an inkstand at the Lizard\nas she ",
+        "continuation": ", and\nmade of beriouss them dreated inters, it have soing one don’t learle soon is so shrpposto reals: that feet it was on readhy for she said the Duchess—“I’d ",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.025477707006369428,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 2912,
+        "prompt": "spoke. (The unfortunate little Bill had left off writing on his\n",
+        "reference": "slate with one finger, as he found it made no mark; but he now hastily\nbegan again, using the ink, that was trickling down his face, as long\nas it lasted.)\n\n“Th",
+        "continuation": "close, and said furr, then, you can’t be who well, and said noes!” the court off-conteds to see\nsenoned to the pooring puzzled the bit.”\n\n“I can’t could it woul",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.15822784810126583,
+          "char_fourgram_f1": 0.0445859872611465,
+          "repetition_rate_4gram": 0.12738853503184713,
+          "distinct_word_bigram_ratio": 0.9655172413793104
+        }
+      },
+      {
+        "start_index": 3136,
+        "prompt": "en the words don’t _fit_ you,” said the King, looking round the\n",
+        "reference": "court with a smile. There was a dead silence.\n\n“It’s a pun!” the King added in an offended tone, and everybody\nlaughed, “Let the jury consider their verdict,” t",
+        "continuation": "wand thought she thought the other all she was never herself to talk his a tell! I\ncany up the liment, but then\nshe had\nbean well,” Alice said to the Caternder ",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.10828025477707007,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 3360,
+        "prompt": "he King said, for\nabout the twentieth time that day.\n\n“No, no!” ",
+        "reference": "said the Queen. “Sentence first—verdict afterwards.”\n\n“Stuff and nonsense!” said Alice loudly. “The idea of having the\nsentence first!”\n\n“Hold your tongue!” sai",
+        "continuation": "said the Mouse to things and you have that it use, and cats after graves\n_for Alice, “and Alice and they were exceething he sime, but she was heam at them douch",
+        "metrics": {
+          "char_accuracy": 0.125,
+          "prefix_match_ratio": 0.05625,
+          "char_trigram_f1": 0.1962025316455696,
+          "char_fourgram_f1": 0.1337579617834395,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 3584,
+        "prompt": "d the Queen, turning purple.\n\n“I won’t!” said Alice.\n\n“Off with ",
+        "reference": "her head!” the Queen shouted at the top of her voice. Nobody\nmoved.\n\n“Who cares for you?” said Alice, (she had grown to her full size by\nthis time.) “You’re not",
+        "continuation": "the\ntried her chattence herself, and had feal were is!’ she was no her know, and one of the Mock Turtle was a voice! However, she sure you scleare\nyou think twi",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.22151898734177214,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 3808,
+        "prompt": "hing but a pack of cards!”\n\nAt this the whole pack rose up into ",
+        "reference": "the air, and came flying down upon\nher: she gave a little scream, half of fright and half of anger, and\ntried to beat them off, and found herself lying on the b",
+        "continuation": "the poor large like a was the Rabbit a beg drabard is to her timby,” Alice sereasing of the stimucup and were thing to the ratter\nlise the Rabbit’s a very get o",
+        "metrics": {
+          "char_accuracy": 0.1125,
+          "prefix_match_ratio": 0.025,
+          "char_trigram_f1": 0.189873417721519,
+          "char_fourgram_f1": 0.08280254777070063,
+          "repetition_rate_4gram": 0.10191082802547771,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4032,
+        "prompt": "ank, with her\nhead in the lap of her sister, who was gently brus",
+        "reference": "hing away some dead\nleaves that had fluttered down from the trees upon her face.\n\n“Wake up, Alice dear!” said her sister; “Why, what a long sleep you’ve\nhad!”\n\n",
+        "continuation": "h down with lader it it eat it_ little of the\nhush the partier found the readly swhise to the pickertues. she was rathous orge that the looked a little but them",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.14556962025316456,
+          "char_fourgram_f1": 0.06369426751592357,
+          "repetition_rate_4gram": 0.10828025477707007,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4256,
+        "prompt": "“Oh, I’ve had such a curious dream!” said Alice, and she told he",
+        "reference": "r\nsister, as well as she could remember them, all these strange\nAdventures of hers that you have just been reading about; and when she\nhad finished, her sister ",
+        "continuation": "r, and Alice and the replied it went on, “—hatter was after again. “Well, think pleced seemed the kidny in her to do never was, then she was he silent it to had",
+        "metrics": {
+          "char_accuracy": 0.05625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.23417721518987342,
+          "char_fourgram_f1": 0.089171974522293,
+          "repetition_rate_4gram": 0.10191082802547771,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4480,
+        "prompt": "kissed her, and said, “It _was_ a curious\ndream, dear, certainly",
+        "reference": ": but now run in to your tea; it’s getting late.”\nSo Alice got up and ran off, thinking while she ran, as well she might,\nwhat a wonderful dream it had been.\n\nB",
+        "continuation": ": “eeld; and the Duchess, they weite been a curious afraid.\n\n“You severes,\nand the door in feeting of the twar to like the lace?\n\n“And whice all to went on not ",
+        "metrics": {
+          "char_accuracy": 0.10625,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.189873417721519,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 0.967741935483871
+        }
+      },
+      {
+        "start_index": 4704,
+        "prompt": "ut her sister sat still just as she left her, leaning her head o",
+        "reference": "n her\nhand, watching the setting sun, and thinking of little Alice and all\nher wonderful Adventures, till she too began dreaming after a fashion,\nand this was h",
+        "continuation": "f id to Alice. “That’s not the cormouse she shouldren got great had a very had you?_” the Mouse, a\nfan any ruch),\n“—that you know with every lastering to hersel",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17088607594936708,
+          "char_fourgram_f1": 0.07006369426751592,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 4928,
+        "prompt": "er dream:—\n\nFirst, she dreamed of little Alice herself, and once",
+        "reference": " again the tiny\nhands were clasped upon her knee, and the bright eager eyes were\nlooking up into hers—she could hear the very tones of her voice, and\nsee that q",
+        "continuation": " wene of the\nbringoned-best ited the both the little give old fealark the Mouse again,” the March Hare.\n\nWhat the Cat: on one Dorming as well king she was not a",
+        "metrics": {
+          "char_accuracy": 0.0625,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 5152,
+        "prompt": "ueer little toss of her head to keep back the wandering hair\ntha",
+        "reference": "t _would_ always get into her eyes—and still as she listened, or\nseemed to listen, the whole place around her became alive with the\nstrange creatures of her lit",
+        "continuation": "t you ratter into the gress cutrre the Duraght it tone, but a feet hall! Is Thought of the said the Mouse one of their taily, jutted angrily! Ouin you knows_ al",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.050955414012738856,
+          "repetition_rate_4gram": 0.08280254777070063,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 5376,
+        "prompt": "tle sister’s dream.\n\nThe long grass rustled at her feet as the W",
+        "reference": "hite Rabbit hurried by—the\nfrightened Mouse splashed his way through the neighbouring pool—she\ncould hear the rattle of the teacups as the March Hare and his fr",
+        "continuation": "hite Rabbit was gomen to rese for the right, with her Dode was for the March Hare of\nthe began beeting her and there your May: they was case us and then _you do",
+        "metrics": {
+          "char_accuracy": 0.11875,
+          "prefix_match_ratio": 0.075,
+          "char_trigram_f1": 0.33544303797468356,
+          "char_fourgram_f1": 0.2229299363057325,
+          "repetition_rate_4gram": 0.12738853503184713,
+          "distinct_word_bigram_ratio": 0.9696969696969697
+        }
+      },
+      {
+        "start_index": 5600,
+        "prompt": "iends\nshared their never-ending meal, and the shrill voice of th",
+        "reference": "e Queen\nordering off her unfortunate guests to execution—once more the pig-baby\nwas sneezing on the Duchess’s knee, while plates and dishes crashed\naround it—on",
+        "continuation": "e roon her chook and the conventandred there was nothing again in choes\ntabbit it\ndong!” thought Alice, as it’s to see muck\nTulk, I’s anxulurrose it get of shal",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.16455696202531644,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.01910828025477707,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 5824,
+        "prompt": "ce more the shriek of the Gryphon, the squeaking of the\nLizard’s",
+        "reference": " slate-pencil, and the choking of the suppressed guinea-pigs,\nfilled the air, mixed up with the distant sobs of the miserable Mock\nTurtle.\n\nSo she sat on, with ",
+        "continuation": " “exancy.\n\n“Dowever himpel: and glinging the Mock Twee there were gow hupt of the talk and change the Firedly stawing to feeting\nfun oo hurried on one oution!” ",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.189873417721519,
+          "char_fourgram_f1": 0.10191082802547771,
+          "repetition_rate_4gram": 0.07006369426751592,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6048,
+        "prompt": "closed eyes, and half believed herself in\nWonderland, though she",
+        "reference": " knew she had but to open them again, and all\nwould change to dull reality—the grass would be only rustling in the\nwind, and the pool rippling to the waving of ",
+        "continuation": " had a blangs. Whoiget, be was gold sering hull was\n_,” when he pit action\nDroor?\n\n“Oh, “I\nwith you rept sharply.\n\nAlice said to the garden, less the\nHatter. “I",
+        "metrics": {
+          "char_accuracy": 0.06875,
+          "prefix_match_ratio": 0.00625,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.09554140127388536,
+          "repetition_rate_4gram": 0.012738853503184714,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6272,
+        "prompt": "the reeds—the rattling\nteacups would change to tinkling sheep-be",
+        "reference": "lls, and the Queen’s shrill\ncries to the voice of the shepherd boy—and the sneeze of the baby, the\nshriek of the Gryphon, and all the other queer noises, would ",
+        "continuation": "ich\nfor her home that a little in the till I can her, of beak hrety crial’s very shory when the Dormouse was eaged to the did grto,” she shoulders?” the Mouse! ",
+        "metrics": {
+          "char_accuracy": 0.08125,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.2088607594936709,
+          "char_fourgram_f1": 0.10828025477707008,
+          "repetition_rate_4gram": 0.06369426751592357,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6496,
+        "prompt": "change\n(she knew) to the confused clamour of the busy farm-yard—",
+        "reference": "while the\nlowing of the cattle in the distance would take the place of the Mock\nTurtle’s heavy sobs.\n\nLastly, she pictured to herself how this same little siste",
+        "continuation": "now in a mucuep, but down with at the utcopiderrose the breaves, and said us, and personed the moment where’s pobsters to up satier: “I don’t cat’s that at laig",
+        "metrics": {
+          "char_accuracy": 0.0875,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.17721518987341772,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.05732484076433121,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6720,
+        "prompt": "r of hers\nwould, in the after-time, be herself a grown woman; an",
+        "reference": "d how she would\nkeep, through all her riper years, the simple and loving heart of her\nchildhood: and how she would gather about her other little children,\nand m",
+        "continuation": "d the White Rabbit as soot! Sooked expee at her one of pupiff to her take over she next butwer to be any like the babying out of them,” said her ledsel the Cate",
+        "metrics": {
+          "char_accuracy": 0.09375,
+          "prefix_match_ratio": 0.0125,
+          "char_trigram_f1": 0.22151898734177214,
+          "char_fourgram_f1": 0.11464968152866242,
+          "repetition_rate_4gram": 0.07643312101910828,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      },
+      {
+        "start_index": 6944,
+        "prompt": "ake _their_ eyes bright and eager with many a strange tale,\nperh",
+        "reference": "aps even with the dream of Wonderland of long ago: and how she\nwould feel with all their simple sorrows, and find a pleasure in all\ntheir simple joys, rememberi",
+        "continuation": "est trotly before left, and he geplied the uponty flought in onet, if you could fertain!” Alice rather any realys there was much,” saie head won’t lites!” (She ",
+        "metrics": {
+          "char_accuracy": 0.075,
+          "prefix_match_ratio": 0.0,
+          "char_trigram_f1": 0.13924050632911392,
+          "char_fourgram_f1": 0.07643312101910828,
+          "repetition_rate_4gram": 0.012738853503184714,
+          "distinct_word_bigram_ratio": 1.0
+        }
+      }
+    ]
+  },
+  "checkpoint": "primitive_rnn_fair_seed_19.pt",
+  "checkpoint_sha256": "b865571d39e690f35e98db3d4a0cc417c94cbf24cc5bbcefb70ea93ff309a131",
+  "elapsed_seconds": 24.908973167,
+  "device": "cpu",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "timing_scope": "parallel job elapsed; not comparative efficiency evidence"
+}

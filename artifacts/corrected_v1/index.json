@@ -1,0 +1,434 @@
+[
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive RNN Fair",
+    "seed": 11,
+    "signature": "9504626e6778436e764a1e3d61e2a292ab09f19797546174e66805863c942eca"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive RNN Fair",
+    "seed": 19,
+    "signature": "e0d1621574e3c7f5a4d0d2f056e23a22d22e8339f250dcae0627feb5a0d7c70f"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive RNN Fair",
+    "seed": 7,
+    "signature": "3e1d65f408f71fa06900cedcb1dfa7f1ff28c1d148abc4555fc21e53a9b4b16f"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive GRU Fair",
+    "seed": 7,
+    "signature": "e7cdb85c40884d946277a7de89ac3937c82a550d1af2698755ce68b98b67df87"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive GRU Fair",
+    "seed": 11,
+    "signature": "afef431333472ce8560c233b33f34598bfa0513c2c1755fe6a63a7180cb82350"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive GRU Fair",
+    "seed": 19,
+    "signature": "ea3c191c15fcf29f64e70025f59afd32c931787046e0c2a03c933437bdd9f1e7"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive LSTM Fair",
+    "seed": 7,
+    "signature": "3df000a50e751a596316f9ef1e980a21e68eaf3b55f4e6cc710ef32e095d9a6a"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive LSTM Fair",
+    "seed": 11,
+    "signature": "92950b0464a627d394e8d3fd34e2ffa45954d0aa43fd0586b3e092a74933d1c6"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive LSTM Fair",
+    "seed": 19,
+    "signature": "9653561da53755a83ede417753d47617422243efd38385f09eb0a4ee526dc932"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 7,
+    "signature": "6447f460901ccdf39b7e5eef12b9fff8468ada9b4cfd907700c7b5a3f9e4236d"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 11,
+    "signature": "1455c67f8f862e8c4f21a8bd3c2811d2b9e2685e9cd92bf1310d35346de0407b"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 19,
+    "signature": "667ff96c59ab3891a6c59b3a52b929eda511c76a4bd8de16ccc94a0cd314704a"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 7,
+    "signature": "ab30e077fa5cade9d9b1f35e158bf94f90d44eac581649e522abdc9ab051c3df"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 11,
+    "signature": "c68ee7e8b2c02960d9dc47f6d6ae7a19a35e71015a329f8845fa24d3bc1e96a3"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 19,
+    "signature": "bacce8154719c8d41806f394e3ffa95a6a94342b0bca9b482e688e60bf26344c"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 7,
+    "signature": "ff669dbc78e8a70c077f93ef9b9d8d6ace6dba21cd279fda3365f8dc5d34f28c"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 11,
+    "signature": "75f21259a06aa5d0511be58dfcf2e878c8ff56f078e4f5b83c27679a84fd6ca1"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive RNN Fair",
+    "seed": 7,
+    "signature": "370c298328440ad12e174e7a7b4e5ecb733ca5eec8c5baf6468729baff4cf6c9"
+  },
+  {
+    "dataset": "tinyshakespeare",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 19,
+    "signature": "f6cab0a49cca58dad8fad92439bcfcbcd850398942f88b7f78e64721e798a4ef"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive RNN Fair",
+    "seed": 11,
+    "signature": "cebb7c4ea7b7b785298720d58dd939ffb8291aab2708695900ef6ea6af1f2746"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive RNN Fair",
+    "seed": 19,
+    "signature": "37923d73b7e6db38c17dec297b2e76fdc01c70b3f0bd021888bd289ba8fa2808"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive GRU Fair",
+    "seed": 11,
+    "signature": "48d22d17f25cfe41cbee42a69f7838f1a65d8249909eefc186e467c27c64ca5c"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive GRU Fair",
+    "seed": 19,
+    "signature": "b5bee93d4682488252e2313424ec9a3776b9ff754cc719f21260beb4b1bc6c15"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive GRU Fair",
+    "seed": 7,
+    "signature": "97167ab332073e32332577c3fc2a8008a7551d286c8fca49211a2920db76143f"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive LSTM Fair",
+    "seed": 7,
+    "signature": "a0e024d28dc96665cc1e0f603a680f4c0ce57f1eaa9845e92f516798b67889d9"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive LSTM Fair",
+    "seed": 11,
+    "signature": "3bf173c9ba91f6942e92f1c7325de44be939bcd06f1fd0946363888270802fe7"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive LSTM Fair",
+    "seed": 19,
+    "signature": "d2669c148d84fb8b15d0edf8b43d9983e68e7681bf9e3f5176ac0fdc55d2d837"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 7,
+    "signature": "72083a12ecdcd83b30ae158058f9b056d1541ce71bda42f286607b0d374e2c26"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 11,
+    "signature": "2a534bf980f91bcf5aeca7e643e56b6e1e548c0eda87a118ddff94cd27e9cb24"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 7,
+    "signature": "9096f158d1591a125101f16c77bd02bfd57f3de7bc1c0a9758f03f31429a8844"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 11,
+    "signature": "8db880da1059cb0a0d3ebd890c5c15206767d56901e796e518532a43c8d3dd83"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 19,
+    "signature": "07ca67e8a3ad85516a1e0b3e0b400da955862b74d74f55ffd20c90ba40f42558"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 19,
+    "signature": "937f536b7a259b7a5487379f14ecf28e0122d09fcd4ec39e3f47cd3234a35a84"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 7,
+    "signature": "3cb1ffbac235d47a6ac9b73b4a302424f3026eee044818f32a67630ef16fcab1"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 11,
+    "signature": "3fb47f65a384b03594b6495d2ba690fd7a1ba4b313004b175c1ea5af7dc9a187"
+  },
+  {
+    "dataset": "alice_in_wonderland",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 19,
+    "signature": "9d2a79e29dbe58ead2370f8b48d6385d73f63433ca0bcccc4169e610ce05b1e6"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive RNN Fair",
+    "seed": 7,
+    "signature": "4818fa121bc4743db53269746b82bcd6c32d0125a435c9e9aaab4b9ab2aed82f"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive RNN Fair",
+    "seed": 11,
+    "signature": "7c24c4233e91f4951604862d581f03603690af9003d93ad4f0de93218ea94fe0"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive RNN Fair",
+    "seed": 19,
+    "signature": "3b7de5169ec5da86099289ba8f4ca785928957458fc3883a98ebfe1c1b096b17"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive GRU Fair",
+    "seed": 7,
+    "signature": "a03cb90f446460e542d3025ba69fb485256b1964f1fd39af14a20244ef14271c"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive GRU Fair",
+    "seed": 11,
+    "signature": "f3fc43a2cdfb740df0768e5777299ef3afd8cf31ad800ac00e350115e27f5513"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive GRU Fair",
+    "seed": 19,
+    "signature": "a33407d8085e15019764f8753d260d35f15633d0af086107361177df56250c2c"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive LSTM Fair",
+    "seed": 7,
+    "signature": "108e564fc79afcf284e51f7e1010001e13450f22d687607103c23f50ef3678a1"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive LSTM Fair",
+    "seed": 11,
+    "signature": "e19f6c2eb5b5185a87bd4ac86a6ececd1a93525df6b108d38b4df76ff5ab59d3"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive LSTM Fair",
+    "seed": 19,
+    "signature": "78f3362cd45a6f6a1b31f7e0e0d7bf32b6ff9c8996fd29976296782985297106"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 7,
+    "signature": "b98b2e3695bab23e7ed4ce622d6f431389d87e8bd4776b4239b7df02fd2ba558"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 11,
+    "signature": "037755beeb742da449f8b0396401a3e7b5142bc0a6cea642344a822a9d4467a8"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 7,
+    "signature": "492251d00381a13d07818e4b1f89e07203183e141be09e73ac51625ae0e949b1"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 19,
+    "signature": "3a8d94f2146df1a4c47252bc094e42ba60efa21686b960bca1ad981d9ede656b"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 11,
+    "signature": "576211968f01b090661fcd344cc39747828b112d2fdd60082b3a9699d6c390ba"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 19,
+    "signature": "ee628c8795cf9a51b2f9463c635233c25dbdf23f2f7d7cbcda2ae1ad4e1b3873"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 7,
+    "signature": "62b1c2c41047d9446eafb3fa4280f5294136a6d5a4e5641094b158f4d489e119"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 11,
+    "signature": "83f3592f34d673f9f754a6243b5aeb315f95bec02224b3599017daf52a692f24"
+  },
+  {
+    "dataset": "pride_and_prejudice",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 19,
+    "signature": "a7dc67097c28d8cbd1984a6278d97b648cb6358295d1b2fb28d992825f8d0d10"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive RNN Fair",
+    "seed": 7,
+    "signature": "4a0ec93f951ae90101c61bc2a630d81b28a3f49dc2844db5f971876f39dafca9"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive RNN Fair",
+    "seed": 11,
+    "signature": "d37c823d580b87843f2103687cd9665d87c1ac485416adf4087cf73134f0a348"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive RNN Fair",
+    "seed": 19,
+    "signature": "9d015e589bba2a40a8d991815ec93a8df89e3e5529e193249902ecac4e818cb0"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive GRU Fair",
+    "seed": 7,
+    "signature": "ef10a88747e1e25b5bd353f12a348ffb358bf290a27e656b142c6244e391ff8c"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive GRU Fair",
+    "seed": 11,
+    "signature": "af12b2cce2b0ea654f786b2395c99c7f733e29de24c8365eeea8250c843f86df"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive GRU Fair",
+    "seed": 19,
+    "signature": "7e8341b2baea1c180b678f3e393b33550189326333fdf6ee392d9e2ec22155ce"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive LSTM Fair",
+    "seed": 7,
+    "signature": "e717016522bc723645b18fe1da41e4677ea2f79693c2e8d9e60a4d8b9d56e0f2"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive LSTM Fair",
+    "seed": 11,
+    "signature": "6984f99a1c9370b5e4a674652e2b6d451c2814f5e1480522c4f2991c86a82487"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive LSTM Fair",
+    "seed": 19,
+    "signature": "e607270197f9029828d461be5b14a196f2f332bfec8203fea17c1f20aac6e486"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 7,
+    "signature": "21ad98fb569ecb281b4bb37c7a675e286d769c128f454b43a2bd639ef92a96b2"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 11,
+    "signature": "6c0fff19fcfc7e9bf5c6fba36777f2e92878185d78ed5c57db8c0e0e6bdcc724"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 7,
+    "signature": "5f43ac7deb3deb86094ff894a0e8865922e7cc58241a94d22803a49f38aef4d7"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive Peephole LSTM Fair",
+    "seed": 19,
+    "signature": "169d0eb46e0de70e4b8ac857d1a731fc5ca8c77c518636d860bd36fdee34707c"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 11,
+    "signature": "6807a990c4e5a099e5d1a9733b9545de322a773c5666213916f1290a4f0f5595"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Primitive CIFG LSTM Fair",
+    "seed": 19,
+    "signature": "3798ac01453f76d1a6ed4e1a1379462571152f7d7e23f5a5362d7c7b3ebebdae"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 7,
+    "signature": "1a9265dad499b5981033907690fd735185f5f959a2552da9230099a22731a276"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 11,
+    "signature": "e70da57891fce3bdf93fcb1c50c00876b23aee0f0dd8d7d0db944488aef7fd26"
+  },
+  {
+    "dataset": "sherlock_holmes",
+    "model": "Tiny Transformer Decoder Fair",
+    "seed": 19,
+    "signature": "624ebf2d80ebd4bf01fedf92f39011a9a855fd44b8a1bcb2a4b2e40fe4e07cc8"
+  }
+]
